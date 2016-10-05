@@ -24,7 +24,7 @@ var taskConfig = {
 
 	example: {
 		src: 'example/src',
-		dist: 'example/dist',
+		dist: 'docs',
 		files: [
 			'index.html',
 			'.gitignore'
