@@ -2,7 +2,7 @@
 
 ## Demo & Examples
 
-Live demo: [.github.io/react-borealis](http://.github.io/react-borealis/)
+Live demo: [https://umnlibraries.github.io/react-borealis](https://umnlibraries.github.io/react-borealis/)
 
 To build the examples locally, run:
 
