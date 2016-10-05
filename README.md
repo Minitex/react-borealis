@@ -1,7 +1,5 @@
 # react-borealis
 
-__COMPONENT DESCRIPTION GOES HERE__
-
 
 ## Demo & Examples
 
@@ -30,22 +28,11 @@ npm install react-borealis --save
 
 ## Usage
 
-__EXPLAIN USAGE HERE__
-
 ```
 var ReactBorealis = require('react-borealis');
 
 <ReactBorealis>Example</ReactBorealis>
 ```
-
-### Properties
-
-* __DOCUMENT PROPERTIES HERE__
-
-### Notes
-
-__ADDITIONAL USAGE NOTES__
-
 
 ## Development (`src`, `lib` and the build process)
 
@@ -55,7 +42,5 @@ To build, watch and serve the examples (which will also watch the component sour
 
 ## License
 
-__PUT LICENSE HERE__
-
-Copyright (c) 2016 .
+University of Minnesota (MIT Pending)
 
