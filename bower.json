@@ -1,0 +1,29 @@
+{
+  "name": "react-borealis",
+  "version": "0.0.0",
+  "description": "react-borealis",
+  "main": "dist/react-borealis.min.js",
+  "homepage": "https://github.com//react-borealis",
+  "authors": [
+    ""
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
