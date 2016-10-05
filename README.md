@@ -1,6 +1,5 @@
 # react-borealis
 
-
 ## Demo & Examples
 
 Live demo: [.github.io/react-borealis](http://.github.io/react-borealis/)
