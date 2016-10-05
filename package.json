@@ -1,7 +1,7 @@
 {
   "name": "react-borealis",
   "version": "1.0.0",
-  "description": "A React component that renders audio, video, pdf, and iif media.",
+  "description": "A React component that renders audio, video, pdf, and iiif media.",
   "main": "lib/react-borealis.js",
   "author": "",
   "homepage": "https://github.com/UMNLibraries/react-borealis",
