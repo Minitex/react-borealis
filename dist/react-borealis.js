@@ -26153,8 +26153,8 @@ var BorealisPDF = (function (_React$Component) {
         { data: this.props.src, type: "application/pdf", width: this.props.width, height: this.props.height },
         _react2["default"].createElement(
           "a",
-          { href: "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf" },
-          "https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf"
+          { href: this.props.src },
+          this.props.src
         )
       );
     }
