@@ -41,7 +41,7 @@ var objects = [{
   "focus": false,
   "type": "pdf",
   "config": {
-    "srcs": ["http://reflections.mndigital.org/utils/getfile/collection/p16022coll35/id/1/filename/2.pdf"]
+    "srcs": ["https://s3.amazonaws.com/mdl-assets/stpaul.pdf"]
   },
   "thumbnails": ["http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll35/0"]
 }, {
