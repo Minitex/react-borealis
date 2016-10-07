@@ -5,7 +5,7 @@ export default class BorealisVideo extends React.Component {
     }
 
     render() {
-      return (<video width="320" height="240" controls>
+      return (<video width={this.props.width} height={this.props.height} controls>
                 <source src={this.props.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>)

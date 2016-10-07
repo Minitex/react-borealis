@@ -16,8 +16,8 @@ export default class BorealisPDF extends React.Component {
 }
 
 BorealisPDF.defaultProps = {
-  height: 800,
-  width: 800
+  height: 500,
+  width: 900
 }
 
 const propTypes = {

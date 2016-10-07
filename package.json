@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "classnames": "^2.1.2",
-    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git"
+    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git",
+    "immutable": "3.8.1"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.3",
