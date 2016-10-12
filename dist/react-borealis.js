@@ -26116,7 +26116,7 @@ var BorealisAudio = (function (_React$Component) {
         value: function render() {
             return _react2["default"].createElement(
                 "audio",
-                { controls: true, "class": "audio-player" },
+                { controls: true, className: "audio-player" },
                 _react2["default"].createElement("source", { src: this.props.src, type: "audio/mpeg" }),
                 "Your browser does not support the audio element."
             );
@@ -26407,30 +26407,31 @@ var BorealisViewer = (function (_React$Component) {
     value: function _player() {
       var _props$active_object = this.props.active_object;
       var type = _props$active_object.type;
-      var config = _props$active_object.config;
+      var srcs = _props$active_object.srcs;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: config.srcs[0] });
+          return _react2['default'].createElement(_borealisPdf2['default'], { src: srcs[0] });
           break;
         case 'audio':
-          return _react2['default'].createElement(_borealisAudio2['default'], { src: config.srcs[0] });
+          return _react2['default'].createElement(_borealisAudio2['default'], { src: srcs[0] });
           break;
         case 'video':
           var _props$active_object2 = this.props.active_object,
               height = _props$active_object2.height,
               width = _props$active_object2.width;
 
-          return _react2['default'].createElement(_borealisVideo2['default'], { src: config.srcs[0] });
+          return _react2['default'].createElement(_borealisVideo2['default'], { src: srcs[0] });
           break;
         case 'iiif':
           var _props$active_object3 = this.props.active_object,
               include_navigator = _props$active_object3.include_navigator,
-              include_controls = _props$active_object3.include_controls;
+              include_controls = _props$active_object3.include_controls,
+              os_config = _props$active_object3.os_config;
 
           return _react2['default'].createElement(_reactOpenseadragon2['default'], { include_navigator: include_navigator,
             include_controls: include_controls,
-            config: config });
+            config: os_config });
           break;
         default:
           return _react2['default'].createElement(

@@ -11,23 +11,23 @@ export default class BorealisViewer extends React.Component {
   }
 
   _player() {
-    let { type, config } = this.props.active_object
+    let { type, srcs } = this.props.active_object
     switch(type) {
       case 'pdf':
-        return <BorealisPDF src={config.srcs[0]} />
+        return <BorealisPDF src={srcs[0]} />
         break
       case 'audio':
-        return <BorealisAudio src={config.srcs[0]} />
+        return <BorealisAudio src={srcs[0]} />
         break
       case 'video':
         let { height, width } = this.props.active_object
-        return <BorealisVideo src={config.srcs[0]} />
+        return <BorealisVideo src={srcs[0]} />
         break
       case 'iiif':
-        let { include_navigator, include_controls } = this.props.active_object
+        let { include_navigator, include_controls, os_config } = this.props.active_object
         return <OpenseadragonViewer include_navigator={include_navigator} 
                                     include_controls={include_controls}
-                                    config={config} />
+                                    config={os_config} />
         break
       default:
         return <div>No Viewer Avaialable for type: "{type}"</div>
