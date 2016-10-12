@@ -6,7 +6,7 @@ export default class BorealisAudio extends React.Component {
     }
 
     render() {
-      return (<audio controls class="audio-player">
+      return (<audio controls className="audio-player">
                 <source src={this.props.src} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
