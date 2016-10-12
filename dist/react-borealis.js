@@ -26278,7 +26278,7 @@ var BorealisTray = (function (_React$Component) {
         'div',
         null,
         objects.map(function (object, i) {
-          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: object.thumbnails[0] });
+          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: object.tray_thumbnail });
         })
       );
     }
@@ -26407,21 +26407,21 @@ var BorealisViewer = (function (_React$Component) {
     value: function _player() {
       var _props$active_object = this.props.active_object;
       var type = _props$active_object.type;
-      var srcs = _props$active_object.srcs;
+      var src = _props$active_object.src;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisPdf2['default'], { src: src });
           break;
         case 'audio':
-          return _react2['default'].createElement(_borealisAudio2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisAudio2['default'], { src: src });
           break;
         case 'video':
           var _props$active_object2 = this.props.active_object,
               height = _props$active_object2.height,
               width = _props$active_object2.width;
 
-          return _react2['default'].createElement(_borealisVideo2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisVideo2['default'], { src: src });
           break;
         case 'iiif':
           var _props$active_object3 = this.props.active_object,

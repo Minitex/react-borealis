@@ -19,7 +19,7 @@ var objects = [{
   "focus": true,
   "type": "iiif",
   "include_controls": true,
-  "thumbnails": ["http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll39/438"],
+  "tray_thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll39/438",
   "os_config": {
     "sequenceMode": true,
     "showReferenceStrip": true,
@@ -40,20 +40,20 @@ var objects = [{
 }, {
   "focus": false,
   "type": "pdf",
-  "srcs": ["https://s3.amazonaws.com/mdl-assets/stpaul.pdf"],
-  "thumbnails": ["http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll35/0"]
+  "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
+  "tray_thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll35/0"
 }, {
   "focus": false,
   "type": "audio",
-  "srcs": ["http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"],
-  "thumbnails": ["http://lib-mdl-dev.oit.umn.edu/thumbnails/jhs/885"]
+  "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919",
+  "tray_thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/jhs/885"
 }, {
   "focus": false,
   "type": "video",
   "height": 500,
   "width": 500,
-  "srcs": ["http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"],
-  "thumbnails": ["http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0"]
+  "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470",
+  "tray_thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0"
 }];
 
 var App = _react2['default'].createClass({

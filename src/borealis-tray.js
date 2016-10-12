@@ -9,7 +9,7 @@ export default class BorealisTray extends React.Component {
       const { objects, handler } = this.props
       return (<div>
                 {objects.map(function(object, i) {
-                  return <Thumbnail handler={handler.bind(this, i)} key={i} src={object.thumbnails[0]} />
+                  return <Thumbnail handler={handler.bind(this, i)} key={i} src={object.tray_thumbnail} />
                 })}
               </div>)
     }
