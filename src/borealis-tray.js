@@ -6,10 +6,10 @@ export default class BorealisTray extends React.Component {
         super(props)
     }
     render() {
-      const { objects, handler } = this.props
+      const { assets, handler } = this.props
       return (<div>
-                {objects.map(function(object, i) {
-                  return <Thumbnail handler={handler.bind(this, i)} key={i} src={object.tray_thumbnail} />
+                {assets.map(function(asset, i) {
+                  return <Thumbnail handler={handler.bind(this, i)} key={i} src={asset.tray_thumbnail} />
                 })}
               </div>)
     }
@@ -17,7 +17,7 @@ export default class BorealisTray extends React.Component {
 }
 
 const propTypes = {
-  objects: React.PropTypes.array.isRequired,
+  assets: React.PropTypes.array.isRequired,
   handler: React.PropTypes.func.isRequired
 }
 

@@ -11,62 +11,62 @@ import Immutable from 'immutable'
 export default class Borealis extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { objects: this.props.objects }
+    this.state = { assets: this.props.assets }
     this._bindInit()
   }
 
   _bindInit() {
     this._hasFocus = this._hasFocus.bind(this)
-    this._getActiveObject  = this._getActiveObject.bind(this)
-    this._setActiveObject  = this._setActiveObject.bind(this)
+    this._getActiveAsset  = this._getActiveAsset.bind(this)
+    this._setActiveAsset  = this._setActiveAsset.bind(this)
     this._getActiveIndex   = this._getActiveIndex.bind(this)
     this._updateFocus      = this._updateFocus.bind(this)
-    this._immutableObjects = this._immutableObjects.bind(this)
+    this._immutableAssets = this._immutableAssets.bind(this)
     this._unFocused    = this._unFocused.bind(this)
   }
 
-  _setActiveObject(i, e) {
+  _setActiveAsset(i, e) {
     e.preventDefault()
-    this.setState({objects: this._updateFocus(this._unFocused(), i, true).toJS()})
+    this.setState({assets: this._updateFocus(this._unFocused(), i, true).toJS()})
   }
 
   _getActiveIndex() {
-    return this.state.objects.findIndex(this._hasFocus)
+    return this.state.assets.findIndex(this._hasFocus)
   }
 
-  _getActiveObject() {
-    return this.state.objects.find(this._hasFocus)
+  _getActiveAsset() {
+    return this.state.assets.find(this._hasFocus)
   }
 
-  _hasFocus(object) {
-    return object.focus == true 
+  _hasFocus(asset) {
+    return asset.focus == true 
   }
 
   _unFocused() {
-    return this._updateFocus(this._immutableObjects(),
+    return this._updateFocus(this._immutableAssets(),
                              this._getActiveIndex(),
                              false)
   }
 
   _updateFocus(list, i, state) {
-    return list.update(i, (object) => object.set("focus", state))
+    return list.update(i, (asset) => asset.set("focus", state))
   }
 
-  _immutableObjects() {
-    return new Immutable.fromJS(this.state.objects)
+  _immutableAssets() {
+    return new Immutable.fromJS(this.state.assets)
   }
 
   render() {
-    let { objects } = this.state
+    let { assets } = this.state
     return (
       <div className="container">
         <div className="panel panel-default">
           <div className="panel-body">
-            <BorealisViewer active_object={this._getActiveObject()} />
+            <BorealisViewer active_asset={this._getActiveAsset()} />
           </div>
           <div className="panel-footer">
             <div className="row borealis-tray">
-              <BorealisTray objects={objects} handler={this._setActiveObject} />
+              <BorealisTray assets={assets} handler={this._setActiveAsset} />
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default class Borealis extends React.Component {
 }
 
 const propTypes = {
-  objects: React.PropTypes.array.isRequired
+  assets: React.PropTypes.array.isRequired
 }
 
 Borealis.propTypes = propTypes

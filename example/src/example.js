@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Borealis  from 'react-borealis'
 
 
-const objects =  [
+const assets =  [
   {
     "focus": true,
     "type": "iiif",
@@ -57,8 +57,8 @@ const objects =  [
 
 const App = React.createClass({
   render () {
-    return (<Borealis objects={this.props.objects} type="video" />);
+    return (<Borealis assets={this.props.assets} type="video" />);
   }
 });
 
-ReactDOM.render(<App objects={objects} />, document.getElementById('app'));
+ReactDOM.render(<App assets={assets} />, document.getElementById('app'));
