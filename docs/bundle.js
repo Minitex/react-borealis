@@ -26264,14 +26264,14 @@ var BorealisTray = (function (_React$Component) {
     key: 'render',
     value: function render() {
       var _props = this.props;
-      var objects = _props.objects;
+      var assets = _props.assets;
       var handler = _props.handler;
 
       return _react2['default'].createElement(
         'div',
         null,
-        objects.map(function (object, i) {
-          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: object.tray_thumbnail });
+        assets.map(function (asset, i) {
+          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
         })
       );
     }
@@ -26283,7 +26283,7 @@ var BorealisTray = (function (_React$Component) {
 exports['default'] = BorealisTray;
 
 var propTypes = {
-  objects: _react2['default'].PropTypes.array.isRequired,
+  assets: _react2['default'].PropTypes.array.isRequired,
   handler: _react2['default'].PropTypes.func.isRequired
 };
 
@@ -26394,29 +26394,29 @@ var BorealisViewer = (function (_React$Component) {
   _createClass(BorealisViewer, [{
     key: '_player',
     value: function _player() {
-      var _props$active_object = this.props.active_object;
-      var type = _props$active_object.type;
-      var src = _props$active_object.src;
+      var _props$active_asset = this.props.active_asset;
+      var type = _props$active_asset.type;
+      var srcs = _props$active_asset.srcs;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: src });
+          return _react2['default'].createElement(_borealisPdf2['default'], { src: srcs[0] });
           break;
         case 'audio':
-          return _react2['default'].createElement(_borealisAudio2['default'], { src: src });
+          return _react2['default'].createElement(_borealisAudio2['default'], { src: srcs[0] });
           break;
         case 'video':
-          var _props$active_object2 = this.props.active_object,
-              height = _props$active_object2.height,
-              width = _props$active_object2.width;
+          var _props$active_asset2 = this.props.active_asset,
+              height = _props$active_asset2.height,
+              width = _props$active_asset2.width;
 
-          return _react2['default'].createElement(_borealisVideo2['default'], { src: src });
+          return _react2['default'].createElement(_borealisVideo2['default'], { src: srcs[0] });
           break;
         case 'iiif':
-          var _props$active_object3 = this.props.active_object,
-              include_navigator = _props$active_object3.include_navigator,
-              include_controls = _props$active_object3.include_controls,
-              os_config = _props$active_object3.os_config;
+          var _props$active_asset3 = this.props.active_asset,
+              include_navigator = _props$active_asset3.include_navigator,
+              include_controls = _props$active_asset3.include_controls,
+              os_config = _props$active_asset3.os_config;
 
           return _react2['default'].createElement(_reactOpenseadragon2['default'], { include_navigator: include_navigator,
             include_controls: include_controls,
@@ -26449,7 +26449,7 @@ var BorealisViewer = (function (_React$Component) {
 exports['default'] = BorealisViewer;
 
 var propTypes = {
-  active_object: _react2['default'].PropTypes.object.isRequired
+  active_asset: _react2['default'].PropTypes.object.isRequired
 };
 
 BorealisViewer.propTypes = propTypes;
@@ -26511,7 +26511,7 @@ var Borealis = (function (_React$Component) {
     _classCallCheck(this, Borealis);
 
     _get(Object.getPrototypeOf(Borealis.prototype), 'constructor', this).call(this, props);
-    this.state = { objects: this.props.objects };
+    this.state = { assets: this.props.assets };
     this._bindInit();
   }
 
@@ -26519,55 +26519,55 @@ var Borealis = (function (_React$Component) {
     key: '_bindInit',
     value: function _bindInit() {
       this._hasFocus = this._hasFocus.bind(this);
-      this._getActiveObject = this._getActiveObject.bind(this);
-      this._setActiveObject = this._setActiveObject.bind(this);
+      this._getActiveAsset = this._getActiveAsset.bind(this);
+      this._setActiveAsset = this._setActiveAsset.bind(this);
       this._getActiveIndex = this._getActiveIndex.bind(this);
       this._updateFocus = this._updateFocus.bind(this);
-      this._immutableObjects = this._immutableObjects.bind(this);
+      this._immutableAssets = this._immutableAssets.bind(this);
       this._unFocused = this._unFocused.bind(this);
     }
   }, {
-    key: '_setActiveObject',
-    value: function _setActiveObject(i, e) {
+    key: '_setActiveAsset',
+    value: function _setActiveAsset(i, e) {
       e.preventDefault();
-      this.setState({ objects: this._updateFocus(this._unFocused(), i, true).toJS() });
+      this.setState({ assets: this._updateFocus(this._unFocused(), i, true).toJS() });
     }
   }, {
     key: '_getActiveIndex',
     value: function _getActiveIndex() {
-      return this.state.objects.findIndex(this._hasFocus);
+      return this.state.assets.findIndex(this._hasFocus);
     }
   }, {
-    key: '_getActiveObject',
-    value: function _getActiveObject() {
-      return this.state.objects.find(this._hasFocus);
+    key: '_getActiveAsset',
+    value: function _getActiveAsset() {
+      return this.state.assets.find(this._hasFocus);
     }
   }, {
     key: '_hasFocus',
-    value: function _hasFocus(object) {
-      return object.focus == true;
+    value: function _hasFocus(asset) {
+      return asset.focus == true;
     }
   }, {
     key: '_unFocused',
     value: function _unFocused() {
-      return this._updateFocus(this._immutableObjects(), this._getActiveIndex(), false);
+      return this._updateFocus(this._immutableAssets(), this._getActiveIndex(), false);
     }
   }, {
     key: '_updateFocus',
     value: function _updateFocus(list, i, state) {
-      return list.update(i, function (object) {
-        return object.set("focus", state);
+      return list.update(i, function (asset) {
+        return asset.set("focus", state);
       });
     }
   }, {
-    key: '_immutableObjects',
-    value: function _immutableObjects() {
-      return new _immutable2['default'].fromJS(this.state.objects);
+    key: '_immutableAssets',
+    value: function _immutableAssets() {
+      return new _immutable2['default'].fromJS(this.state.assets);
     }
   }, {
     key: 'render',
     value: function render() {
-      var objects = this.state.objects;
+      var assets = this.state.assets;
 
       return _react2['default'].createElement(
         'div',
@@ -26578,7 +26578,7 @@ var Borealis = (function (_React$Component) {
           _react2['default'].createElement(
             'div',
             { className: 'panel-body' },
-            _react2['default'].createElement(_borealisViewer2['default'], { active_object: this._getActiveObject() })
+            _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() })
           ),
           _react2['default'].createElement(
             'div',
@@ -26586,7 +26586,7 @@ var Borealis = (function (_React$Component) {
             _react2['default'].createElement(
               'div',
               { className: 'row borealis-tray' },
-              _react2['default'].createElement(_borealisTray2['default'], { objects: objects, handler: this._setActiveObject })
+              _react2['default'].createElement(_borealisTray2['default'], { assets: assets, handler: this._setActiveAsset })
             )
           )
         )
@@ -26600,7 +26600,7 @@ var Borealis = (function (_React$Component) {
 exports['default'] = Borealis;
 
 var propTypes = {
-  objects: _react2['default'].PropTypes.array.isRequired
+  assets: _react2['default'].PropTypes.array.isRequired
 };
 
 Borealis.propTypes = propTypes;

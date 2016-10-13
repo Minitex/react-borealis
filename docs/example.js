@@ -15,7 +15,7 @@ var _reactBorealis = require('react-borealis');
 
 var _reactBorealis2 = _interopRequireDefault(_reactBorealis);
 
-var objects = [{
+var assets = [{
   "focus": true,
   "type": "iiif",
   "include_controls": true,
@@ -60,10 +60,10 @@ var App = _react2['default'].createClass({
   displayName: 'App',
 
   render: function render() {
-    return _react2['default'].createElement(_reactBorealis2['default'], { objects: this.props.objects, type: 'video' });
+    return _react2['default'].createElement(_reactBorealis2['default'], { assets: this.props.assets, type: 'video' });
   }
 });
 
-_reactDom2['default'].render(_react2['default'].createElement(App, { objects: objects }), document.getElementById('app'));
+_reactDom2['default'].render(_react2['default'].createElement(App, { assets: assets }), document.getElementById('app'));
 
 },{"react":undefined,"react-borealis":undefined,"react-dom":undefined}]},{},[1]);
