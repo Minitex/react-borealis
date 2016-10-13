@@ -17,7 +17,7 @@ var _reactBorealis2 = _interopRequireDefault(_reactBorealis);
 
 var assets = [{
   "focus": true,
-  "type": "iiif",
+  "type": "image",
   "include_controls": true,
   "tray_thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll39/438",
   "os_config": {

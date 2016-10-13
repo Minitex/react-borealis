@@ -26423,7 +26423,7 @@ var BorealisViewer = (function (_React$Component) {
 
           return _react2['default'].createElement(_borealisVideo2['default'], { src: srcs[0] });
           break;
-        case 'iiif':
+        case 'image':
           var _props$active_asset3 = this.props.active_asset,
               include_navigator = _props$active_asset3.include_navigator,
               include_controls = _props$active_asset3.include_controls,
