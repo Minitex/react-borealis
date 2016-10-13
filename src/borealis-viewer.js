@@ -23,7 +23,7 @@ export default class BorealisViewer extends React.Component {
         let { height, width } = this.props.active_asset
         return <BorealisVideo src={srcs[0]} />
         break
-      case 'iiif':
+      case 'image':
         let { include_navigator, include_controls, os_config } = this.props.active_asset
         return <OpenseadragonViewer include_navigator={include_navigator} 
                                     include_controls={include_controls}
