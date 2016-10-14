@@ -26269,10 +26269,14 @@ var BorealisTray = (function (_React$Component) {
 
       return _react2['default'].createElement(
         'div',
-        null,
-        assets.map(function (asset, i) {
-          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
-        })
+        { className: 'panel-footer' },
+        _react2['default'].createElement(
+          'div',
+          { className: 'row borealis-tray' },
+          assets.map(function (asset, i) {
+            return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
+          })
+        )
       );
     }
   }]);
@@ -26525,6 +26529,7 @@ var Borealis = (function (_React$Component) {
       this._updateFocus = this._updateFocus.bind(this);
       this._immutableAssets = this._immutableAssets.bind(this);
       this._unFocused = this._unFocused.bind(this);
+      this._tray = this._tray.bind(this);
     }
   }, {
     key: '_setActiveAsset',
@@ -26565,10 +26570,17 @@ var Borealis = (function (_React$Component) {
       return new _immutable2['default'].fromJS(this.state.assets);
     }
   }, {
+    key: '_tray',
+    value: function _tray(assets) {
+      if (this.state.assets.length > 1) {
+        return _react2['default'].createElement(_borealisTray2['default'], { assets: this.state.assets, handler: this._setActiveAsset });
+      } else {
+        return '';
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
-      var assets = this.state.assets;
-
       return _react2['default'].createElement(
         'div',
         { className: 'container' },
@@ -26578,16 +26590,8 @@ var Borealis = (function (_React$Component) {
           _react2['default'].createElement(
             'div',
             { className: 'panel-body' },
-            _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() })
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'panel-footer' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'row borealis-tray' },
-              _react2['default'].createElement(_borealisTray2['default'], { assets: assets, handler: this._setActiveAsset })
-            )
+            _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() }),
+            this._tray()
           )
         )
       );
