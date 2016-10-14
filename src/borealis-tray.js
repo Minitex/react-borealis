@@ -7,10 +7,12 @@ export default class BorealisTray extends React.Component {
     }
     render() {
       const { assets, handler } = this.props
-      return (<div>
+      return (<div className="panel-footer">
+                <div className="row borealis-tray">
                 {assets.map(function(asset, i) {
                   return <Thumbnail handler={handler.bind(this, i)} key={i} src={asset.tray_thumbnail} />
                 })}
+                </div>
               </div>)
     }
 

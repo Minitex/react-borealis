@@ -23,6 +23,7 @@ export default class Borealis extends React.Component {
     this._updateFocus      = this._updateFocus.bind(this)
     this._immutableAssets = this._immutableAssets.bind(this)
     this._unFocused    = this._unFocused.bind(this)
+    this._tray = this._tray.bind(this)
   }
 
   _setActiveAsset(i, e) {
@@ -56,18 +57,21 @@ export default class Borealis extends React.Component {
     return new Immutable.fromJS(this.state.assets)
   }
 
+  _tray(assets) {
+    if (this.state.assets.length > 1 ) {
+      return <BorealisTray assets={this.state.assets} handler={this._setActiveAsset} /> 
+    } else { 
+      return ''
+    }    
+  }
+
   render() {
-    let { assets } = this.state
     return (
       <div className="container">
         <div className="panel panel-default">
           <div className="panel-body">
             <BorealisViewer active_asset={this._getActiveAsset()} />
-          </div>
-          <div className="panel-footer">
-            <div className="row borealis-tray">
-              <BorealisTray assets={assets} handler={this._setActiveAsset} />
-            </div>
+            {this._tray()}
           </div>
         </div>
       </div>
