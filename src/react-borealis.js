@@ -67,12 +67,10 @@ export default class Borealis extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="panel panel-default">
-          <div className="panel-body">
-            <BorealisViewer active_asset={this._getActiveAsset()} />
-            {this._tray()}
-          </div>
+      <div className="panel panel-default">
+        <div className="panel-body">
+          <BorealisViewer active_asset={this._getActiveAsset()} />
+          {this._tray()}
         </div>
       </div>
     )
