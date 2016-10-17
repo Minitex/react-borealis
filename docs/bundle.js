@@ -25939,7 +25939,7 @@ module.exports = exports["default"];
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
-    value: true
+  value: true
 });
 
 var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
@@ -25967,116 +25967,93 @@ var _openseadragon = require('openseadragon');
 var _openseadragon2 = _interopRequireDefault(_openseadragon);
 
 Object.defineProperty(exports, 'OpenSeadragonControls', {
-    enumerable: true,
-    get: function get() {
-        return _reactOpenseadragonControls.OpenSeadragonControls;
-    }
+  enumerable: true,
+  get: function get() {
+    return _reactOpenseadragonControls.OpenSeadragonControls;
+  }
 });
 
 var OpenSeadragonViewer = (function (_React$Component) {
-    _inherits(OpenSeadragonViewer, _React$Component);
+  _inherits(OpenSeadragonViewer, _React$Component);
 
-    function OpenSeadragonViewer(props) {
-        _classCallCheck(this, OpenSeadragonViewer);
+  function OpenSeadragonViewer(props) {
+    _classCallCheck(this, OpenSeadragonViewer);
 
-        _get(Object.getPrototypeOf(OpenSeadragonViewer.prototype), 'constructor', this).call(this, props);
+    _get(Object.getPrototypeOf(OpenSeadragonViewer.prototype), 'constructor', this).call(this, props);
+  }
+
+  _createClass(OpenSeadragonViewer, [{
+    key: 'render',
+    value: function render() {
+      var _props = this.props;
+      var include_controls = _props.include_controls;
+      var include_navigator = _props.include_navigator;
+
+      var controls = include_controls ? _react2['default'].createElement(_reactOpenseadragonControls2['default'], null) : '';
+      return _react2['default'].createElement(
+        'div',
+        { className: 'osd col-md-12' },
+        _react2['default'].createElement(
+          'div',
+          { className: 'col-md-11' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'openseadragon', id: 'osd-viewer' },
+            controls
+          )
+        )
+      );
     }
+  }, {
+    key: 'initSeaDragon',
+    value: function initSeaDragon() {
+      window.OpenSeadragon(this._config());
+    }
+  }, {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.initSeaDragon();
+    }
+  }, {
+    key: 'shouldComponentUpdate',
+    value: function shouldComponentUpdate(nextProps, nextState) {
+      return false;
+    }
+  }, {
+    key: '_config',
+    value: function _config() {
+      return _extends(this.props.config, this.props.default_config);
+    }
+  }]);
 
-    _createClass(OpenSeadragonViewer, [{
-        key: 'render',
-        value: function render() {
-            var _props = this.props;
-            var include_controls = _props.include_controls;
-            var include_navigator = _props.include_navigator;
-
-            var controls = include_controls ? _react2['default'].createElement(_reactOpenseadragonControls2['default'], null) : '';
-            return _react2['default'].createElement(
-                'div',
-                { className: 'container' },
-                _react2['default'].createElement(
-                    'div',
-                    { className: 'osd col-md-12' },
-                    _react2['default'].createElement(
-                        'div',
-                        { className: 'col-md-11' },
-                        _react2['default'].createElement(
-                            'div',
-                            { className: 'openseadragon', id: 'osd-viewer' },
-                            controls
-                        ),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null),
-                        _react2['default'].createElement('br', null)
-                    )
-                )
-            );
-        }
-    }, {
-        key: 'initSeaDragon',
-        value: function initSeaDragon() {
-            window.OpenSeadragon(this._config());
-        }
-    }, {
-        key: 'componentDidMount',
-        value: function componentDidMount() {
-            this.initSeaDragon();
-        }
-    }, {
-        key: 'shouldComponentUpdate',
-        value: function shouldComponentUpdate(nextProps, nextState) {
-            return false;
-        }
-    }, {
-        key: '_config',
-        value: function _config() {
-            return _extends(this.props.config, this.props.default_config);
-        }
-    }]);
-
-    return OpenSeadragonViewer;
+  return OpenSeadragonViewer;
 })(_react2['default'].Component);
 
 exports['default'] = OpenSeadragonViewer;
 
 OpenSeadragonViewer.defaultProps = { include_navigator: true,
-    include_controls: true,
-    default_config: {
-        showNavigator: true,
-        id: 'osd-viewer',
-        visibilityRatio: 1.0,
-        constrainDuringPan: false,
-        defaultZoomLevel: 1,
-        minZoomLevel: 1,
-        maxZoomLevel: 10,
-        zoomInButton: 'zoom-in',
-        zoomOutButton: 'zoom-out',
-        homeButton: 'reset',
-        fullPageButton: 'full-page',
-        nextButton: 'next',
-        previousButton: 'previous'
-    }
+  include_controls: true,
+  default_config: {
+    showNavigator: true,
+    id: 'osd-viewer',
+    visibilityRatio: 1.0,
+    constrainDuringPan: false,
+    defaultZoomLevel: 1,
+    minZoomLevel: 1,
+    maxZoomLevel: 10,
+    zoomInButton: 'zoom-in',
+    zoomOutButton: 'zoom-out',
+    homeButton: 'reset',
+    fullPageButton: 'full-page',
+    nextButton: 'next',
+    previousButton: 'previous'
+  }
 };
 
 var propTypes = {
-    include_controls: _react2['default'].PropTypes.bool,
-    include_navigator: _react2['default'].PropTypes.bool,
-    config: _react2['default'].PropTypes.object.isRequired
+  include_controls: _react2['default'].PropTypes.bool,
+  include_navigator: _react2['default'].PropTypes.bool,
+  config: _react2['default'].PropTypes.object.isRequired
 };
 
 OpenSeadragonViewer.propTypes = propTypes;
@@ -26400,21 +26377,21 @@ var BorealisViewer = (function (_React$Component) {
     value: function _player() {
       var _props$active_asset = this.props.active_asset;
       var type = _props$active_asset.type;
-      var srcs = _props$active_asset.srcs;
+      var src = _props$active_asset.src;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisPdf2['default'], { src: src });
           break;
         case 'audio':
-          return _react2['default'].createElement(_borealisAudio2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisAudio2['default'], { src: src });
           break;
         case 'video':
           var _props$active_asset2 = this.props.active_asset,
               height = _props$active_asset2.height,
               width = _props$active_asset2.width;
 
-          return _react2['default'].createElement(_borealisVideo2['default'], { src: srcs[0] });
+          return _react2['default'].createElement(_borealisVideo2['default'], { src: src });
           break;
         case 'image':
           var _props$active_asset3 = this.props.active_asset,
