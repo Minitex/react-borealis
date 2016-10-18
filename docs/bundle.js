@@ -26246,14 +26246,10 @@ var BorealisTray = (function (_React$Component) {
 
       return _react2['default'].createElement(
         'div',
-        { className: 'panel-footer' },
-        _react2['default'].createElement(
-          'div',
-          { className: 'row borealis-tray' },
-          assets.map(function (asset, i) {
-            return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
-          })
-        )
+        { className: 'row borealis-tray' },
+        assets.map(function (asset, i) {
+          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
+        })
       );
     }
   }]);
@@ -26560,13 +26556,9 @@ var Borealis = (function (_React$Component) {
     value: function render() {
       return _react2['default'].createElement(
         'div',
-        { className: 'panel panel-default' },
-        _react2['default'].createElement(
-          'div',
-          { className: 'panel-body' },
-          _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() }),
-          this._tray()
-        )
+        null,
+        _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() }),
+        this._tray()
       );
     }
   }]);

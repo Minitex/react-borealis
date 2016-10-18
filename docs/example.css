@@ -52,3 +52,8 @@
   height: 500px;
   width: 100%;
 }
+.borealis-tray {
+  padding-top: 15px;
+  margin-top: 15px;
+  clear: both;
+}
