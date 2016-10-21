@@ -26150,9 +26150,13 @@ var BorealisPDF = (function (_React$Component) {
       return _react2["default"].createElement(
         "object",
         { data: this.props.src, type: "application/pdf", width: this.props.width, height: this.props.height },
+        _react2["default"].createElement("img", { src: this.props.thumbnail }),
+        " ",
         _react2["default"].createElement(
           "a",
           { href: this.props.src },
+          _react2["default"].createElement("span", { className: "glyphicon glyphicon-download-alt" }),
+          " ",
           this.props.src
         )
       );
@@ -26255,7 +26259,7 @@ var BorealisTray = (function (_React$Component) {
         'div',
         { className: 'row borealis-tray' },
         assets.map(function (asset, i) {
-          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.tray_thumbnail });
+          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.thumbnail });
         })
       );
     }
@@ -26385,10 +26389,11 @@ var BorealisViewer = (function (_React$Component) {
       var _props$active_asset = this.props.active_asset;
       var type = _props$active_asset.type;
       var src = _props$active_asset.src;
+      var thumbnail = _props$active_asset.thumbnail;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: src });
+          return _react2['default'].createElement(_borealisPdf2['default'], { src: src, thumbnail: thumbnail });
           break;
         case 'audio':
           return _react2['default'].createElement(_borealisAudio2['default'], { src: src });
