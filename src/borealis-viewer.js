@@ -11,10 +11,10 @@ export default class BorealisViewer extends React.Component {
   }
 
   _player() {
-    let { type, src } = this.props.active_asset
+    let { type, src, thumbnail } = this.props.active_asset
     switch(type) {
       case 'pdf':
-        return <BorealisPDF src={src} />
+        return <BorealisPDF src={src} thumbnail={thumbnail} />
         break
       case 'audio':
         return <BorealisAudio src={src} />

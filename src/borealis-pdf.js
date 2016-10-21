@@ -8,7 +8,7 @@ export default class BorealisPDF extends React.Component {
     render() {
       return (
         <object data={this.props.src} type="application/pdf" width={this.props.width} height={this.props.height}>
-          <a href={this.props.src}>{this.props.src}</a>
+          <img src={this.props.thumbnail} /> <a href={this.props.src}><span className="glyphicon glyphicon-download-alt"></span> {this.props.src}</a>
         </object>
         )
     }
