@@ -26152,7 +26152,11 @@ var BorealisPDF = (function (_React$Component) {
         _react2["default"].createElement(
           "a",
           { href: this.props.src },
-          _react2["default"].createElement("span", { className: "glyphicon glyphicon-download-alt" }),
+          _react2["default"].createElement(
+            "span",
+            { className: "glyphicon glyphicon-download-alt" },
+            "asdasdasd"
+          ),
           " ",
           this.props.src
         )
@@ -26203,6 +26207,13 @@ var Thumbnail = function Thumbnail(props) {
     )
   );
 };
+
+var propTypes = {
+  handler: _react2["default"].PropTypes.func.isRequired,
+  src: _react2["default"].PropTypes.string.isRequired
+};
+
+Thumbnail.propTypes = propTypes;
 
 exports["default"] = Thumbnail;
 module.exports = exports["default"];
@@ -26319,7 +26330,9 @@ var BorealisVideo = (function (_React$Component) {
 exports["default"] = BorealisVideo;
 
 var propTypes = {
-  src: _react2["default"].PropTypes.string.isRequired
+  src: _react2["default"].PropTypes.string.isRequired,
+  height: _react2["default"].PropTypes.string,
+  width: _react2["default"].PropTypes.string
 };
 
 BorealisVideo.propTypes = propTypes;

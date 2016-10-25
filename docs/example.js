@@ -19,11 +19,11 @@ var assets = [{
   "focus": true,
   "type": "image",
   "include_controls": true,
-  "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll39/id/438",
+  "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",
   "os_config": {
     "sequenceMode": true,
     "showReferenceStrip": true,
-    "tileSources": ["http://lib-mdl-dev.oit.umn.edu/contentdm-images/info?id=mpls:22757", "http://lib-mdl-dev.oit.umn.edu/contentdm-images/info?id=mpls:22758"]
+    "tileSources": ["https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json", "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json"]
   }
 }, {
   "focus": true,
