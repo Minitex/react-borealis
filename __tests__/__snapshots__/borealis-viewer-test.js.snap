@@ -1,0 +1,24 @@
+exports[`test Borealis viewer 1`] = `
+<div
+  className="react-borealis col-md-12"
+  id="react-borealis">
+  <object
+    data="https://s3.amazonaws.com/mdl-assets/stpaul.pdf"
+    height={500}
+    type="application/pdf"
+    width={900}>
+    <img
+      src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+     
+    <a
+      href="https://s3.amazonaws.com/mdl-assets/stpaul.pdf">
+      <span
+        className="glyphicon glyphicon-download-alt">
+        asdasdasd
+      </span>
+       
+      https://s3.amazonaws.com/mdl-assets/stpaul.pdf
+    </a>
+  </object>
+</div>
+`;

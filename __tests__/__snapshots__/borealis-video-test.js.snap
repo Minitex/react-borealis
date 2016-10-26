@@ -1,0 +1,11 @@
+exports[`test Borealis video 1`] = `
+<video
+  controls={true}
+  height={undefined}
+  width={undefined}>
+  <source
+    src="http://example.com"
+    type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+`;

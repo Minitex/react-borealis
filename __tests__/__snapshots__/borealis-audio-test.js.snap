@@ -1,0 +1,10 @@
+exports[`BorealisAudio Tests renders an audio 1`] = `
+<audio
+  className="audio-player"
+  controls={true}>
+  <source
+    src="http://example.com"
+    type="audio/mpeg" />
+  Your browser does not support the audio element.
+</audio>
+`;

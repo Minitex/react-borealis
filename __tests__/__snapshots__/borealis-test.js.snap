@@ -1,0 +1,56 @@
+exports[`Borealis Tests renders React Borealis 1`] = `
+<div>
+  <div
+    className="react-borealis col-md-12"
+    id="react-borealis">
+    <object
+      data="https://s3.amazonaws.com/mdl-assets/stpaul.pdf"
+      height={500}
+      type="application/pdf"
+      width={900}>
+      <img
+        src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+       
+      <a
+        href="https://s3.amazonaws.com/mdl-assets/stpaul.pdf">
+        <span
+          className="glyphicon glyphicon-download-alt">
+          asdasdasd
+        </span>
+         
+        https://s3.amazonaws.com/mdl-assets/stpaul.pdf
+      </a>
+    </object>
+  </div>
+  <div
+    className="row borealis-tray">
+    <div
+      className="col-md-2">
+      <a
+        className="thumbnail"
+        onClick={[Function]}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+      </a>
+    </div>
+    <div
+      className="col-md-2">
+      <a
+        className="thumbnail"
+        onClick={[Function]}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
+    <div
+      className="col-md-2">
+      <a
+        className="thumbnail"
+        onClick={[Function]}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+  </div>
+</div>
+`;

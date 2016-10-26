@@ -14,7 +14,9 @@ export default class BorealisVideo extends React.Component {
 }
 
 const propTypes = {
-  src: React.PropTypes.string.isRequired
+  src: React.PropTypes.string.isRequired,
+  height: React.PropTypes.string,
+  width: React.PropTypes.string,
 }
 
 BorealisVideo.propTypes = propTypes
