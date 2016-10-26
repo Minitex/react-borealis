@@ -25995,12 +25995,8 @@ var OpenSeadragonViewer = (function (_React$Component) {
         { className: 'osd col-md-12' },
         _react2['default'].createElement(
           'div',
-          { className: 'col-md-11' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'openseadragon', id: 'osd-viewer' },
-            controls
-          )
+          { className: 'openseadragon', id: 'osd-viewer' },
+          controls
         )
       );
     }
@@ -26022,7 +26018,7 @@ var OpenSeadragonViewer = (function (_React$Component) {
   }, {
     key: '_config',
     value: function _config() {
-      return _extends(this.props.config, this.props.default_config);
+      return _extends(this.props.default_config, this.props.config);
     }
   }]);
 
@@ -26065,52 +26061,52 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
 var _react2 = _interopRequireDefault(_react);
 
-var BorealisAudio = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BorealisAudio = function (_React$Component) {
     _inherits(BorealisAudio, _React$Component);
 
     function BorealisAudio(props) {
         _classCallCheck(this, BorealisAudio);
 
-        _get(Object.getPrototypeOf(BorealisAudio.prototype), "constructor", this).call(this, props);
+        return _possibleConstructorReturn(this, (BorealisAudio.__proto__ || Object.getPrototypeOf(BorealisAudio)).call(this, props));
     }
 
     _createClass(BorealisAudio, [{
         key: "render",
         value: function render() {
-            return _react2["default"].createElement(
+            return _react2.default.createElement(
                 "audio",
                 { controls: true, className: "audio-player" },
-                _react2["default"].createElement("source", { src: this.props.src, type: "audio/mpeg" }),
+                _react2.default.createElement("source", { src: this.props.src, type: "audio/mpeg" }),
                 "Your browser does not support the audio element."
             );
         }
     }]);
 
     return BorealisAudio;
-})(_react2["default"].Component);
+}(_react2.default.Component);
 
-exports["default"] = BorealisAudio;
+exports.default = BorealisAudio;
+
 
 var propTypes = {
-    src: _react2["default"].PropTypes.string.isRequired
+    src: _react2.default.PropTypes.string.isRequired
 };
 
 BorealisAudio.propTypes = propTypes;
-module.exports = exports["default"];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],6:[function(require,module,exports){
@@ -26121,41 +26117,45 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
 var _react2 = _interopRequireDefault(_react);
 
-var BorealisPDF = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BorealisPDF = function (_React$Component) {
   _inherits(BorealisPDF, _React$Component);
 
   function BorealisPDF(props) {
     _classCallCheck(this, BorealisPDF);
 
-    _get(Object.getPrototypeOf(BorealisPDF.prototype), "constructor", this).call(this, props);
+    return _possibleConstructorReturn(this, (BorealisPDF.__proto__ || Object.getPrototypeOf(BorealisPDF)).call(this, props));
   }
 
   _createClass(BorealisPDF, [{
     key: "render",
     value: function render() {
-      return _react2["default"].createElement(
+      return _react2.default.createElement(
         "object",
         { data: this.props.src, type: "application/pdf", width: this.props.width, height: this.props.height },
-        _react2["default"].createElement("img", { src: this.props.thumbnail }),
+        _react2.default.createElement("img", { src: this.props.thumbnail }),
         " ",
-        _react2["default"].createElement(
+        _react2.default.createElement(
           "a",
           { href: this.props.src },
-          _react2["default"].createElement("span", { className: "glyphicon glyphicon-download-alt" }),
+          _react2.default.createElement(
+            "span",
+            { className: "glyphicon glyphicon-download-alt" },
+            "asdasdasd"
+          ),
           " ",
           this.props.src
         )
@@ -26164,9 +26164,10 @@ var BorealisPDF = (function (_React$Component) {
   }]);
 
   return BorealisPDF;
-})(_react2["default"].Component);
+}(_react2.default.Component);
 
-exports["default"] = BorealisPDF;
+exports.default = BorealisPDF;
+
 
 BorealisPDF.defaultProps = {
   height: 500,
@@ -26174,13 +26175,12 @@ BorealisPDF.defaultProps = {
 };
 
 var propTypes = {
-  height: _react2["default"].PropTypes.number,
-  width: _react2["default"].PropTypes.number,
-  src: _react2["default"].PropTypes.string.isRequired
+  height: _react2.default.PropTypes.number,
+  width: _react2.default.PropTypes.number,
+  src: _react2.default.PropTypes.string.isRequired
 };
 
 BorealisPDF.propTypes = propTypes;
-module.exports = exports["default"];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],7:[function(require,module,exports){
@@ -26191,45 +26191,43 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
 var _react2 = _interopRequireDefault(_react);
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 var Thumbnail = function Thumbnail(props) {
-  return _react2["default"].createElement(
+  return _react2.default.createElement(
     "div",
     { className: "col-md-2" },
-    _react2["default"].createElement(
+    _react2.default.createElement(
       "a",
       { onClick: props.handler, className: "thumbnail" },
-      _react2["default"].createElement("img", { src: props.src })
+      _react2.default.createElement("img", { src: props.src })
     )
   );
 };
 
-exports["default"] = Thumbnail;
-module.exports = exports["default"];
+var propTypes = {
+  handler: _react2.default.PropTypes.func.isRequired,
+  src: _react2.default.PropTypes.string.isRequired
+};
+
+Thumbnail.propTypes = propTypes;
+
+exports.default = Thumbnail;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],8:[function(require,module,exports){
 (function (global){
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
@@ -26239,44 +26237,52 @@ var _borealisThumbnail = require('./borealis-thumbnail');
 
 var _borealisThumbnail2 = _interopRequireDefault(_borealisThumbnail);
 
-var BorealisTray = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BorealisTray = function (_React$Component) {
   _inherits(BorealisTray, _React$Component);
 
   function BorealisTray(props) {
     _classCallCheck(this, BorealisTray);
 
-    _get(Object.getPrototypeOf(BorealisTray.prototype), 'constructor', this).call(this, props);
+    return _possibleConstructorReturn(this, (BorealisTray.__proto__ || Object.getPrototypeOf(BorealisTray)).call(this, props));
   }
 
   _createClass(BorealisTray, [{
     key: 'render',
     value: function render() {
-      var _props = this.props;
-      var assets = _props.assets;
-      var handler = _props.handler;
+      var _props = this.props,
+          assets = _props.assets,
+          handler = _props.handler;
 
-      return _react2['default'].createElement(
+      return _react2.default.createElement(
         'div',
         { className: 'row borealis-tray' },
         assets.map(function (asset, i) {
-          return _react2['default'].createElement(_borealisThumbnail2['default'], { handler: handler.bind(this, i), key: i, src: asset.thumbnail });
+          return _react2.default.createElement(_borealisThumbnail2.default, { handler: handler.bind(this, i), key: i, src: asset.thumbnail });
         })
       );
     }
   }]);
 
   return BorealisTray;
-})(_react2['default'].Component);
+}(_react2.default.Component);
 
-exports['default'] = BorealisTray;
+exports.default = BorealisTray;
+
 
 var propTypes = {
-  assets: _react2['default'].PropTypes.array.isRequired,
-  handler: _react2['default'].PropTypes.func.isRequired
+  assets: _react2.default.PropTypes.array.isRequired,
+  handler: _react2.default.PropTypes.func.isRequired
 };
 
 BorealisTray.propTypes = propTypes;
-module.exports = exports['default'];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./borealis-thumbnail":7}],9:[function(require,module,exports){
@@ -26287,71 +26293,65 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
 var _react2 = _interopRequireDefault(_react);
 
-var BorealisVideo = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BorealisVideo = function (_React$Component) {
   _inherits(BorealisVideo, _React$Component);
 
   function BorealisVideo(props) {
     _classCallCheck(this, BorealisVideo);
 
-    _get(Object.getPrototypeOf(BorealisVideo.prototype), "constructor", this).call(this, props);
+    return _possibleConstructorReturn(this, (BorealisVideo.__proto__ || Object.getPrototypeOf(BorealisVideo)).call(this, props));
   }
 
   _createClass(BorealisVideo, [{
     key: "render",
     value: function render() {
-      return _react2["default"].createElement(
+      return _react2.default.createElement(
         "video",
         { width: this.props.width, height: this.props.height, controls: true },
-        _react2["default"].createElement("source", { src: this.props.src, type: "video/mp4" }),
+        _react2.default.createElement("source", { src: this.props.src, type: "video/mp4" }),
         "Your browser does not support the video tag."
       );
     }
   }]);
 
   return BorealisVideo;
-})(_react2["default"].Component);
+}(_react2.default.Component);
 
-exports["default"] = BorealisVideo;
+exports.default = BorealisVideo;
+
 
 var propTypes = {
-  src: _react2["default"].PropTypes.string.isRequired
+  src: _react2.default.PropTypes.string.isRequired,
+  height: _react2.default.PropTypes.string,
+  width: _react2.default.PropTypes.string
 };
 
 BorealisVideo.propTypes = propTypes;
-module.exports = exports["default"];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],10:[function(require,module,exports){
 (function (global){
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
@@ -26373,37 +26373,47 @@ var _reactOpenseadragon = require('react-openseadragon');
 
 var _reactOpenseadragon2 = _interopRequireDefault(_reactOpenseadragon);
 
-var BorealisViewer = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var BorealisViewer = function (_React$Component) {
   _inherits(BorealisViewer, _React$Component);
 
   function BorealisViewer(props) {
     _classCallCheck(this, BorealisViewer);
 
-    _get(Object.getPrototypeOf(BorealisViewer.prototype), 'constructor', this).call(this, props);
-    this._player = this._player.bind(this);
+    var _this = _possibleConstructorReturn(this, (BorealisViewer.__proto__ || Object.getPrototypeOf(BorealisViewer)).call(this, props));
+
+    _this._player = _this._player.bind(_this);
+    return _this;
   }
 
   _createClass(BorealisViewer, [{
     key: '_player',
     value: function _player() {
-      var _props$active_asset = this.props.active_asset;
-      var type = _props$active_asset.type;
-      var src = _props$active_asset.src;
-      var thumbnail = _props$active_asset.thumbnail;
+      var _props$active_asset = this.props.active_asset,
+          type = _props$active_asset.type,
+          src = _props$active_asset.src,
+          thumbnail = _props$active_asset.thumbnail;
 
       switch (type) {
         case 'pdf':
-          return _react2['default'].createElement(_borealisPdf2['default'], { src: src, thumbnail: thumbnail });
+          return _react2.default.createElement(_borealisPdf2.default, { src: src, thumbnail: thumbnail });
           break;
         case 'audio':
-          return _react2['default'].createElement(_borealisAudio2['default'], { src: src });
+          return _react2.default.createElement(_borealisAudio2.default, { src: src });
           break;
         case 'video':
           var _props$active_asset2 = this.props.active_asset,
               height = _props$active_asset2.height,
               width = _props$active_asset2.width;
 
-          return _react2['default'].createElement(_borealisVideo2['default'], { src: src });
+          return _react2.default.createElement(_borealisVideo2.default, { src: src });
           break;
         case 'image':
           var _props$active_asset3 = this.props.active_asset,
@@ -26411,12 +26421,12 @@ var BorealisViewer = (function (_React$Component) {
               include_controls = _props$active_asset3.include_controls,
               os_config = _props$active_asset3.os_config;
 
-          return _react2['default'].createElement(_reactOpenseadragon2['default'], { include_navigator: include_navigator,
+          return _react2.default.createElement(_reactOpenseadragon2.default, { include_navigator: include_navigator,
             include_controls: include_controls,
             config: os_config });
           break;
         default:
-          return _react2['default'].createElement(
+          return _react2.default.createElement(
             'div',
             null,
             'No Viewer Avaialable for type: "',
@@ -26428,7 +26438,7 @@ var BorealisViewer = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2['default'].createElement(
+      return _react2.default.createElement(
         'div',
         { id: 'react-borealis', className: 'react-borealis col-md-12' },
         this._player()
@@ -26437,35 +26447,27 @@ var BorealisViewer = (function (_React$Component) {
   }]);
 
   return BorealisViewer;
-})(_react2['default'].Component);
+}(_react2.default.Component);
 
-exports['default'] = BorealisViewer;
+exports.default = BorealisViewer;
+
 
 var propTypes = {
-  active_asset: _react2['default'].PropTypes.object.isRequired
+  active_asset: _react2.default.PropTypes.object.isRequired
 };
 
 BorealisViewer.propTypes = propTypes;
-module.exports = exports['default'];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./borealis-audio":5,"./borealis-pdf":6,"./borealis-video":9,"react-openseadragon":4}],11:[function(require,module,exports){
 (function (global){
 'use strict';
 
-Object.defineProperty(exports, '__esModule', {
+Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = (typeof window !== "undefined" ? window['React'] : typeof global !== "undefined" ? global['React'] : null);
 
@@ -26499,15 +26501,25 @@ var _immutable = require('immutable');
 
 var _immutable2 = _interopRequireDefault(_immutable);
 
-var Borealis = (function (_React$Component) {
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Borealis = function (_React$Component) {
   _inherits(Borealis, _React$Component);
 
   function Borealis(props) {
     _classCallCheck(this, Borealis);
 
-    _get(Object.getPrototypeOf(Borealis.prototype), 'constructor', this).call(this, props);
-    this.state = { assets: this.props.assets };
-    this._bindInit();
+    var _this = _possibleConstructorReturn(this, (Borealis.__proto__ || Object.getPrototypeOf(Borealis)).call(this, props));
+
+    _this.state = { assets: _this.props.assets };
+    _this._bindInit();
+    return _this;
   }
 
   _createClass(Borealis, [{
@@ -26558,13 +26570,13 @@ var Borealis = (function (_React$Component) {
   }, {
     key: '_immutableAssets',
     value: function _immutableAssets() {
-      return new _immutable2['default'].fromJS(this.state.assets);
+      return new _immutable2.default.fromJS(this.state.assets);
     }
   }, {
     key: '_tray',
     value: function _tray(assets) {
       if (this.state.assets.length > 1) {
-        return _react2['default'].createElement(_borealisTray2['default'], { assets: this.state.assets, handler: this._setActiveAsset });
+        return _react2.default.createElement(_borealisTray2.default, { assets: this.state.assets, handler: this._setActiveAsset });
       } else {
         return '';
       }
@@ -26572,26 +26584,26 @@ var Borealis = (function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      return _react2['default'].createElement(
+      return _react2.default.createElement(
         'div',
         null,
-        _react2['default'].createElement(_borealisViewer2['default'], { active_asset: this._getActiveAsset() }),
+        _react2.default.createElement(_borealisViewer2.default, { active_asset: this._getActiveAsset() }),
         this._tray()
       );
     }
   }]);
 
   return Borealis;
-})(_react2['default'].Component);
+}(_react2.default.Component);
 
-exports['default'] = Borealis;
+exports.default = Borealis;
+
 
 var propTypes = {
-  assets: _react2['default'].PropTypes.array.isRequired
+  assets: _react2.default.PropTypes.array.isRequired
 };
 
 Borealis.propTypes = propTypes;
-module.exports = exports['default'];
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"./borealis-audio":5,"./borealis-pdf":6,"./borealis-tray":8,"./borealis-video":9,"./borealis-viewer":10,"immutable":1,"react-openseadragon":4}]},{},[11])(11)
