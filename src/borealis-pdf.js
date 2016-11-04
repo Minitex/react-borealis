@@ -2,7 +2,7 @@ import React from 'react'
 
 export default class BorealisPDF extends React.Component {
     constructor(props) {
-        super(props)
+      super(props)
     }
 
     render() {
