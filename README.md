@@ -21,7 +21,7 @@ The easiest way to use react-borealis is to install it from NPM and include it i
 You can also use the standalone build by including `dist/react-borealis.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
-npm install npm install git+git@github.com:UMNLibraries/react-borealis.git --save
+npm install git+git@github.com:UMNLibraries/react-borealis.git --save
 ```
 
 
