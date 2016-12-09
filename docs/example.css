@@ -1,11 +1,6 @@
 .thumbnail img {
   max-height: 75px;
 }
-.openseadragon-container,
-.openseadragon {
-  height: 500px;
-  width: 100%;
-}
 .borealis-tray {
   padding-top: 15px;
   margin-top: 15px;

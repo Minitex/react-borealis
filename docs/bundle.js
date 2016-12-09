@@ -26724,29 +26724,18 @@ var BorealisViewer = function (_React$Component) {
   _createClass(BorealisViewer, [{
     key: '_player',
     value: function _player() {
-      var _props$active_asset = this.props.active_asset,
-          type = _props$active_asset.type,
-          src = _props$active_asset.src,
-          thumbnail = _props$active_asset.thumbnail;
-
-      switch (type) {
+      switch (this.props.active_asset.type) {
         case 'pdf':
-          return _react2.default.createElement(_borealisPdf2.default, { src: src, thumbnail: thumbnail });
+          return _react2.default.createElement(_borealisPdf2.default, this.props.active_asset);
           break;
         case 'audio':
-          return _react2.default.createElement(_borealisAudio2.default, { src: src });
+          return _react2.default.createElement(_borealisAudio2.default, this.props.active_asset);
           break;
         case 'video':
-          var _props$active_asset2 = this.props.active_asset,
-              height = _props$active_asset2.height,
-              width = _props$active_asset2.width;
-
-          return _react2.default.createElement(_borealisVideo2.default, { src: src });
+          return _react2.default.createElement(_borealisVideo2.default, this.props.active_asset);
           break;
         case 'image':
-          var items = this.props.active_asset.items;
-
-          return _react2.default.createElement(_reactOpenseadragon2.default, { items: items });
+          return _react2.default.createElement(_reactOpenseadragon2.default, this.props.active_asset);
           break;
         default:
           return _react2.default.createElement(
