@@ -1,8 +1,15 @@
-#react-borealis {
-  height: 500px;
+.thumbnail img {
+  max-height: 75px;
 }
-.thumbnail {
-  margin-bottom: 0;
+.openseadragon-container,
+.openseadragon {
+  height: 500px;
+  width: 100%;
+}
+.borealis-tray {
+  padding-top: 15px;
+  margin-top: 15px;
+  clear: both;
 }
 .navigator-wrapper {
   background: #000;
@@ -13,6 +20,7 @@
 }
 .osd {
   position: relative;
+  background-color: black;
 }
 .osd-toolbar {
   padding: 0;
@@ -52,8 +60,9 @@
   height: 500px;
   width: 100%;
 }
-.borealis-tray {
-  padding-top: 15px;
-  margin-top: 15px;
-  clear: both;
+.image-nav {
+  margin-bottom: 10px;
+}
+.image-nav ul {
+  margin-left: 15px;
 }

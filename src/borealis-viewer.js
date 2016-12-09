@@ -24,10 +24,8 @@ export default class BorealisViewer extends React.Component {
         return <BorealisVideo src={src} />
         break
       case 'image':
-        let { include_navigator, include_controls, os_config } = this.props.active_asset
-        return <OpenseadragonViewer include_navigator={include_navigator} 
-                                    include_controls={include_controls}
-                                    config={os_config} />
+        let { items } = this.props.active_asset
+        return <OpenseadragonViewer items={items} />
         break
       default:
         return <div>No Viewer Avaialable for type: "{type}"</div>
