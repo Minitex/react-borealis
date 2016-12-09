@@ -25860,6 +25860,125 @@ $.extend( $.World.prototype, $.EventSource.prototype, /** @lends OpenSeadragon.W
 
 
 },{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+exports.default = activeItem;
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _immutable = require('immutable');
+
+var _immutable2 = _interopRequireDefault(_immutable);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// TODO: Split this out as a separate react component and add as a dependency
+
+function activeItem(WrappedComponent) {
+  return function (_React$Component) {
+    _inherits(ActiveItem, _React$Component);
+
+    function ActiveItem(props) {
+      _classCallCheck(this, ActiveItem);
+
+      var _this = _possibleConstructorReturn(this, (ActiveItem.__proto__ || Object.getPrototypeOf(ActiveItem)).call(this, props));
+
+      _this.state = { items: _this.props.items };
+      _this._bindInit();
+      return _this;
+    }
+
+    _createClass(ActiveItem, [{
+      key: '_bindInit',
+      value: function _bindInit() {
+        this.getActiveItem = this.getActiveItem.bind(this);
+        this.setActiveItem = this.setActiveItem.bind(this);
+        this.getActiveItemIndex = this.getActiveItemIndex.bind(this);
+        this._hasFocus = this._hasFocus.bind(this);
+        this._updateFocus = this._updateFocus.bind(this);
+        this._immutableAssets = this._immutableAssets.bind(this);
+        this._unFocused = this._unFocused.bind(this);
+        this._handlers = this._handlers.bind(this);
+      }
+    }, {
+      key: 'setActiveItem',
+      value: function setActiveItem(i, e) {
+        if (typeof e != 'undefined') {
+          e.preventDefault();
+        }
+        this.setState({ items: this._updateFocus(this._unFocused(), i, true).toJS() });
+      }
+    }, {
+      key: 'getActiveItem',
+      value: function getActiveItem() {
+        return this.state.items.find(this._hasFocus);
+      }
+    }, {
+      key: 'getActiveItemIndex',
+      value: function getActiveItemIndex() {
+        return this.state.items.findIndex(this._hasFocus);
+      }
+
+      // "private"
+
+    }, {
+      key: '_hasFocus',
+      value: function _hasFocus(item) {
+        return item.focus == true;
+      }
+    }, {
+      key: '_unFocused',
+      value: function _unFocused() {
+        return this._updateFocus(this._immutableAssets(), this.getActiveItemIndex(), false);
+      }
+    }, {
+      key: '_updateFocus',
+      value: function _updateFocus(list, i, status) {
+        return list.update(i, function (item) {
+          return item.set('focus', status);
+        });
+      }
+    }, {
+      key: '_immutableAssets',
+      value: function _immutableAssets() {
+        return new _immutable2.default.fromJS(this.state.items);
+      }
+    }, {
+      key: '_handlers',
+      value: function _handlers() {
+        return {
+          setActiveItem: this.setActiveItem.bind(this),
+          getActiveItem: this.getActiveItem.bind(this),
+          getActiveItemIndex: this.getActiveItemIndex.bind(this)
+        };
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        return _react2.default.createElement(WrappedComponent, _extends({}, this.props, this.state, this._handlers()));
+      }
+    }]);
+
+    return ActiveItem;
+  }(_react2.default.Component);
+}
+},{"immutable":1,"react":undefined}],4:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -25935,7 +26054,93 @@ var OpenSeadragonControls = function OpenSeadragonControls(props) {
 
 exports["default"] = OpenSeadragonControls;
 module.exports = exports["default"];
-},{"react":undefined}],4:[function(require,module,exports){
+},{"react":undefined}],5:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var OpenSeadragonNav = (function (_React$Component) {
+  _inherits(OpenSeadragonNav, _React$Component);
+
+  function OpenSeadragonNav(props) {
+    _classCallCheck(this, OpenSeadragonNav);
+
+    _get(Object.getPrototypeOf(OpenSeadragonNav.prototype), 'constructor', this).call(this, props);
+    this.active_index = this.active_index.bind(this);
+    this.active_class = this.active_class.bind(this);
+  }
+
+  _createClass(OpenSeadragonNav, [{
+    key: 'active_index',
+    value: function active_index() {
+      return this.props.getActiveItemIndex();
+    }
+  }, {
+    key: 'active_class',
+    value: function active_class(i) {
+      return this.active_index() == i ? 'active' : '';
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var _props = this.props;
+      var items = _props.items;
+      var class_name = _props.class_name;
+      var setActiveItem = _props.setActiveItem;
+      var getActiveItem = _props.getActiveItem;
+
+      var active_class = this.active_class;
+      return _react2['default'].createElement(
+        'div',
+        { className: 'row image-nav' },
+        _react2['default'].createElement(
+          'ul',
+          { className: 'nav nav-pills' },
+          items.map(function (item, i) {
+            return _react2['default'].createElement(
+              'li',
+              { role: 'presentation', className: active_class(i), onClick: setActiveItem.bind(this, i), key: i },
+              _react2['default'].createElement(
+                'a',
+                { href: '' },
+                item.label
+              )
+            );
+          })
+        )
+      );
+    }
+  }]);
+
+  return OpenSeadragonNav;
+})(_react2['default'].Component);
+
+exports['default'] = OpenSeadragonNav;
+
+var propTypes = {
+  items: _react2['default'].PropTypes.array.isRequired,
+  setActiveItem: _react2['default'].PropTypes.func.isRequired
+};
+
+OpenSeadragonNav.propTypes = propTypes;
+module.exports = exports['default'];
+},{"react":undefined}],6:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -25958,20 +26163,13 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactOpenseadragonControls = require('./react-openseadragon-controls');
-
-var _reactOpenseadragonControls2 = _interopRequireDefault(_reactOpenseadragonControls);
-
 var _openseadragon = require('openseadragon');
 
 var _openseadragon2 = _interopRequireDefault(_openseadragon);
 
-Object.defineProperty(exports, 'OpenSeadragonControls', {
-  enumerable: true,
-  get: function get() {
-    return _reactOpenseadragonControls.OpenSeadragonControls;
-  }
-});
+var _reactOpenseadragonControls = require('./react-openseadragon-controls');
+
+var _reactOpenseadragonControls2 = _interopRequireDefault(_reactOpenseadragonControls);
 
 var OpenSeadragonViewer = (function (_React$Component) {
   _inherits(OpenSeadragonViewer, _React$Component);
@@ -25980,14 +26178,31 @@ var OpenSeadragonViewer = (function (_React$Component) {
     _classCallCheck(this, OpenSeadragonViewer);
 
     _get(Object.getPrototypeOf(OpenSeadragonViewer.prototype), 'constructor', this).call(this, props);
+    this._config = this._config.bind(this);
   }
 
   _createClass(OpenSeadragonViewer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var page_handler = this.props.page_handler;
+
+      window.OPENSEADRAGONVIEWER = window.OpenSeadragon(this._config());
+      this.setState({ viewer: OPENSEADRAGONVIEWER });
+      OPENSEADRAGONVIEWER.addHandler('page', function (viewer) {
+        page_handler(viewer);
+      });
+    }
+  }, {
+    key: '_config',
+    value: function _config() {
+      return _extends(this.props.default_config, this.props.config);
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _props = this.props;
+      var text = _props.text;
       var include_controls = _props.include_controls;
-      var include_navigator = _props.include_navigator;
 
       var controls = include_controls ? _react2['default'].createElement(_reactOpenseadragonControls2['default'], null) : '';
       return _react2['default'].createElement(
@@ -25999,26 +26214,6 @@ var OpenSeadragonViewer = (function (_React$Component) {
           controls
         )
       );
-    }
-  }, {
-    key: 'initSeaDragon',
-    value: function initSeaDragon() {
-      window.OpenSeadragon(this._config());
-    }
-  }, {
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      this.initSeaDragon();
-    }
-  }, {
-    key: 'shouldComponentUpdate',
-    value: function shouldComponentUpdate(nextProps, nextState) {
-      return false;
-    }
-  }, {
-    key: '_config',
-    value: function _config() {
-      return _extends(this.props.default_config, this.props.config);
     }
   }]);
 
@@ -26047,13 +26242,157 @@ OpenSeadragonViewer.defaultProps = { include_navigator: true,
 };
 
 var propTypes = {
-  include_controls: _react2['default'].PropTypes.bool,
-  include_navigator: _react2['default'].PropTypes.bool,
+  page_handler: _react2['default'].PropTypes.func,
   config: _react2['default'].PropTypes.object.isRequired
 };
 
 OpenSeadragonViewer.propTypes = propTypes;
-},{"./react-openseadragon-controls":3,"openseadragon":2,"react":undefined}],5:[function(require,module,exports){
+module.exports = exports['default'];
+},{"./react-openseadragon-controls":4,"openseadragon":2,"react":undefined}],7:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactActiveItem = require('react-active-item');
+
+var _reactActiveItem2 = _interopRequireDefault(_reactActiveItem);
+
+var _reactOpenseadragonNav = require('./react-openseadragon-nav');
+
+var _reactOpenseadragonNav2 = _interopRequireDefault(_reactOpenseadragonNav);
+
+var _reactOpenseadragonViewer = require('./react-openseadragon-viewer');
+
+var _reactOpenseadragonViewer2 = _interopRequireDefault(_reactOpenseadragonViewer);
+
+var _reactOpenseadragonControls = require('./react-openseadragon-controls');
+
+Object.defineProperty(exports, 'OpenSeadragonControls', {
+  enumerable: true,
+  get: function get() {
+    return _reactOpenseadragonControls.OpenSeadragonControls;
+  }
+});
+
+var OpenSeadragon = (function (_React$Component) {
+  _inherits(OpenSeadragon, _React$Component);
+
+  function OpenSeadragon(props) {
+    _classCallCheck(this, OpenSeadragon);
+
+    _get(Object.getPrototypeOf(OpenSeadragon.prototype), 'constructor', this).call(this, props);
+    this.viewer = this.viewer.bind(this);
+    this.page_handler = this.page_handler.bind(this);
+    this.state = { text: this.text(0) };
+  }
+
+  _createClass(OpenSeadragon, [{
+    key: 'text',
+    value: function text(i) {
+      return this.props.items[1]['texts'][i];
+    }
+  }, {
+    key: 'page_handler',
+    value: function page_handler(p) {
+      this.setState({ text: this.text(p.page) });
+    }
+  }, {
+    key: 'viewer',
+    value: function viewer() {
+      var _props$getActiveItem = this.props.getActiveItem();
+
+      var type = _props$getActiveItem.type;
+      var text = _props$getActiveItem.text;
+
+      switch (type) {
+        case 'image':
+          return _react2['default'].createElement(_reactOpenseadragonViewer2['default'], { page_handler: this.page_handler, config: this.props.getActiveItem() });
+          break;
+        case 'transcript':
+          return _react2['default'].createElement(
+            'div',
+            null,
+            this.state.text
+          );
+          break;
+        default:
+          return _react2['default'].createElement(
+            'div',
+            null,
+            'No Viewer Avaialable for type: "',
+            type,
+            '"'
+          );
+      }
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var include_controls = this.props.include_controls;
+
+      if (this.state != null) {
+        var viewer = this.state.viewer;
+
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { className: 'row' },
+            _react2['default'].createElement(_reactOpenseadragonNav2['default'], this.props)
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'row' },
+            this.viewer()
+          )
+        );
+      } else {
+        return _react2['default'].createElement(
+          'div',
+          null,
+          _react2['default'].createElement(
+            'div',
+            { className: 'row' },
+            _react2['default'].createElement(_reactOpenseadragonNav2['default'], this.props)
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'row' },
+            this.viewer()
+          )
+        );
+      }
+    }
+  }]);
+
+  return OpenSeadragon;
+})(_react2['default'].Component);
+
+var propTypes = {
+  items: _react2['default'].PropTypes.array.isRequired
+};
+
+OpenSeadragon.propTypes = propTypes;
+
+exports['default'] = (0, _reactActiveItem2['default'])(OpenSeadragon);
+},{"./react-openseadragon-controls":4,"./react-openseadragon-nav":5,"./react-openseadragon-viewer":6,"react":undefined,"react-active-item":3}],8:[function(require,module,exports){
 (function (global){
 "use strict";
 
@@ -26109,7 +26448,7 @@ var propTypes = {
 BorealisAudio.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],6:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 (function (global){
 "use strict";
 
@@ -26183,7 +26522,7 @@ var propTypes = {
 BorealisPDF.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],7:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 (function (global){
 "use strict";
 
@@ -26219,7 +26558,7 @@ Thumbnail.propTypes = propTypes;
 exports.default = Thumbnail;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],8:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -26285,7 +26624,7 @@ var propTypes = {
 BorealisTray.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./borealis-thumbnail":7}],9:[function(require,module,exports){
+},{"./borealis-thumbnail":10}],12:[function(require,module,exports){
 (function (global){
 "use strict";
 
@@ -26343,7 +26682,7 @@ var propTypes = {
 BorealisVideo.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],10:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -26416,14 +26755,9 @@ var BorealisViewer = function (_React$Component) {
           return _react2.default.createElement(_borealisVideo2.default, { src: src });
           break;
         case 'image':
-          var _props$active_asset3 = this.props.active_asset,
-              include_navigator = _props$active_asset3.include_navigator,
-              include_controls = _props$active_asset3.include_controls,
-              os_config = _props$active_asset3.os_config;
+          var items = this.props.active_asset.items;
 
-          return _react2.default.createElement(_reactOpenseadragon2.default, { include_navigator: include_navigator,
-            include_controls: include_controls,
-            config: os_config });
+          return _react2.default.createElement(_reactOpenseadragon2.default, { items: items });
           break;
         default:
           return _react2.default.createElement(
@@ -26459,7 +26793,7 @@ var propTypes = {
 BorealisViewer.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./borealis-audio":5,"./borealis-pdf":6,"./borealis-video":9,"react-openseadragon":4}],11:[function(require,module,exports){
+},{"./borealis-audio":8,"./borealis-pdf":9,"./borealis-video":12,"react-openseadragon":7}],14:[function(require,module,exports){
 (function (global){
 'use strict';
 
@@ -26587,8 +26921,8 @@ var Borealis = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_borealisViewer2.default, { active_asset: this._getActiveAsset() }),
-        this._tray()
+        this._tray(),
+        _react2.default.createElement(_borealisViewer2.default, { active_asset: this._getActiveAsset() })
       );
     }
   }]);
@@ -26606,5 +26940,5 @@ var propTypes = {
 Borealis.propTypes = propTypes;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./borealis-audio":5,"./borealis-pdf":6,"./borealis-tray":8,"./borealis-video":9,"./borealis-viewer":10,"immutable":1,"react-openseadragon":4}]},{},[11])(11)
+},{"./borealis-audio":8,"./borealis-pdf":9,"./borealis-tray":11,"./borealis-video":12,"./borealis-viewer":13,"immutable":1,"react-openseadragon":7}]},{},[14])(14)
 });
