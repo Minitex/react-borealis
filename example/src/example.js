@@ -37,6 +37,7 @@ const assets =
   {
     "focus": true,
     "type": "pdf",
+    "height": 800,
     "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
     "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0"
   },
