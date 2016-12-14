@@ -1,12 +1,10 @@
 import React from 'react'
 import ActiveItem from 'react-active-item'
+import OpenseadragonViewer from 'react-openseadragon'
 import BorealisTray from './borealis-tray'
 import BorealisPDF from './borealis-pdf'
 import BorealisAudio from './borealis-audio'
 import BorealisVideo from './borealis-video'
-import OpenseadragonViewer from 'react-openseadragon'
-
-
 
 
 class Borealis extends React.Component {
