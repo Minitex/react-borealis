@@ -1,22 +1,41 @@
 import React from 'react'
-export default class BorealisVideo extends React.Component {
+import TranscriptNav from './transcript-nav'
+import ActiveItem from 'react-active-item'
+import VideoPlayer from './borealis-video-player'
+
+class BorealisVideo extends React.Component {
     constructor(props) {
         super(props)
+        this.viewer = this.viewer.bind(this)        
+    }
+
+    viewer() {
+      let item = this.props.getActiveItem()
+      switch(item.type) {
+        case 'video':
+          return <VideoPlayer {...item} />
+          break
+        case 'transcript':
+          return <div>{item.text}</div>
+          break
+        default:
+          return <div>No Viewer Avaialable for type: "{item.type}"</div>
+      }
     }
 
     render() {
-      return (<video width={this.props.width} height={this.props.height} controls>
-                <source src={this.props.src} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>)
+      return (
+               <div>
+                 <div className="row"><TranscriptNav {...this.props} /></div>
+                 <div className="row">{this.viewer()}</div>
+                </div>
+              )
     }
 
 }
 
-const propTypes = {
-  src: React.PropTypes.string.isRequired,
-  height: React.PropTypes.string,
-  width: React.PropTypes.string,
+BorealisVideo.propTypes = {
+  items: React.PropTypes.array.isRequired
 }
 
-BorealisVideo.propTypes = propTypes
+export default ActiveItem(BorealisVideo)

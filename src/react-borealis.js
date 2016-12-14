@@ -36,7 +36,7 @@ class Borealis extends React.Component {
   render() {
     return (
       <div id="react-borealis" className="react-borealis col-md-12">
-        <div className="row"><BorealisTray {...this.props } /> </div>
+        <div className="row"><BorealisTray {...this.props } /></div>
         <div className="row">{this._player()}</div>
       </div>
     )

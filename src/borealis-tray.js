@@ -19,8 +19,7 @@ export default class BorealisTray extends React.Component {
 }
 
 const propTypes = {
-  items: React.PropTypes.array.isRequired,
-  setActiveItem: React.PropTypes.func.isRequired
+  items: React.PropTypes.array.isRequired
 }
 
 BorealisTray.propTypes = propTypes

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import Borealis  from 'react-borealis'
 
 
-const assets =  
+const items =  
 [
   {
     "focus": true,
@@ -27,8 +27,8 @@ const assets =
         "type": "transcript",
         "label": "Transcript",
         "texts": [
-          "First Item",
-          "Second Item"
+          "First Image Item Transcript",
+          "Second Image Item  Transcript"
         ],
         "focus": false
       }
@@ -39,28 +39,63 @@ const assets =
     "type": "pdf",
     "height": 800,
     "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0"
+    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0",
+    "items": [
+      {
+        "type": "pdf",
+        "label": "PDF",
+        "focus": true,
+        "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
+      },
+      {
+        "type": "transcript",
+        "label": "Transcript",
+        "text": "PDF Transcript Here",
+        "focus": false
+      }
+    ]
   },
   {
     "focus": false,
     "type": "audio",
     "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885"
+    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885",
+    "items": [
+      {
+        "type": "audio",
+        "label": "Audio",
+        "focus": true,
+        "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"
+      },
+      {
+        "type": "transcript",
+        "label": "Transcript",
+        "text": "Audio Transcript Here",
+        "focus": false
+      }
+    ]
   },
   {
     "focus": false,
     "type": "video",
-    "height": 500,
-    "width": 500,
-    "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0"
+    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
+    "items": [
+      {
+        "type": "video",
+        "label": "Video",
+        "height": 500,
+        "width": 500,
+        "focus": true,
+        "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+      },
+      {
+        "type": "transcript",
+        "label": "Transcript",
+        "text": "Video Transcript Here",
+        "focus": false
+      }
+    ]    
   }
 ]
 
-const App = React.createClass({
-  render () {
-    return (<Borealis assets={this.props.assets} />)
-  }
-});
-
-ReactDOM.render(<App assets={assets} />, document.getElementById('app'));
+ReactDOM.render(<Borealis items={items} />, document.getElementById('app'));

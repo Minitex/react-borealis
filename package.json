@@ -17,7 +17,8 @@
     "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git",
     "immutable": "3.8.1",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "react-active-item": "git:+git@github.com:UMNLibraries/react-active-item.git"
   },
   "devDependencies": {
     "babel": "^6.5.2",

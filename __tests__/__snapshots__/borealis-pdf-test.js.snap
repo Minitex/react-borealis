@@ -1,20 +1,50 @@
 exports[`BorealisPDF Tests renders an audio 1`] = `
-<object
-  data="http://example.com"
-  height={500}
-  type="application/pdf"
-  width={900}>
-  <img
-    src="blerg" />
-   
-  <a
-    href="http://example.com">
-    <span
-      className="glyphicon glyphicon-download-alt">
-      asdasdasd
-    </span>
-     
-    http://example.com
-  </a>
-</object>
+<div>
+  <div
+    className="row">
+    <div
+      className="row image-nav">
+      <ul
+        className="nav nav-pills">
+        <li
+          className="active"
+          onClick={[Function]}
+          role="presentation">
+          <a
+            href="">
+            PDF
+          </a>
+        </li>
+        <li
+          className=""
+          onClick={[Function]}
+          role="presentation">
+          <a
+            href="">
+            Transcript
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="row">
+    <object
+      data="https://s3.amazonaws.com/mdl-assets/stpaul.pdf"
+      height={500}
+      type="application/pdf"
+      width={800}>
+      <img
+        src={undefined} />
+       
+      <a
+        href="https://s3.amazonaws.com/mdl-assets/stpaul.pdf">
+        <span
+          className="glyphicon glyphicon-download-alt" />
+         
+        https://s3.amazonaws.com/mdl-assets/stpaul.pdf
+      </a>
+    </object>
+  </div>
+</div>
 `;

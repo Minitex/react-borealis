@@ -1,27 +1,43 @@
 import React from 'react'
+import ActiveItem from 'react-active-item'
+import TranscriptNav from './transcript-nav'
+import ThumbnailViewer from './borealis-pdf-viewer'
 
-export default class BorealisPDF extends React.Component {
+class BorealisPDF extends React.Component {
     constructor(props) {
       super(props)
+      this.viewer = this.viewer.bind(this)
+    }
+
+    viewer() {
+      let item = this.props.getActiveItem()
+      switch(item.type) {
+        case 'pdf':
+          return <ThumbnailViewer {...item} />
+          break
+        case 'transcript':
+          return <div>{item.text}</div>
+          break
+        default:
+          return <div>No Viewer Avaialable for type: "{item.type}"</div>
+      }
     }
 
     render() {
-      return (<object data={this.props.src} type="application/pdf" width={this.props.width} height={this.props.height}>
-                <img src={this.props.thumbnail} /> <a href={this.props.src}><span className="glyphicon glyphicon-download-alt">asdasdasd</span> {this.props.src}</a>
-              </object>)
+      return (
+               <div>
+                 <div className="row"><TranscriptNav {...this.props} /></div>
+                 <div className="row">{this.viewer()}</div>
+                </div>
+              )
     }
 
 }
 
-BorealisPDF.defaultProps = {
-  height: 500,
-  width: 900
-}
-
 const propTypes = {
-  height: React.PropTypes.number,
-  width: React.PropTypes.number,
-  src: React.PropTypes.string.isRequired
+  items: React.PropTypes.array
 }
 
 BorealisPDF.propTypes = propTypes
+
+export default ActiveItem(BorealisPDF)

@@ -1,22 +1,43 @@
 import React from 'react'
+import AudioPlayer from './borealis-audio-player'
+import TranscriptNav from './transcript-nav'
+import ActiveItem from 'react-active-item'
 
-export default class BorealisAudio extends React.Component {
+class BorealisAudio extends React.Component {
     constructor(props) {
         super(props)
+        this.viewer = this.viewer.bind(this)        
+    }
+
+    viewer() {
+      let item = this.props.getActiveItem()
+      switch(item.type) {
+        case 'audio':
+          return <AudioPlayer {...item} />
+          break
+        case 'transcript':
+          return <div>{item.text}</div>
+          break
+        default:
+          return <div>No Viewer Avaialable for type: "{item.type}"</div>
+      }
     }
 
     render() {
-      return (<audio controls className="audio-player">
-                <source src={this.props.src} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-        )
+      return (
+               <div>
+                 <div className="row"><TranscriptNav {...this.props} /></div>
+                 <div className="row">{this.viewer()}</div>
+                </div>
+              )
     }
 
 }
 
 const propTypes = {
-  src: React.PropTypes.string.isRequired
+  items: React.PropTypes.array.isRequired
 }
 
 BorealisAudio.propTypes = propTypes
+
+export default ActiveItem(BorealisAudio)

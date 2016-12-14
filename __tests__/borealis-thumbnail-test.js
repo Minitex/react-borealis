@@ -6,7 +6,7 @@ describe('BorealisThumbnail Tests', () => {
 
   it("renders an audio", function(){  
     const component = renderer.create(
-      <BorealisThumbnail src="http://example.com" thumbnail="blerg" handler={() => {}} />
+      <BorealisThumbnail src="http://example.com" thumbnail="blerg" setActiveItem={() => {}} />
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()

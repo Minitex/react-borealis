@@ -1,11 +1,13 @@
 import React from 'react'
 
-const Thumbnail = props => (<div className="col-md-2">
-                              <a onClick={props.handler} className="thumbnail"><img src={props.src} /></a>
-                            </div>)
+const Thumbnail = props => (
+                              <div className="col-md-2">
+                                <a onClick={props.setActiveItem} className="thumbnail"><img src={props.src} /></a>
+                              </div>
+                            )
 
 const propTypes = {
-  handler: React.PropTypes.func.isRequired,
+  setActiveItem: React.PropTypes.func.isRequired,
   src: React.PropTypes.string.isRequired
 }
 

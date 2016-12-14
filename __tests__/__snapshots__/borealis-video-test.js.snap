@@ -1,11 +1,43 @@
 exports[`test Borealis video 1`] = `
-<video
-  controls={true}
-  height={undefined}
-  width={undefined}>
-  <source
-    src="http://example.com"
-    type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+<div>
+  <div
+    className="row">
+    <div
+      className="row image-nav">
+      <ul
+        className="nav nav-pills">
+        <li
+          className="active"
+          onClick={[Function]}
+          role="presentation">
+          <a
+            href="">
+            Video
+          </a>
+        </li>
+        <li
+          className=""
+          onClick={[Function]}
+          role="presentation">
+          <a
+            href="">
+            Transcript
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="row">
+    <video
+      controls={true}
+      height={500}
+      width={500}>
+      <source
+        src="http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+        type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 `;
