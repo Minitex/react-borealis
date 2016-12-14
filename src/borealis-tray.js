@@ -6,19 +6,21 @@ export default class BorealisTray extends React.Component {
         super(props)
     }
     render() {
-      const { assets, handler } = this.props
-      return (<div className="row borealis-tray">
-                {assets.map(function(asset, i) {
-                  return <Thumbnail handler={handler.bind(this, i)} key={i} src={asset.thumbnail} />
-                })}
-                </div>)
+      const { items, setActiveItem } = this.props
+      return (
+                <div className="row borealis-tray">
+                  {items.map(function(item, i) {
+                    return <Thumbnail setActiveItem={setActiveItem.bind(this, i)} key={i} src={item.thumbnail} />
+                  })}
+                </div>
+              )
     }
 
 }
 
 const propTypes = {
-  assets: React.PropTypes.array.isRequired,
-  handler: React.PropTypes.func.isRequired
+  items: React.PropTypes.array.isRequired,
+  setActiveItem: React.PropTypes.func.isRequired
 }
 
 BorealisTray.propTypes = propTypes
