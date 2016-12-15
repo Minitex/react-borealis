@@ -16,7 +16,7 @@ class BorealisAudio extends React.Component {
           return <AudioPlayer {...item} />
           break
         case 'transcript':
-          return <div>{item.text}</div>
+          return <div>{item.texts[0]}</div>
           break
         default:
           return <div>No Viewer Avaialable for type: "{item.type}"</div>
