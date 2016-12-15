@@ -26551,7 +26551,7 @@ var BorealisAudio = function (_React$Component) {
           return _react2.default.createElement(
             'div',
             null,
-            item.text
+            item.texts[0]
           );
           break;
         default:
@@ -26729,7 +26729,7 @@ var BorealisPDF = function (_React$Component) {
           return _react2.default.createElement(
             'div',
             null,
-            item.text
+            item.texts[0]
           );
           break;
         default:
@@ -26999,7 +26999,7 @@ var BorealisVideo = function (_React$Component) {
           return _react2.default.createElement(
             'div',
             null,
-            item.text
+            item.texts[0]
           );
           break;
         default:

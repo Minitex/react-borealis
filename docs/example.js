@@ -49,7 +49,7 @@ var items = [{
   }, {
     "type": "transcript",
     "label": "Transcript",
-    "text": "PDF Transcript Here",
+    "texts": ["PDF Transcript Here"],
     "focus": false
   }]
 }, {
@@ -65,7 +65,7 @@ var items = [{
   }, {
     "type": "transcript",
     "label": "Transcript",
-    "text": "Audio Transcript Here",
+    "texts": ["Audio Transcript Here"],
     "focus": false
   }]
 }, {
@@ -82,7 +82,7 @@ var items = [{
   }, {
     "type": "transcript",
     "label": "Transcript",
-    "text": "Video Transcript Here",
+    "texts": ["Video Transcript Here"],
     "focus": false
   }]
 }];
