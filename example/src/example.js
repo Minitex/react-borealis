@@ -32,7 +32,11 @@ const items =
         ],
         "focus": false
       }
-    ]
+    ],
+    tocs: [
+        "MLK",
+        "A Statue"
+      ]
   },
   {
     "focus": true,
