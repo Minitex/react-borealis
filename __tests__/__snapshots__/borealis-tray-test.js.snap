@@ -4,7 +4,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   <div
     className="col-md-2">
     <a
-      className="thumbnail"
+      className="thumbnail active"
       onClick={[Function]}>
       <img
         src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
@@ -13,7 +13,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   <div
     className="col-md-2">
     <a
-      className="thumbnail"
+      className="thumbnail active"
       onClick={[Function]}>
       <img
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
@@ -22,7 +22,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   <div
     className="col-md-2">
     <a
-      className="thumbnail"
+      className="thumbnail "
       onClick={[Function]}>
       <img
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
@@ -31,7 +31,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   <div
     className="col-md-2">
     <a
-      className="thumbnail"
+      className="thumbnail "
       onClick={[Function]}>
       <img
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />

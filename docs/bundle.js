@@ -26785,13 +26785,14 @@ var Thumbnail = function Thumbnail(props) {
     { className: "col-md-2" },
     _react2.default.createElement(
       "a",
-      { onClick: props.setActiveItem, className: "thumbnail" },
+      { onClick: props.setActiveItem, className: "thumbnail " + (props.is_active ? 'active' : '') },
       _react2.default.createElement("img", { src: props.src })
     )
   );
 };
 
 var propTypes = {
+  is_active: _react2.default.PropTypes.bool,
   setActiveItem: _react2.default.PropTypes.func.isRequired,
   src: _react2.default.PropTypes.string.isRequired
 };
@@ -26846,7 +26847,7 @@ var BorealisTray = function (_React$Component) {
           'div',
           { className: 'row borealis-tray' },
           items.map(function (item, i) {
-            return _react2.default.createElement(_borealisThumbnail2.default, { setActiveItem: setActiveItem.bind(this, i), key: i, src: item.thumbnail });
+            return _react2.default.createElement(_borealisThumbnail2.default, { is_active: item.focus, setActiveItem: setActiveItem.bind(this, i), key: i, src: item.thumbnail });
           })
         );
       } else {
