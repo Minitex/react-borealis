@@ -1,0 +1,49 @@
+exports[`Borealis should render correctly 1`] = `
+<div
+  className="react-borealis col-md-12"
+  id="react-borealis">
+  <div
+    className="row">
+    <span />
+  </div>
+  <div
+    className="row">
+    <OpenSeadragonViewer
+      focus={true}
+      items={
+        Array [
+          Object {
+            "defaultZoomLevel": 0,
+            "focus": true,
+            "include_controls": true,
+            "label": "Image",
+            "sequenceMode": true,
+            "showReferenceStrip": true,
+            "tileSources": Array [
+              "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+              "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
+            ],
+            "type": "image",
+          },
+          Object {
+            "focus": false,
+            "label": "Transcript",
+            "texts": Array [
+              "First Image Item Transcript",
+              "Second Image Item  Transcript",
+            ],
+            "type": "transcript",
+          },
+        ]
+      }
+      thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
+      tocs={
+        Array [
+          "MLK",
+          "A Statue",
+        ]
+      }
+      type="image" />
+  </div>
+</div>
+`;

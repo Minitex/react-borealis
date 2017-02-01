@@ -7,13 +7,17 @@ export default class BorealisTray extends React.Component {
     }
     render() {
       const { items, setActiveItem } = this.props
-      return (
-                <div className="row borealis-tray">
-                  {items.map(function(item, i) {
-                    return <Thumbnail setActiveItem={setActiveItem.bind(this, i)} key={i} src={item.thumbnail} />
-                  })}
-                </div>
-              )
+      if (items.length > 1) {
+        return (
+                  <div className="row borealis-tray">
+                    {items.map(function(item, i) {
+                      return <Thumbnail setActiveItem={setActiveItem.bind(this, i)} key={i} src={item.thumbnail} />
+                    })}
+                  </div>
+                )
+      } else {
+        return <span/>
+      }
     }
 
 }
