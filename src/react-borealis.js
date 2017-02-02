@@ -1,11 +1,12 @@
 import React from 'react'
 import ActiveItem from 'react-active-item'
-import OpenseadragonViewer from 'react-openseadragon'
+import ReactOpenseadragon from 'react-openseadragon'
 import BorealisTray from './borealis-tray'
 import BorealisPDF from './borealis-pdf'
 import BorealisAudio from './borealis-audio'
 import BorealisVideo from './borealis-video'
 
+import './index.css'
 
 class Borealis extends React.Component {
   constructor(props) {
@@ -26,7 +27,7 @@ class Borealis extends React.Component {
         return <BorealisVideo {...item} />
         break
       case 'image':
-        return <OpenseadragonViewer {...item} />
+        return <ReactOpenseadragon {...item} />
         break
       default:
         return <div>No Viewer Avaialable for type: "{item.type}"</div>

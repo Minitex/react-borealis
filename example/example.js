@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Borealis  from 'react-borealis'
+import Borealis  from '../src/react-borealis'
 
 
 const items =  
@@ -39,7 +39,7 @@ const items =
       ]
   },
   {
-    "focus": true,
+    "focus": false,
     "type": "pdf",
     "height": 800,
     "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
