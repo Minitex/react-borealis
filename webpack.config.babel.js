@@ -8,6 +8,8 @@ var TARGET = process.env.npm_lifecycle_event;
 // e.g. nmp run start (event -- start)
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
+var minimize = process.argv.indexOf('--minimize')
+
 var common = {
   module: {
     loaders: [
