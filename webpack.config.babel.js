@@ -9,10 +9,15 @@ var TARGET = process.env.npm_lifecycle_event;
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var minimize = process.argv.indexOf('--minimize')
-
+ 
 var common = {
   module: {
     loaders: [
+      { 
+        test: /\.js?$/,
+        loader: 'react-hot-loader',
+        include: path.join(__dirname, 'src')
+      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -27,12 +32,13 @@ var common = {
       },
       {
           test: /\.less$/,
-          loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
+          loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       }
     ]
   },
   plugins: [
-      new ExtractTextPlugin("[name].css")
+      new ExtractTextPlugin("[name].css"),
+      new webpack.HotModuleReplacementPlugin()
   ]
 };
 
@@ -43,7 +49,7 @@ if (TARGET === 'build') {
       {
         entry: './src/react-borealis.js',
         output: {
-          path: './dist/',
+          path: path.join(__dirname, 'dist'),
           filename: 'react-borealis-min.js',
           library: "react-borealis",
           libraryTarget: 'umd',
@@ -56,7 +62,7 @@ if (TARGET === 'build') {
         devtool: 'source-map',
         entry: './src/react-borealis.js',
         output: {
-          path: './dist/',
+          path: path.join(__dirname, 'dist'),
           filename: 'react-borealis.js',
           library: "react-borealis",
           libraryTarget: 'umd',
@@ -71,11 +77,12 @@ if (TARGET === 'build') {
 if (TARGET === 'start') {
   module.exports = merge(common, {
     devtool: 'source-map',
-    entry: {
-      example: "./example/example.js"
-    },
+    entry: [
+      'webpack-hot-middleware/client',
+      './example/example.js'
+    ],
     output: {
-        path: "./docs/",
+        path: path.join(__dirname, 'docs'),
         filename: "example.js"
     }
   });
