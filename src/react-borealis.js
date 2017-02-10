@@ -21,8 +21,9 @@ import { Router,
 class Borealis extends React.Component {
   constructor(props) {
     super(props)
-    this._app  = this._app.bind(this)
-    this._type = this._type.bind(this)
+    this._app          = this._app.bind(this)
+    this._type         = this._type.bind(this)
+    this._initial_path = this._initial_path.bind(this)
   }
 
   _viewer(config, base_path, children) {
@@ -56,16 +57,31 @@ class Borealis extends React.Component {
     })
   }
 
+  _initial_path() {
+    let config = this.props.config
+    if (config['image']) {
+      return 'image/item/0'
+    } else if(config['pdf']) {
+      return 'pdf'
+    } else if(config['audio']) {
+      return 'audio'
+    } else if(config['video']) {
+      return 'video'
+    }
+  }
+
   render() {
     //Allow this React App to exist at the end of a preexisiting path like:
     //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
     const history = useRouterHistory(createHistory)({
         basename: this.props.base_path
     })
+    let initial_path = this._initial_path
+    console.log(initial_path())
     return (
       <Router history={history}>
         <Route path="/" component={this._app()}>
-          <IndexRedirect to="image/item/0" />
+          <IndexRedirect to={initial_path()} />
           <Redirect from="image" to="image/item/0" />
           <Route path="image/item/:id" component={BorealisImage} />
           <Route path="audio" component={BorealisAudio} />
@@ -89,21 +105,3 @@ const propTypes = {
 Borealis.propTypes = propTypes
 
 export default Borealis
-
-  // _app() {
-  //   let props = this.props
-  //   let item_for = this.item_for
-  //   let base_path = this._base_path
-  //   return React.createClass({
-  //     render: function () {
-  //       let path = base_path(this.props.location.pathname)
-  //       return (
-  //                 <div>
-  //                   <BorealisTray {...props} />
-  //                   <TranscriptNav transcript={item_for(path).transcript} path={path} />
-  //                   <div className="row">{this.props.children}</div>
-  //                 </div>
-  //              )
-  //     }
-  //   })
-  // }
