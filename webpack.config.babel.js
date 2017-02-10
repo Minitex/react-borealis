@@ -1,6 +1,8 @@
 var webpack = require("webpack");
 var path = require('path');
 var merge = require('webpack-merge')
+
+var TARGET = process.env.npm_lifecycle_event;
 var minimize = (process.argv.indexOf('--minimize') > 0) ? true : false;
 var example =  (process.argv.indexOf('--example') > 0) ? true : false;
 var build =    (process.argv.indexOf('--build') > 0) ? true : false;
@@ -23,11 +25,11 @@ var common = {
       },
       {
           test: /\.css$/,
-          loader: ["style-loader", "css-loader"]
+          loaders: ["style-loader", "css-loader"]
       },
       {
           test: /\.less$/,
-          loader: ["style-loader", "css-loader"]
+          loaders: ["style-loader", "css-loader"]
       }
     ]
   },
@@ -67,7 +69,7 @@ if (build) {
   module.exports = merge(common, config);
 }
 
-if (example) {
+if (example || TARGET === 'start') {
   module.exports = merge(common, {
     devtool: 'source-map',
     entry: './example/example.js',
