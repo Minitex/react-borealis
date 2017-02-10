@@ -7,7 +7,6 @@ var app = express();
 var compiler = webpack(config);
 
 // Allow index.html to access files in docs dir (css)
-app.use(express.static(path.join(__dirname, 'docs')));
 
 app.use(require('webpack-dev-middleware')(compiler, {
   publicPath: config.output.publicPath
