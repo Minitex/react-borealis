@@ -3,15 +3,26 @@ import Thumbnail from './borealis-thumbnail'
 
 export default class BorealisTray extends React.Component {
     constructor(props) {
-        super(props)
+      super(props)
     }
+
+    _thumbs(config) {
+      let thumbs = []
+      for (var asset_type in config) {
+        if (config.hasOwnProperty(asset_type)) {
+          thumbs.push({to: asset_type, src: config[asset_type].thumbnail})
+        }
+      }
+      return thumbs
+    }
+
     render() {
-      const { items, setActiveItem } = this.props
-      if (items.length > 1) {
-        return (
+      const { config } = this.props
+      if (Object.keys(config).length > 1) {
+        return  (
                   <div className="borealis-tray">
-                    {items.map(function(item, i) {
-                      return <Thumbnail is_active={item.focus} setActiveItem={setActiveItem.bind(this, i)} key={i} src={item.thumbnail} />
+                    {this._thumbs(config).map(function(item, i) {
+                      return <Thumbnail to={item.to} key={i} src={item.src}/>
                     })}
                   </div>
                 )
@@ -23,7 +34,7 @@ export default class BorealisTray extends React.Component {
 }
 
 const propTypes = {
-  items: React.PropTypes.array.isRequired
+  config: React.PropTypes.object.isRequired
 }
 
 BorealisTray.propTypes = propTypes

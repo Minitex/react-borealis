@@ -1,14 +1,13 @@
 import React from 'react'
-
+import { Link } from 'react-router'
 const Thumbnail = props => (
-                              <div className="col-md-2">
-                                <a onClick={props.setActiveItem} className={"thumbnail " + ((props.is_active) ? 'active' : '')}><img src={props.src} /></a>
+                              <div>
+                                <Link className="thumbnail" activeClassName="active" to={props.to}><img src={props.src} /></Link>
                               </div>
                             )
 
 const propTypes = {
-  is_active: React.PropTypes.bool,
-  setActiveItem: React.PropTypes.func.isRequired,
+  to: React.PropTypes.string.isRequired,
   src: React.PropTypes.string.isRequired
 }
 
