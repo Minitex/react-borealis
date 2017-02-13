@@ -5,7 +5,7 @@ import TranscriptNav from './transcript-nav'
 export default (props) => {
   return (
             <div>
-              <ReactOpenseadragon config={props.config['image']} base_path={props.base_path + '/image'} />
+              <ReactOpenseadragon config={props.config['image']} base_path={props.base_path + 'image'} />
             </div>
           )
 }
