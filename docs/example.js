@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "14fe58deff809031ffab"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "93a88f65bada00cb7ad1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -646,7 +646,7 @@
 	  }
 	};
 	
-	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, { config: config, base_path: '/foo/bar' }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, { config: config, base_path: '/' }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -22721,7 +22721,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_reactOpenseadragon2.default, { config: props.config['image'], base_path: props.base_path + '/image' })
+	    _react2.default.createElement(_reactOpenseadragon2.default, { config: props.config['image'], base_path: props.base_path + 'image' })
 	  );
 	};
 	

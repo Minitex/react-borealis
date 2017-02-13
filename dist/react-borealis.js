@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "e49af7b5e14403d66a34"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "49370b7a3282698cfd91"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -12355,7 +12355,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  return _react2.default.createElement(
 	    'div',
 	    null,
-	    _react2.default.createElement(_reactOpenseadragon2.default, { config: props.config['image'], base_path: props.base_path + '/image' })
+	    _react2.default.createElement(_reactOpenseadragon2.default, { config: props.config['image'], base_path: props.base_path + 'image' })
 	  );
 	};
 	
