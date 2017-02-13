@@ -3,103 +3,59 @@ import ReactDOM from 'react-dom'
 import Borealis  from '../src/react-borealis'
 
 
-const items =  
-[
+
+var config =
   {
-    "focus": true,
-    "type": "image",
-    "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",      
-    "items": [
-      {
-        "type": "image",
-        "label": "Image",
-        "focus": true,
-        "include_controls": true,
-        "sequenceMode": true,
-        "showReferenceStrip": true,
-        "defaultZoomLevel": 0,
-        "tileSources": [
-          "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
-          "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json"
-        ]
+    "image": {
+      "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",
+      "type": "image",
+      "label": "Image",
+      "include_controls": true,
+      "sequenceMode": true,
+      "showReferenceStrip": true,
+      "defaultZoomLevel": 0,
+      "tileSources": [
+        "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+        "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json"
+      ],
+      "transcript": {
+        "texts": ["First Image Item Transcript","Second Image Item  Transcript"],
+        "label": "Image"
       },
-      {
-        "type": "transcript",
-        "label": "Transcript",
-        "texts": [
-          "First Image Item Transcript",
-          "Second Image Item  Transcript"
-        ],
-        "focus": false
-      }
-    ],
-    tocs: [
+      "tocs": [
         "MLK",
         "A Statue"
       ]
-  },
-  {
-    "focus": false,
-    "type": "pdf",
-    "height": 800,
-    "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0",
-    "items": [
-      {
-        "type": "pdf",
-        "label": "PDF",
-        "focus": true,
-        "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
-      },
-      {
-        "type": "transcript",
-        "label": "Transcript",
+    },
+    "pdf": {
+      "height": 800,
+      "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
+      "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0",
+      "transcript": {
         "texts": ["PDF Transcript Here"],
-        "focus": false
-      }
-    ]
-  },
-  {
-    "focus": false,
-    "type": "audio",
-    "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885",
-    "items": [
-      {
-        "type": "audio",
-        "label": "Audio",
-        "focus": true,
-        "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"
+        "label": "PDF"
       },
-      {
-        "type": "transcript",
-        "label": "Transcript",
+      "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
+    },
+    "audio": {
+      "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919",
+      "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885",
+      "transcript": {
         "texts": ["Audio Transcript Here"],
-        "focus": false
-      }
-    ]
-  },
-  {
-    "focus": false,
-    "type": "video",
-    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
-    "items": [
-      {
-        "type": "video",
-        "label": "Video",
-        "height": 500,
-        "width": 500,
-        "focus": true,
-        "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+        "label": "Audio"
       },
-      {
-        "type": "transcript",
-        "label": "Transcript",
+      "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"
+    },
+    "video": {
+      "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
+      "transcript": {
         "texts": ["Video Transcript Here"],
-        "focus": false
-      }
-    ]    
+        "label": "Video"
+      },
+      "height": 500,
+      "width": 500,
+      "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+    }
   }
-]
 
-ReactDOM.render(<Borealis items={items} />, document.getElementById('app'));
+ReactDOM.render(<Borealis config={config} base_path="/foo/bar" />, document.getElementById('app'));
