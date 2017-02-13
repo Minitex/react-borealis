@@ -16,7 +16,7 @@
     "development": "0.0.6",
     "openseadragon": "^2.2.1",
     "react": "^15.4.1",
-    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#744339c75167",
+    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#4d1a5a1d05bcb3",
     "react-router": "^3.0.2"
   },
   "devDependencies": {
