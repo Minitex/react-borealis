@@ -49,7 +49,7 @@ var config =
     "video": {
       "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
       "transcript": {
-        "texts": ["Video Transcript Here"],
+        "texts": [],
         "label": "Video"
       },
       "height": 500,
