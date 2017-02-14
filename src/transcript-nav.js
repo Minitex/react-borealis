@@ -8,7 +8,7 @@ export default class TranscriptNav extends React.Component {
 
     render() {
       let { transcript, asset_path, transcript_path } = this.props
-      if (transcript) {
+      if (transcript.texts.length > 0) {
           return (
                     <div className="row image-nav">
                       <ul className="nav nav-pills">
