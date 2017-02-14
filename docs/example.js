@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1d0d9ff35662b9aeb32d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1639c16244d73bfeff63"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -646,7 +646,7 @@
 	  }
 	};
 	
-	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, { config: config, base_path: '/' }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, { config: config, base_path: '/foo/bar' }), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -22220,7 +22220,7 @@
 	      //Allow this React App to exist at the end of a preexisiting path like:
 	      //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
-	        basename: this.props.base_path
+	        basename: "/"
 	      });
 	      var initial_path = this._initial_path;
 	      return _react2.default.createElement(

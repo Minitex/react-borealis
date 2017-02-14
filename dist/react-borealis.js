@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "c201d3b5d0e3a383d25d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b59a5ffc5e2ba2221c04"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -727,7 +727,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      //Allow this React App to exist at the end of a preexisiting path like:
 	      //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
-	        basename: this.props.base_path
+	        basename: "/"
 	      });
 	      var initial_path = this._initial_path;
 	      return _react2.default.createElement(
