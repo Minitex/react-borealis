@@ -80,12 +80,12 @@ class Borealis extends React.Component {
       <Router history={history}>
         <Route path="/" component={this._app()}>
           <IndexRedirect to={initial_path()} />
+          <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="image/:id" component={BorealisImage} />
           <Redirect from='image' to='image/0' />
           <Route path="audio" component={BorealisAudio} />
           <Route path="video" component={BorealisVideo} />
           <Route path="pdf" component={BorealisPDF} />
-          <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="audio/transcript" component={BorealisAudioTranscript} />
           <Route path="video/transcript" component={BorealisVideoTranscript} />
           <Route path="pdf/transcript" component={BorealisPDFTranscript} />
