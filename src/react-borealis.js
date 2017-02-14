@@ -73,7 +73,7 @@ class Borealis extends React.Component {
     //Allow this React App to exist at the end of a preexisiting path like:
     //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
     const history = useRouterHistory(createHashHistory)({
-        basename: this.props.base_path
+        basename: "/"
     })
     let initial_path = this._initial_path
     return (
