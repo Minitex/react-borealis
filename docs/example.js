@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "1639c16244d73bfeff63"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "584a6a8e4bbaef5d4b46"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -637,7 +637,7 @@
 	  "video": {
 	    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
 	    "transcript": {
-	      "texts": ["Video Transcript Here"],
+	      "texts": [],
 	      "label": "Video"
 	    },
 	    "height": 500,
@@ -22809,7 +22809,7 @@
 	          asset_path = _props.asset_path,
 	          transcript_path = _props.transcript_path;
 	
-	      if (transcript) {
+	      if (transcript.texts.length > 0) {
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'row image-nav' },

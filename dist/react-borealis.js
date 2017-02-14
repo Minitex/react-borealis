@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b59a5ffc5e2ba2221c04"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a04183912bbd0d010e38"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -12443,7 +12443,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          asset_path = _props.asset_path,
 	          transcript_path = _props.transcript_path;
 	
-	      if (transcript) {
+	      if (transcript.texts.length > 0) {
 	        return _react2.default.createElement(
 	          'div',
 	          { className: 'row image-nav' },
