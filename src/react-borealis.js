@@ -59,7 +59,7 @@ class Borealis extends React.Component {
   _initial_path() {
     let config = this.props.config
     if (config['image']) {
-      return 'image/item/0'
+      return 'image/0'
     } else if(config['pdf']) {
       return 'pdf'
     } else if(config['audio']) {
@@ -80,8 +80,8 @@ class Borealis extends React.Component {
       <Router history={history}>
         <Route path="/" component={this._app()}>
           <IndexRedirect to={initial_path()} />
-          <Redirect from="image" to="image/item/0" />
-          <Route path="image/item/:id" component={BorealisImage} />
+          <Route path="image/:id" component={BorealisImage} />
+          <Redirect from='image' to='image/0' />
           <Route path="audio" component={BorealisAudio} />
           <Route path="video" component={BorealisVideo} />
           <Route path="pdf" component={BorealisPDF} />
