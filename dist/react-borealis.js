@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a04183912bbd0d010e38"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "64bf00a76db8f766e9a1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -737,12 +737,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
 	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initial_path() }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'audio', component: _borealisAudio2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'video', component: _borealisVideo2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'pdf', component: _borealisPdf2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'audio/transcript', component: _borealisAudioTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'video/transcript', component: _borealisVideoTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'pdf/transcript', component: _borealisPdfTranscript2.default })
