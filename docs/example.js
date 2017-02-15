@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "158116e70a5bdf65578a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5cc7f04a0bb897103d7c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -22200,18 +22200,21 @@
 	        }
 	      });
 	    }
+	
+	    //This order is mirrored in borealis-tray.js
+	
 	  }, {
 	    key: '_initial_path',
 	    value: function _initial_path() {
 	      var config = this.props.config;
 	      if (config['image']) {
 	        return 'image/0';
-	      } else if (config['pdf']) {
-	        return 'pdf';
 	      } else if (config['audio']) {
 	        return 'audio';
 	      } else if (config['video']) {
 	        return 'video';
+	      } else if (config['pdf']) {
+	        return 'pdf';
 	      }
 	    }
 	  }, {
@@ -28041,6 +28044,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -28059,13 +28064,11 @@
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      var thumbs = [];
-	      for (var asset_type in config) {
-	        if (config.hasOwnProperty(asset_type)) {
-	          thumbs.push({ to: asset_type, src: config[asset_type].thumbnail });
-	        }
-	      }
-	      return thumbs;
+	      return ['image', 'audio', 'video', 'pdf'].map(function (type) {
+	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
+	      }).filter(function (item) {
+	        return item != '';
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -28077,7 +28080,9 @@
 	          'div',
 	          { className: 'borealis-tray' },
 	          this._thumbs(config).map(function (item, i) {
-	            return _react2.default.createElement(_borealisThumbnail2.default, { to: item.to, key: i, src: item.src });
+	            return _react2.default.createElement(_borealisThumbnail2.default, { to: Object.keys(item)[0],
+	              src: Object.values(item)[0],
+	              key: i });
 	          })
 	        );
 	      } else {

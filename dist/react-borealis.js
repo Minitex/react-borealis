@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "64bf00a76db8f766e9a1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e275a968aee0f11e5ddf"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -707,18 +707,21 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      });
 	    }
+	
+	    //This order is mirrored in borealis-tray.js
+	
 	  }, {
 	    key: '_initial_path',
 	    value: function _initial_path() {
 	      var config = this.props.config;
 	      if (config['image']) {
 	        return 'image/0';
-	      } else if (config['pdf']) {
-	        return 'pdf';
 	      } else if (config['audio']) {
 	        return 'audio';
 	      } else if (config['video']) {
 	        return 'video';
+	      } else if (config['pdf']) {
+	        return 'pdf';
 	      }
 	    }
 	  }, {
@@ -17675,6 +17678,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -17693,13 +17698,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      var thumbs = [];
-	      for (var asset_type in config) {
-	        if (config.hasOwnProperty(asset_type)) {
-	          thumbs.push({ to: asset_type, src: config[asset_type].thumbnail });
-	        }
-	      }
-	      return thumbs;
+	      return ['image', 'audio', 'video', 'pdf'].map(function (type) {
+	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
+	      }).filter(function (item) {
+	        return item != '';
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -17711,7 +17714,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          'div',
 	          { className: 'borealis-tray' },
 	          this._thumbs(config).map(function (item, i) {
-	            return _react2.default.createElement(_borealisThumbnail2.default, { to: item.to, key: i, src: item.src });
+	            return _react2.default.createElement(_borealisThumbnail2.default, { to: Object.keys(item)[0],
+	              src: Object.values(item)[0],
+	              key: i });
 	          })
 	        );
 	      } else {
