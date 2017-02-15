@@ -56,16 +56,17 @@ class Borealis extends React.Component {
     })
   }
 
+  //This order is mirrored in borealis-tray.js
   _initial_path() {
     let config = this.props.config
     if (config['image']) {
       return 'image/0'
-    } else if(config['pdf']) {
-      return 'pdf'
     } else if(config['audio']) {
       return 'audio'
     } else if(config['video']) {
       return 'video'
+    } else if(config['pdf']) {
+      return 'pdf'
     }
   }
 

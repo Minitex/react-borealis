@@ -7,13 +7,11 @@ export default class BorealisTray extends React.Component {
     }
 
     _thumbs(config) {
-      let thumbs = []
-      for (var asset_type in config) {
-        if (config.hasOwnProperty(asset_type)) {
-          thumbs.push({to: asset_type, src: config[asset_type].thumbnail})
+      return ['image', 'audio', 'video', 'pdf'].map(
+        (type) => {
+          return (config[type]) ? {[type]: config[type].thumbnail} : ''
         }
-      }
-      return thumbs
+      ).filter((item) => { return item != '' })
     }
 
     render() {
@@ -22,7 +20,9 @@ export default class BorealisTray extends React.Component {
         return  (
                   <div className="borealis-tray">
                     {this._thumbs(config).map(function(item, i) {
-                      return <Thumbnail to={item.to} key={i} src={item.src}/>
+                      return <Thumbnail to={Object.keys(item)[0]}
+                                        src={Object.values(item)[0]}
+                                        key={i} />
                     })}
                   </div>
                 )
