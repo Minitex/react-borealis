@@ -23,7 +23,6 @@ var config =
         "label": "Image"
       },
       "tocs": [
-        "MLK",
         "A Statue"
       ]
     },
