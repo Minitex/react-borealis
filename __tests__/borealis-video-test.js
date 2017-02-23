@@ -3,26 +3,21 @@ import BorealisVideo from '../src/borealis-video'
 import renderer from 'react-test-renderer'
 
 test('Borealis video', () => {
-  let items =  [
-            {
-              "type": "video",
-              "label": "Video",
-              "height": 500,
-              "width": 500,
-              "focus": true,
-              "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
-            },
-            {
-              "type": "transcript",
-              "label": "Transcript",
-              "text": "Video Transcript Here",
-              "focus": false
-            }
-          ]    
-
+  const config = {
+        "video": {
+        "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
+        "transcript": {
+          "texts": [],
+          "label": "Video"
+        },
+        "height": 500,
+        "width": 500,
+        "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+      }
+    }
 
   const component = renderer.create(
-     <BorealisVideo items={items} />
+     <BorealisVideo config={config} />
   );
   let tree = component.toJSON()
   expect(tree).toMatchSnapshot()

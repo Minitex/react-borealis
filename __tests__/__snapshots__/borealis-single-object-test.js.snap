@@ -1,49 +1,58 @@
 exports[`Borealis should render correctly 1`] = `
-<div
-  className="react-borealis col-md-12"
-  id="react-borealis">
+<div>
+  <span />
   <div
-    className="row">
-    <span />
+    className="row image-nav">
+    <ul
+      className="nav nav-pills">
+      <li>
+        <a
+          className="thumbnail"
+          href="#/image"
+          onClick={[Function]}
+          style={Object {}}>
+          Image
+        </a>
+      </li>
+      <li>
+        <a
+          className="thumbnail"
+          href="#/image/transcript"
+          onClick={[Function]}
+          style={Object {}}>
+          Transcript
+        </a>
+      </li>
+    </ul>
   </div>
-  <div
-    className="row">
+  <div>
     <OpenSeadragonViewer
-      focus={true}
-      items={
-        Array [
-          Object {
-            "defaultZoomLevel": 0,
-            "focus": true,
-            "include_controls": true,
+      base_path={undefined}
+      config={
+        Object {
+          "defaultZoomLevel": 0,
+          "include_controls": true,
+          "label": "Image",
+          "sequenceMode": true,
+          "showReferenceStrip": true,
+          "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",
+          "tileSources": Array [
+            "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+            "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
+          ],
+          "tocs": Array [
+            "A Statue",
+          ],
+          "transcript": Object {
             "label": "Image",
-            "sequenceMode": true,
-            "showReferenceStrip": true,
-            "tileSources": Array [
-              "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
-              "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
-            ],
-            "type": "image",
-          },
-          Object {
-            "focus": false,
-            "label": "Transcript",
             "texts": Array [
               "First Image Item Transcript",
               "Second Image Item  Transcript",
             ],
-            "type": "transcript",
           },
-        ]
-      }
-      thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
-      tocs={
-        Array [
-          "MLK",
-          "A Statue",
-        ]
-      }
-      type="image" />
+          "type": "image",
+        }
+      } />
   </div>
 </div>
 `;

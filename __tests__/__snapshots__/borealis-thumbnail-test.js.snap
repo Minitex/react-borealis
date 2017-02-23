@@ -1,9 +1,9 @@
 exports[`BorealisThumbnail Tests renders an audio 1`] = `
-<div
-  className="col-md-2">
+<div>
   <a
-    className="thumbnail "
-    onClick={[Function]}>
+    className="thumbnail"
+    onClick={[Function]}
+    style={Object {}}>
     <img
       src="http://example.com" />
   </a>

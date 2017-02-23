@@ -4,9 +4,9 @@ import BorealisThumbnail from '../src/borealis-thumbnail'
 
 describe('BorealisThumbnail Tests', () => {
 
-  it("renders an audio", function(){  
+  it("renders an audio", function(){
     const component = renderer.create(
-      <BorealisThumbnail src="http://example.com" thumbnail="blerg" setActiveItem={() => {}} />
+      <BorealisThumbnail src="http://example.com" thumbnail="blerg" to="foo" />
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()
