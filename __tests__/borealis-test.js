@@ -42,6 +42,7 @@ describe('Borealis', () => {
           texts: [],
           label: 'PowerPoint',
         },
+        text: '(Download)',
         thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
         src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx',
       },
