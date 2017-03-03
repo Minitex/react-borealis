@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "b5b5cbb34c4c8cadf08e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "3b6351225b99fa4e826c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -622,6 +622,7 @@
 	      texts: [],
 	      label: 'PowerPoint'
 	    },
+	    text: '(Download)',
 	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
 	    src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
 	  },
@@ -28858,8 +28859,12 @@
 	    _react2.default.createElement(
 	      "a",
 	      { href: config.src },
-	      _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail }),
-	      " (Download)"
+	      _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail })
+	    ),
+	    _react2.default.createElement(
+	      "a",
+	      { href: config.src },
+	      config.text
 	    )
 	  );
 	};
