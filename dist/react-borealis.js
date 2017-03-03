@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "af2af3e07efa21733e83"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "71224972cc74f14e3d2b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -18479,10 +18479,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var config = props.config.ppt;
 	
 	  return _react2.default.createElement(
-	    "a",
-	    { className: "ppt-download", href: config.src },
-	    _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail }),
-	    " (Download)"
+	    "div",
+	    { className: "ppt-download" },
+	    _react2.default.createElement(
+	      "a",
+	      { href: config.src },
+	      _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail }),
+	      " (Download)"
+	    )
 	  );
 	};
 	

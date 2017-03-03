@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "45e51598c67fbfa5f951"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "b5b5cbb34c4c8cadf08e"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28853,10 +28853,14 @@
 	  var config = props.config.ppt;
 	
 	  return _react2.default.createElement(
-	    "a",
-	    { className: "ppt-download", href: config.src },
-	    _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail }),
-	    " (Download)"
+	    "div",
+	    { className: "ppt-download" },
+	    _react2.default.createElement(
+	      "a",
+	      { href: config.src },
+	      _react2.default.createElement("img", { alt: "Microsoft PowerPoint", src: config.thumbnail }),
+	      " (Download)"
+	    )
 	  );
 	};
 	
