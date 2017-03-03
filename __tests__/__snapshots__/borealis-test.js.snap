@@ -1,0 +1,110 @@
+exports[`Borealis should render correctly 1`] = `
+<div>
+  <div
+    className="borealis-tray">
+    <div>
+      <a
+        className="thumbnail"
+        href="#/image"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/audio"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/video"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/pdf"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/ppt"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
+      </a>
+    </div>
+  </div>
+  <div
+    className="row image-nav">
+    <ul
+      className="nav nav-pills">
+      <li>
+        <a
+          className="thumbnail"
+          href="#/image"
+          onClick={[Function]}
+          style={Object {}}>
+          Image
+        </a>
+      </li>
+      <li>
+        <a
+          className="thumbnail"
+          href="#/image/transcript"
+          onClick={[Function]}
+          style={Object {}}>
+          Transcript
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div>
+    <OpenSeadragonViewer
+      base_path="/"
+      config={
+        Object {
+          "defaultZoomLevel": 0,
+          "include_controls": true,
+          "label": "Image",
+          "sequenceMode": true,
+          "showReferenceStrip": true,
+          "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",
+          "tileSources": Array [
+            "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+            "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
+          ],
+          "tocs": Array [
+            "A Statue",
+          ],
+          "transcript": Object {
+            "label": "Image",
+            "texts": Array [
+              "First Image Item Transcript",
+              "Second Image Item  Transcript",
+            ],
+          },
+          "type": "image",
+        }
+      } />
+  </div>
+</div>
+`;

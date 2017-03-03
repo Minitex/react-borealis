@@ -1,0 +1,10 @@
+exports[`BorealisPPT Tests renders a PowerPoint 1`] = `
+<a
+  className="ppt-download"
+  href="http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx">
+  <img
+    alt="Microsoft PowerPoint"
+    src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
+   (Download)
+</a>
+`;

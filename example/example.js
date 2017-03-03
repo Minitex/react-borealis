@@ -26,6 +26,14 @@ var config =
         "A Statue"
       ]
     },
+    ppt: {
+      transcript: {
+        texts: [],
+        label: 'PowerPoint',
+      },
+      thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
+      src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx',
+    },
     "pdf": {
       "height": 800,
       "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",

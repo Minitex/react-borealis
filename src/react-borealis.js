@@ -1,35 +1,37 @@
-import React from 'react'
-import BorealisImage from './borealis-image'
-import BorealisTray from './borealis-tray'
-import BorealisPDF from './borealis-pdf'
-import BorealisAudio from './borealis-audio'
-import BorealisVideo from './borealis-video'
-import BorealisImageTranscript from './borealis-image-transcript'
-import BorealisAudioTranscript from './borealis-audio-transcript'
-import BorealisVideoTranscript from './borealis-video-transcript'
-import BorealisPDFTranscript from './borealis-pdf-transcript'
-import TranscriptNav from './transcript-nav'
-import { createHashHistory } from 'history'
-
 import { Router,
          Route,
          IndexRedirect,
          useRouterHistory,
-         Redirect } from 'react-router'
+         Redirect } from 'react-router';
+
+import React from 'react';
+import BorealisImage from './borealis-image';
+import BorealisTray from './borealis-tray';
+import BorealisAudio from './borealis-audio';
+import BorealisVideo from './borealis-video';
+import BorealisImageTranscript from './borealis-image-transcript';
+import BorealisAudioTranscript from './borealis-audio-transcript';
+import BorealisVideoTranscript from './borealis-video-transcript';
+import BorealisPDFTranscript from './borealis-pdf-transcript';
+import TranscriptNav from './transcript-nav';
+import { createHashHistory } from 'history';
+import BorealisPDF from './borealis-pdf';
+import BorealisPPT from './borealis-ppt';
+
 
 class Borealis extends React.Component {
   constructor(props) {
-    super(props)
-    this._app          = this._app.bind(this)
-    this._type         = this._type.bind(this)
-    this._initial_path = this._initial_path.bind(this)
+    super(props);
+    this._app = this._app.bind(this);
+    this._type = this._type.bind(this);
+    this._initial_path = this._initial_path.bind(this);
   }
 
   _viewer(config, base_path, children) {
     return React.cloneElement(
       children,
-      {config: config, base_path: base_path}
-    )
+      { config, base_path },
+    );
   }
 
   _type(path) {
@@ -67,6 +69,8 @@ class Borealis extends React.Component {
       return 'video'
     } else if(config['pdf']) {
       return 'pdf'
+    } else if(config['ppt']) {
+      return 'ppt'
     }
   }
 
@@ -87,6 +91,7 @@ class Borealis extends React.Component {
           <Route path="audio" component={BorealisAudio} />
           <Route path="video" component={BorealisVideo} />
           <Route path="pdf" component={BorealisPDF} />
+          <Route path="ppt" component={BorealisPPT} />
           <Route path="audio/transcript" component={BorealisAudioTranscript} />
           <Route path="video/transcript" component={BorealisVideoTranscript} />
           <Route path="pdf/transcript" component={BorealisPDFTranscript} />
