@@ -24,7 +24,7 @@ class Borealis extends React.Component {
     super(props);
     this._app = this._app.bind(this);
     this._type = this._type.bind(this);
-    this._initial_path = this._initial_path.bind(this);
+    this._initialPath = this._initialPath.bind(this);
   }
 
   _viewer(config, base_path, children) {
@@ -35,57 +35,60 @@ class Borealis extends React.Component {
   }
 
   _type(path) {
-    return path.replace(/^\//, '').split('/')[0]
+    return path.replace(/^\//, '').split('/')[0];
   }
 
   _app() {
-    let { config, base_path } = this.props
-    let viewer                = this._viewer
-    let type                  = this._type
+    const { config, base_path } = this.props;
+    const viewer                = this._viewer;
+    const type                  = this._type;
     return React.createClass({
       render: function() {
-        let asset_type = type(this.props.location.pathname)
-        return  (
-                  <div>
-                    <BorealisTray config={config} />
-                    <TranscriptNav transcript={config[asset_type].transcript}
-                                   asset_path={asset_type}
-                                   transcript_path={asset_type + '/transcript'}  />
-                    {viewer(config, base_path, this.props.children)}
-                  </div>
-                )
-      }
-    })
+        const asset_type = type(this.props.location.pathname);
+        return (
+          <div>
+            <BorealisTray config={config} />
+            <TranscriptNav
+              transcript={config[asset_type].transcript}
+              asset_path={asset_type}
+              transcript_path={`${asset_type}/transcript`}  />
+            {viewer(config, base_path, this.props.children)}
+          </div>
+        );
+      },
+    });
   }
 
-  //This order is mirrored in borealis-tray.js
-  _initial_path() {
-    let config = this.props.config
-    if (config['image']) {
-      return 'image/0'
-    } else if(config['audio']) {
-      return 'audio'
-    } else if(config['video']) {
-      return 'video'
-    } else if(config['pdf']) {
-      return 'pdf'
-    } else if(config['ppt']) {
-      return 'ppt'
+  // This order is mirrored in borealis-tray.js
+  _initialPath() {
+    const config = this.props.config;
+    let type = 'image/0';
+    if (config.image) {
+      type = 'image/0';
+    } else if (config.audio) {
+      type = 'audio';
+    } else if (config.video) {
+      type = 'video';
+    } else if (config.pdf) {
+      type = 'pdf';
+    } else if (config.ppt) {
+      type = 'ppt';
     }
+    return type;
   }
 
   render() {
-    //Allow this React App to exist at the end of a preexisiting path like:
-    //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
+    // Allow this React App to exist at the end of a preexisiting path like:
+    // localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
     const history = useRouterHistory(createHashHistory)({
-        basename: "/"
-    })
-    let initial_path = this._initial_path
+      basename: '/',
+    });
+    const initialPath = this._initialPath;
     return (
       <Router history={history}>
         <Route path="/" component={this._app()}>
-          <IndexRedirect to={initial_path()} />
-          <Redirect from='image' to='image/0' />
+          <IndexRedirect to={initialPath()} />
+          <Redirect from="image" to="image/0" />
           <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="image/:id" component={BorealisImage} />
           <Route path="audio" component={BorealisAudio} />
@@ -97,15 +100,15 @@ class Borealis extends React.Component {
           <Route path="pdf/transcript" component={BorealisPDFTranscript} />
         </Route>
       </Router>
-    )
+    );
   }
 }
 
 const propTypes = {
   config: React.PropTypes.object.isRequired,
-  base_path: React.PropTypes.string
-}
+  base_path: React.PropTypes.string,
+};
 
-Borealis.propTypes = propTypes
+Borealis.propTypes = propTypes;
 
-export default Borealis
+export default Borealis;
