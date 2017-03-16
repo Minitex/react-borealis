@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "28071a30a7fb5373883b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cfb9f01e7f59aa40def7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -599,23 +599,21 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-	
 	var config = {
-	  "image": {
-	    "thumbnail": "https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg",
-	    "type": "image",
-	    "label": "Image",
-	    "include_controls": true,
-	    "sequenceMode": true,
-	    "showReferenceStrip": true,
-	    "defaultZoomLevel": 0,
-	    "tileSources": ["https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json", "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json"],
-	    "transcript": {
-	      "texts": ["First Image Item Transcript", "Second Image Item  Transcript"],
-	      "label": "Image"
+	  image: {
+	    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
+	    type: 'image',
+	    label: 'Image',
+	    include_controls: true,
+	    sequenceMode: true,
+	    showReferenceStrip: true,
+	    defaultZoomLevel: 0,
+	    tileSources: ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
+	    transcript: {
+	      texts: ['First Image Item Transcript', 'Second Image Item  Transcript'],
+	      label: 'Image'
 	    },
-	    "tocs": ["A Statue"]
+	    tocs: ['A Statue']
 	  },
 	  ppt: {
 	    transcript: {
@@ -668,36 +666,39 @@
 	    width: '460px',
 	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
-	  "pdf": _defineProperty({
-	    "height": 800,
-	    "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",
-	    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0",
-	    "transcript": {
-	      "texts": ["PDF Transcript Here"],
-	      "label": "PDF"
+	  pdf: {
+	    height: 800,
+	    src: 'https://s3.amazonaws.com/mdl-assets/stpaul.pdf',
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0',
+	    transcript: {
+	      texts: ['PDF Transcript Here'],
+	      label: 'PDF'
 	    }
-	  }, 'src', "https://s3.amazonaws.com/mdl-assets/stpaul.pdf"),
-	  "audio": _defineProperty({
-	    "src": "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919",
-	    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885",
-	    "transcript": {
-	      "texts": ["Audio Transcript Here"],
-	      "label": "Audio"
+	  },
+	  audio: {
+	    src: 'http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919',
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885',
+	    transcript: {
+	      texts: ['Audio Transcript Here'],
+	      label: 'Audio'
 	    }
-	  }, 'src', "http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"),
-	  "video": {
-	    "thumbnail": "http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0",
-	    "transcript": {
-	      "texts": [],
-	      "label": "Video"
+	  },
+	  video: {
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0',
+	    transcript: {
+	      texts: [],
+	      label: 'Video'
 	    },
-	    "height": 500,
-	    "width": 500,
-	    "src": "http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470"
+	    height: 500,
+	    width: 500,
+	    src: 'http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470'
 	  }
 	};
 	
-	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, { config: config, base_path: '/foo/bar' }), document.getElementById('app'));
+	_reactDom2.default.render(_react2.default.createElement(_reactBorealis2.default, {
+	  config: config,
+	  base_path: '/foo/bar'
+	}), document.getElementById('app'));
 
 /***/ },
 /* 1 */
@@ -28444,10 +28445,8 @@
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(1);
 	
@@ -28455,44 +28454,20 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var BorealisAudioPlayer = function (_React$Component) {
-	    _inherits(BorealisAudioPlayer, _React$Component);
-	
-	    function BorealisAudioPlayer(props) {
-	        _classCallCheck(this, BorealisAudioPlayer);
-	
-	        return _possibleConstructorReturn(this, (BorealisAudioPlayer.__proto__ || Object.getPrototypeOf(BorealisAudioPlayer)).call(this, props));
-	    }
-	
-	    _createClass(BorealisAudioPlayer, [{
-	        key: "render",
-	        value: function render() {
-	            var src = this.props.src;
-	
-	            return _react2.default.createElement(
-	                "audio",
-	                { controls: true, className: "audio-player" },
-	                _react2.default.createElement("source", { src: src, type: "audio/mpeg" }),
-	                "Your browser does not support the audio element."
-	            );
-	        }
-	    }]);
-	
-	    return BorealisAudioPlayer;
-	}(_react2.default.Component);
-	
-	exports.default = BorealisAudioPlayer;
-	
+	var BorealisAudioPlayer = function BorealisAudioPlayer(props) {
+	  return _react2.default.createElement(
+	    "audio",
+	    { controls: true, className: "audio-player" },
+	    _react2.default.createElement("source", { src: props.src, type: "audio/mpeg" }),
+	    "Your browser does not support the audio element."
+	  );
+	};
 	
 	BorealisAudioPlayer.propTypes = {
-	    src: _react2.default.PropTypes.string.isRequired
+	  src: _react2.default.PropTypes.string.isRequired
 	};
+	
+	exports.default = BorealisAudioPlayer;
 	
 	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
@@ -28854,10 +28829,6 @@
 	            itemProp: 'video',
 	            itemType: 'http://schema.org/VideoObject'
 	          },
-	          _react2.default.createElement('span', {
-	            itemProp: 'thumbnail',
-	            content: 'http://cfvod.kaltura.com/p/' + wid + '/sp/' + wid + '00/thumbnail/entry_id/' + entry_id + '"'
-	          }),
 	          _react2.default.createElement('span', { itemProp: 'width', content: width }),
 	          _react2.default.createElement('span', { itemProp: 'height', content: height })
 	        )
@@ -28882,11 +28853,11 @@
 	KalturaPlayer.propTypes = {
 	  targetId: _react2.default.PropTypes.string.isRequired,
 	  wid: _react2.default.PropTypes.string.isRequired,
-	  uiconf_id: _react2.default.PropTypes.string.isRequired,
+	  uiconf_id: _react2.default.PropTypes.number.isRequired,
 	  flashvars: _react2.default.PropTypes.object,
 	  height: _react2.default.PropTypes.string.isRequired,
 	  width: _react2.default.PropTypes.string.isRequired,
-	  entry_id: _react2.default.PropTypes.string.isRequired
+	  entry_id: _react2.default.PropTypes.string
 	};
 	
 	exports.default = KalturaPlayer;

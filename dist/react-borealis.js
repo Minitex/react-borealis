@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "91f571e07ada3ae0c9af"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "613b9995809ff7f9f3d0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -18027,10 +18027,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _react = __webpack_require__(98);
 	
@@ -18038,44 +18036,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var BorealisAudioPlayer = function (_React$Component) {
-	    _inherits(BorealisAudioPlayer, _React$Component);
-	
-	    function BorealisAudioPlayer(props) {
-	        _classCallCheck(this, BorealisAudioPlayer);
-	
-	        return _possibleConstructorReturn(this, (BorealisAudioPlayer.__proto__ || Object.getPrototypeOf(BorealisAudioPlayer)).call(this, props));
-	    }
-	
-	    _createClass(BorealisAudioPlayer, [{
-	        key: "render",
-	        value: function render() {
-	            var src = this.props.src;
-	
-	            return _react2.default.createElement(
-	                "audio",
-	                { controls: true, className: "audio-player" },
-	                _react2.default.createElement("source", { src: src, type: "audio/mpeg" }),
-	                "Your browser does not support the audio element."
-	            );
-	        }
-	    }]);
-	
-	    return BorealisAudioPlayer;
-	}(_react2.default.Component);
-	
-	exports.default = BorealisAudioPlayer;
-	
+	var BorealisAudioPlayer = function BorealisAudioPlayer(props) {
+	  return _react2.default.createElement(
+	    "audio",
+	    { controls: true, className: "audio-player" },
+	    _react2.default.createElement("source", { src: props.src, type: "audio/mpeg" }),
+	    "Your browser does not support the audio element."
+	  );
+	};
 	
 	BorealisAudioPlayer.propTypes = {
-	    src: _react2.default.PropTypes.string.isRequired
+	  src: _react2.default.PropTypes.string.isRequired
 	};
+	
+	exports.default = BorealisAudioPlayer;
 	
 	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(159); if (makeExportsHot(module, __webpack_require__(98))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)(module)))
@@ -18437,10 +18411,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	            itemProp: 'video',
 	            itemType: 'http://schema.org/VideoObject'
 	          },
-	          _react2.default.createElement('span', {
-	            itemProp: 'thumbnail',
-	            content: 'http://cfvod.kaltura.com/p/' + wid + '/sp/' + wid + '00/thumbnail/entry_id/' + entry_id + '"'
-	          }),
 	          _react2.default.createElement('span', { itemProp: 'width', content: width }),
 	          _react2.default.createElement('span', { itemProp: 'height', content: height })
 	        )
@@ -18465,11 +18435,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	KalturaPlayer.propTypes = {
 	  targetId: _react2.default.PropTypes.string.isRequired,
 	  wid: _react2.default.PropTypes.string.isRequired,
-	  uiconf_id: _react2.default.PropTypes.string.isRequired,
+	  uiconf_id: _react2.default.PropTypes.number.isRequired,
 	  flashvars: _react2.default.PropTypes.object,
 	  height: _react2.default.PropTypes.string.isRequired,
 	  width: _react2.default.PropTypes.string.isRequired,
-	  entry_id: _react2.default.PropTypes.string.isRequired
+	  entry_id: _react2.default.PropTypes.string
 	};
 	
 	exports.default = KalturaPlayer;
