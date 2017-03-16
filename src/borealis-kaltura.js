@@ -28,10 +28,6 @@ class KalturaPlayer extends React.Component {
           itemProp="video"
           itemType="http://schema.org/VideoObject"
         >
-          <span
-            itemProp="thumbnail"
-            content={`http://cfvod.kaltura.com/p/${wid}/sp/${wid}00/thumbnail/entry_id/${entry_id}"`}
-          />
           <span itemProp="width" content={width} />
           <span itemProp="height" content={height} />
         </div>
@@ -43,11 +39,11 @@ class KalturaPlayer extends React.Component {
 KalturaPlayer.propTypes = {
   targetId: React.PropTypes.string.isRequired,
   wid: React.PropTypes.string.isRequired,
-  uiconf_id: React.PropTypes.string.isRequired,
+  uiconf_id: React.PropTypes.number.isRequired,
   flashvars: React.PropTypes.object,
   height: React.PropTypes.string.isRequired,
   width: React.PropTypes.string.isRequired,
-  entry_id: React.PropTypes.string.isRequired,
+  entry_id: React.PropTypes.string,
 };
 
 export default KalturaPlayer;
