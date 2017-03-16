@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "beb03e75b13e03706a25"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "28071a30a7fb5373883b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -625,6 +625,48 @@
 	    text: '(Download)',
 	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
 	    src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
+	  },
+	  kaltura_audio_playlist: {
+	    targetId: 'kaltura_player_1489684320',
+	    wid: '_1369852',
+	    uiconf_id: 38719361,
+	    flashvars: {
+	      streamerType: 'auto',
+	      'playlistAPI.kpl0Id': '0_0s5bpfh7'
+	    },
+	    transcript: {
+	      texts: ['this is a kaltura audio playlist transcript'],
+	      label: 'Video'
+	    },
+	    height: '395px',
+	    width: '560px',
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885'
+	  },
+	  kaltura_video: {
+	    targetId: 'kaltura_player_1489614720',
+	    wid: '_1369852',
+	    uiconf_id: 38683631,
+	    transcript: {
+	      texts: ['this is a kaltura video transcript'],
+	      label: 'Video'
+	    },
+	    entry_id: '0_t96feg4f',
+	    height: '315px',
+	    width: '560px',
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0'
+	  },
+	  kaltura_audio: {
+	    targetId: 'kaltura_player_1489599711',
+	    wid: '_1369852',
+	    uiconf_id: 38708801,
+	    entry_id: '0_b64f8k0c',
+	    transcript: {
+	      texts: ['this is a kaltura audio transcript'],
+	      label: 'Audio'
+	    },
+	    height: '70px',
+	    width: '460px',
+	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
 	  "pdf": _defineProperty({
 	    "height": 800,
@@ -22107,55 +22149,79 @@
 	
 	var _reactRouter = __webpack_require__(190);
 	
+	var _history = __webpack_require__(245);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _borealisImage = __webpack_require__(245);
+	var _borealisImage = __webpack_require__(247);
 	
 	var _borealisImage2 = _interopRequireDefault(_borealisImage);
 	
-	var _borealisTray = __webpack_require__(251);
+	var _borealisTray = __webpack_require__(253);
 	
 	var _borealisTray2 = _interopRequireDefault(_borealisTray);
 	
-	var _borealisAudio = __webpack_require__(253);
+	var _borealisAudio = __webpack_require__(255);
 	
 	var _borealisAudio2 = _interopRequireDefault(_borealisAudio);
 	
-	var _borealisVideo = __webpack_require__(255);
+	var _borealisVideo = __webpack_require__(257);
 	
 	var _borealisVideo2 = _interopRequireDefault(_borealisVideo);
 	
-	var _borealisImageTranscript = __webpack_require__(257);
-	
-	var _borealisImageTranscript2 = _interopRequireDefault(_borealisImageTranscript);
-	
-	var _borealisAudioTranscript = __webpack_require__(259);
-	
-	var _borealisAudioTranscript2 = _interopRequireDefault(_borealisAudioTranscript);
-	
-	var _borealisVideoTranscript = __webpack_require__(260);
-	
-	var _borealisVideoTranscript2 = _interopRequireDefault(_borealisVideoTranscript);
-	
-	var _borealisPdfTranscript = __webpack_require__(261);
-	
-	var _borealisPdfTranscript2 = _interopRequireDefault(_borealisPdfTranscript);
-	
-	var _transcriptNav = __webpack_require__(247);
+	var _transcriptNav = __webpack_require__(249);
 	
 	var _transcriptNav2 = _interopRequireDefault(_transcriptNav);
 	
-	var _history = __webpack_require__(262);
-	
-	var _borealisPdf = __webpack_require__(264);
+	var _borealisPdf = __webpack_require__(259);
 	
 	var _borealisPdf2 = _interopRequireDefault(_borealisPdf);
 	
-	var _borealisPpt = __webpack_require__(266);
+	var _borealisPpt = __webpack_require__(261);
 	
 	var _borealisPpt2 = _interopRequireDefault(_borealisPpt);
+	
+	var _borealisKalturaVideo = __webpack_require__(262);
+	
+	var _borealisKalturaVideo2 = _interopRequireDefault(_borealisKalturaVideo);
+	
+	var _borealisKalturaAudio = __webpack_require__(264);
+	
+	var _borealisKalturaAudio2 = _interopRequireDefault(_borealisKalturaAudio);
+	
+	var _borealisKalturaAudioPlaylist = __webpack_require__(265);
+	
+	var _borealisKalturaAudioPlaylist2 = _interopRequireDefault(_borealisKalturaAudioPlaylist);
+	
+	var _borealisImageTranscript = __webpack_require__(266);
+	
+	var _borealisImageTranscript2 = _interopRequireDefault(_borealisImageTranscript);
+	
+	var _borealisAudioTranscript = __webpack_require__(268);
+	
+	var _borealisAudioTranscript2 = _interopRequireDefault(_borealisAudioTranscript);
+	
+	var _borealisVideoTranscript = __webpack_require__(269);
+	
+	var _borealisVideoTranscript2 = _interopRequireDefault(_borealisVideoTranscript);
+	
+	var _borealisPdfTranscript = __webpack_require__(270);
+	
+	var _borealisPdfTranscript2 = _interopRequireDefault(_borealisPdfTranscript);
+	
+	var _borealisKalturaVideoTranscript = __webpack_require__(271);
+	
+	var _borealisKalturaVideoTranscript2 = _interopRequireDefault(_borealisKalturaVideoTranscript);
+	
+	var _borealisKalturaAudioTranscript = __webpack_require__(272);
+	
+	var _borealisKalturaAudioTranscript2 = _interopRequireDefault(_borealisKalturaAudioTranscript);
+	
+	var _borealisKalturaAudioPlaylistTranscript = __webpack_require__(273);
+	
+	var _borealisKalturaAudioPlaylistTranscript2 = _interopRequireDefault(_borealisKalturaAudioPlaylistTranscript);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22175,7 +22241,7 @@
 	
 	    _this._app = _this._app.bind(_this);
 	    _this._type = _this._type.bind(_this);
-	    _this._initial_path = _this._initial_path.bind(_this);
+	    _this._initialPath = _this._initialPath.bind(_this);
 	    return _this;
 	  }
 	
@@ -22205,7 +22271,8 @@
 	            'div',
 	            null,
 	            _react2.default.createElement(_borealisTray2.default, { config: config }),
-	            _react2.default.createElement(_transcriptNav2.default, { transcript: config[asset_type].transcript,
+	            _react2.default.createElement(_transcriptNav2.default, {
+	              transcript: config[asset_type].transcript,
 	              asset_path: asset_type,
 	              transcript_path: asset_type + '/transcript' }),
 	            viewer(config, base_path, this.props.children)
@@ -22214,40 +22281,44 @@
 	      });
 	    }
 	
-	    //This order is mirrored in borealis-tray.js
+	    // This order is mirrored in borealis-tray.js
 	
 	  }, {
-	    key: '_initial_path',
-	    value: function _initial_path() {
+	    key: '_initialPath',
+	    value: function _initialPath() {
 	      var config = this.props.config;
-	      if (config['image']) {
-	        return 'image/0';
-	      } else if (config['audio']) {
-	        return 'audio';
-	      } else if (config['video']) {
-	        return 'video';
-	      } else if (config['pdf']) {
-	        return 'pdf';
-	      } else if (config['ppt']) {
-	        return 'ppt';
+	      var type = 'image/0';
+	      if (config.image) {
+	        type = 'image/0';
+	      } else if (config.audio) {
+	        type = 'audio';
+	      } else if (config.video) {
+	        type = 'video';
+	      } else if (config.pdf) {
+	        type = 'pdf';
+	      } else if (config.ppt) {
+	        type = 'ppt';
+	      } else if (config.kaltura_video) {
+	        type = 'kaltura_video';
 	      }
+	      return type;
 	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      //Allow this React App to exist at the end of a preexisiting path like:
-	      //localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
+	      // Allow this React App to exist at the end of a preexisiting path like:
+	      // localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
-	        basename: "/"
+	        basename: '/'
 	      });
-	      var initial_path = this._initial_path;
+	      var initialPath = this._initialPath;
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: history },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
-	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initial_path() }),
+	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
@@ -22255,9 +22326,15 @@
 	          _react2.default.createElement(_reactRouter.Route, { path: 'video', component: _borealisVideo2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'pdf', component: _borealisPdf2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'ppt', component: _borealisPpt2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_video', component: _borealisKalturaVideo2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_audio', component: _borealisKalturaAudio2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_audio_playlist', component: _borealisKalturaAudioPlaylist2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'audio/transcript', component: _borealisAudioTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'video/transcript', component: _borealisVideoTranscript2.default }),
-	          _react2.default.createElement(_reactRouter.Route, { path: 'pdf/transcript', component: _borealisPdfTranscript2.default })
+	          _react2.default.createElement(_reactRouter.Route, { path: 'pdf/transcript', component: _borealisPdfTranscript2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_video/transcript', component: _borealisKalturaVideoTranscript2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_audio/transcript', component: _borealisKalturaAudioTranscript2.default }),
+	          _react2.default.createElement(_reactRouter.Route, { path: 'kaltura_audio_playlist/transcript', component: _borealisKalturaAudioPlaylistTranscript2.default })
 	        )
 	      );
 	    }
@@ -22275,7 +22352,7 @@
 	
 	exports.default = Borealis;
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "react-borealis.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "react-borealis.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
@@ -27744,6 +27821,148 @@
 /* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+	
+	exports.__esModule = true;
+	exports.locationsAreEqual = exports.Actions = exports.useQueries = exports.useBeforeUnload = exports.useBasename = exports.createMemoryHistory = exports.createHashHistory = exports.createHistory = undefined;
+	
+	var _LocationUtils = __webpack_require__(226);
+	
+	Object.defineProperty(exports, 'locationsAreEqual', {
+	  enumerable: true,
+	  get: function get() {
+	    return _LocationUtils.locationsAreEqual;
+	  }
+	});
+	
+	var _createBrowserHistory = __webpack_require__(235);
+	
+	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
+	
+	var _createHashHistory2 = __webpack_require__(243);
+	
+	var _createHashHistory3 = _interopRequireDefault(_createHashHistory2);
+	
+	var _createMemoryHistory2 = __webpack_require__(229);
+	
+	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
+	
+	var _useBasename2 = __webpack_require__(228);
+	
+	var _useBasename3 = _interopRequireDefault(_useBasename2);
+	
+	var _useBeforeUnload2 = __webpack_require__(246);
+	
+	var _useBeforeUnload3 = _interopRequireDefault(_useBeforeUnload2);
+	
+	var _useQueries2 = __webpack_require__(222);
+	
+	var _useQueries3 = _interopRequireDefault(_useQueries2);
+	
+	var _Actions2 = __webpack_require__(220);
+	
+	var _Actions = _interopRequireWildcard(_Actions2);
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.createHistory = _createBrowserHistory2.default;
+	exports.createHashHistory = _createHashHistory3.default;
+	exports.createMemoryHistory = _createMemoryHistory3.default;
+	exports.useBasename = _useBasename3.default;
+	exports.useBeforeUnload = _useBeforeUnload3.default;
+	exports.useQueries = _useQueries3.default;
+	exports.Actions = _Actions;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
+	
+	exports.__esModule = true;
+	
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+	
+	var _invariant = __webpack_require__(194);
+	
+	var _invariant2 = _interopRequireDefault(_invariant);
+	
+	var _DOMUtils = __webpack_require__(238);
+	
+	var _ExecutionEnvironment = __webpack_require__(236);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var startListener = function startListener(getPromptMessage) {
+	  var handleBeforeUnload = function handleBeforeUnload(event) {
+	    var message = getPromptMessage();
+	
+	    if (typeof message === 'string') {
+	      (event || window.event).returnValue = message;
+	      return message;
+	    }
+	
+	    return undefined;
+	  };
+	
+	  (0, _DOMUtils.addEventListener)(window, 'beforeunload', handleBeforeUnload);
+	
+	  return function () {
+	    return (0, _DOMUtils.removeEventListener)(window, 'beforeunload', handleBeforeUnload);
+	  };
+	};
+	
+	/**
+	 * Returns a new createHistory function that can be used to create
+	 * history objects that know how to use the beforeunload event in web
+	 * browsers to cancel navigation.
+	 */
+	var useBeforeUnload = function useBeforeUnload(createHistory) {
+	  !_ExecutionEnvironment.canUseDOM ? process.env.NODE_ENV !== 'production' ? (0, _invariant2.default)(false, 'useBeforeUnload only works in DOM environments') : (0, _invariant2.default)(false) : void 0;
+	
+	  return function (options) {
+	    var history = createHistory(options);
+	
+	    var listeners = [];
+	    var stopListener = void 0;
+	
+	    var getPromptMessage = function getPromptMessage() {
+	      var message = void 0;
+	      for (var i = 0, len = listeners.length; message == null && i < len; ++i) {
+	        message = listeners[i].call();
+	      }return message;
+	    };
+	
+	    var listenBeforeUnload = function listenBeforeUnload(listener) {
+	      if (listeners.push(listener) === 1) stopListener = startListener(getPromptMessage);
+	
+	      return function () {
+	        listeners = listeners.filter(function (item) {
+	          return item !== listener;
+	        });
+	
+	        if (listeners.length === 0 && stopListener) {
+	          stopListener();
+	          stopListener = null;
+	        }
+	      };
+	    };
+	
+	    return _extends({}, history, {
+	      listenBeforeUnload: listenBeforeUnload
+	    });
+	  };
+	};
+	
+	exports.default = useBeforeUnload;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 	
 	'use strict';
@@ -27756,11 +27975,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactOpenseadragon = __webpack_require__(246);
+	var _reactOpenseadragon = __webpack_require__(248);
 	
 	var _reactOpenseadragon2 = _interopRequireDefault(_reactOpenseadragon);
 	
-	var _transcriptNav = __webpack_require__(247);
+	var _transcriptNav = __webpack_require__(249);
 	
 	var _transcriptNav2 = _interopRequireDefault(_transcriptNav);
 	
@@ -27774,11 +27993,11 @@
 	  );
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-image.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-image.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 246 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	!function(e,t){ true?module.exports=t():"function"==typeof define&&define.amd?define("react-openseadragon",[],t):"object"==typeof exports?exports["react-openseadragon"]=t():e["react-openseadragon"]=t()}(this,function(){return function(e){function t(e){var t=document.getElementsByTagName("head")[0],n=document.createElement("script");n.type="text/javascript",n.charset="utf-8",n.src=d.p+""+e+"."+w+".hot-update.js",t.appendChild(n)}function n(e){if("undefined"==typeof XMLHttpRequest)return e(new Error("No browser support"));try{var t=new XMLHttpRequest,n=d.p+""+w+".hot-update.json";t.open("GET",n,!0),t.timeout=1e4,t.send(null)}catch(t){return e(t)}t.onreadystatechange=function(){if(4===t.readyState)if(0===t.status)e(new Error("Manifest request to "+n+" timed out."));else if(404===t.status)e();else if(200!==t.status&&304!==t.status)e(new Error("Manifest request to "+n+" failed."));else{try{var i=JSON.parse(t.responseText)}catch(t){return void e(t)}e(null,i)}}}function i(e){function t(e,t){"ready"===x&&r("prepare"),S++,d.e(e,function(){function n(){S--,"prepare"===x&&(P[e]||u(e),0===S&&0===b&&c())}try{t.call(null,i)}finally{n()}})}var n=R[e];if(!n)return d;var i=function(t){return n.hot.active?R[t]?(R[t].parents.indexOf(e)<0&&R[t].parents.push(e),n.children.indexOf(t)<0&&n.children.push(t)):_=[e]:(console.warn("[HMR] unexpected require("+t+") from disposed module "+e),_=[]),d(t)};for(var o in d)Object.prototype.hasOwnProperty.call(d,o)&&(f?Object.defineProperty(i,o,function(e){return{configurable:!0,enumerable:!0,get:function(){return d[e]},set:function(t){d[e]=t}}}(o)):i[o]=d[o]);return f?Object.defineProperty(i,"e",{enumerable:!0,value:t}):i.e=t,i}function o(e){var t={_acceptedDependencies:{},_declinedDependencies:{},_selfAccepted:!1,_selfDeclined:!1,_disposeHandlers:[],active:!0,accept:function(e,n){if("undefined"==typeof e)t._selfAccepted=!0;else if("function"==typeof e)t._selfAccepted=e;else if("object"==typeof e)for(var i=0;i<e.length;i++)t._acceptedDependencies[e[i]]=n;else t._acceptedDependencies[e]=n},decline:function(e){if("undefined"==typeof e)t._selfDeclined=!0;else if("number"==typeof e)t._declinedDependencies[e]=!0;else for(var n=0;n<e.length;n++)t._declinedDependencies[e[n]]=!0},dispose:function(e){t._disposeHandlers.push(e)},addDisposeHandler:function(e){t._disposeHandlers.push(e)},removeDisposeHandler:function(e){var n=t._disposeHandlers.indexOf(e);n>=0&&t._disposeHandlers.splice(n,1)},check:s,apply:h,status:function(e){return e?void T.push(e):x},addStatusHandler:function(e){T.push(e)},removeStatusHandler:function(e){var t=T.indexOf(e);t>=0&&T.splice(t,1)},data:E[e]};return t}function r(e){x=e;for(var t=0;t<T.length;t++)T[t].call(null,e)}function a(e){var t=+e+""===e;return t?+e:e}function s(e,t){if("idle"!==x)throw new Error("check() is only allowed in idle status");"function"==typeof e?(y=!1,t=e):(y=e,t=t||function(e){if(e)throw e}),r("check"),n(function(e,n){if(e)return t(e);if(!n)return r("idle"),void t(null,null);C={},O={},P={};for(var i=0;i<n.c.length;i++)O[n.c[i]]=!0;g=n.h,r("prepare"),m=t,v={};var o=0;u(o),"prepare"===x&&0===S&&0===b&&c()})}function l(e,t){if(O[e]&&C[e]){C[e]=!1;for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(v[n]=t[n]);0===--b&&0===S&&c()}}function u(e){O[e]?(C[e]=!0,b++,t(e)):P[e]=!0}function c(){r("ready");var e=m;if(m=null,e)if(y)h(y,e);else{var t=[];for(var n in v)Object.prototype.hasOwnProperty.call(v,n)&&t.push(a(n));e(null,t)}}function h(t,n){function i(e){for(var t=[e],n={},i=t.slice();i.length>0;){var r=i.pop(),e=R[r];if(e&&!e.hot._selfAccepted){if(e.hot._selfDeclined)return new Error("Aborted because of self decline: "+r);if(0===r)return;for(var a=0;a<e.parents.length;a++){var s=e.parents[a],l=R[s];if(l.hot._declinedDependencies[r])return new Error("Aborted because of declined dependency: "+r+" in "+s);t.indexOf(s)>=0||(l.hot._acceptedDependencies[r]?(n[s]||(n[s]=[]),o(n[s],[r])):(delete n[s],t.push(s),i.push(s)))}}}return[t,n]}function o(e,t){for(var n=0;n<t.length;n++){var i=t[n];e.indexOf(i)<0&&e.push(i)}}if("ready"!==x)throw new Error("apply() is only allowed in ready status");"function"==typeof t?(n=t,t={}):t&&"object"==typeof t?n=n||function(e){if(e)throw e}:(t={},n=n||function(e){if(e)throw e});var s={},l=[],u={};for(var c in v)if(Object.prototype.hasOwnProperty.call(v,c)){var h=a(c),p=i(h);if(!p){if(t.ignoreUnaccepted)continue;return r("abort"),n(new Error("Aborted because "+h+" is not accepted"))}if(p instanceof Error)return r("abort"),n(p);u[h]=v[h],o(l,p[0]);for(var h in p[1])Object.prototype.hasOwnProperty.call(p[1],h)&&(s[h]||(s[h]=[]),o(s[h],p[1][h]))}for(var f=[],m=0;m<l.length;m++){var h=l[m];R[h]&&R[h].hot._selfAccepted&&f.push({module:h,errorHandler:R[h].hot._selfAccepted})}r("dispose");for(var y=l.slice();y.length>0;){var h=y.pop(),T=R[h];if(T){for(var b={},S=T.hot._disposeHandlers,P=0;P<S.length;P++){var C=S[P];C(b)}E[h]=b,T.hot.active=!1,delete R[h];for(var P=0;P<T.children.length;P++){var O=R[T.children[P]];if(O){var N=O.parents.indexOf(h);N>=0&&O.parents.splice(N,1)}}}}for(var h in s)if(Object.prototype.hasOwnProperty.call(s,h))for(var T=R[h],D=s[h],P=0;P<D.length;P++){var I=D[P],N=T.children.indexOf(I);N>=0&&T.children.splice(N,1)}r("apply"),w=g;for(var h in u)Object.prototype.hasOwnProperty.call(u,h)&&(e[h]=u[h]);var k=null;for(var h in s)if(Object.prototype.hasOwnProperty.call(s,h)){for(var T=R[h],D=s[h],M=[],m=0;m<D.length;m++){var I=D[m],C=T.hot._acceptedDependencies[I];M.indexOf(C)>=0||M.push(C)}for(var m=0;m<M.length;m++){var C=M[m];try{C(s)}catch(e){k||(k=e)}}}for(var m=0;m<f.length;m++){var A=f[m],h=A.module;_=[h];try{d(h)}catch(e){if("function"==typeof A.errorHandler)try{A.errorHandler(e)}catch(e){k||(k=e)}else k||(k=e)}}return k?(r("fail"),n(k)):(r("idle"),void n(null,l))}function d(t){if(R[t])return R[t].exports;var n=R[t]={exports:{},id:t,loaded:!1,hot:o(t),parents:_,children:[]};return e[t].call(n.exports,n,n.exports,i(t)),n.loaded=!0,n.exports}var p=this.webpackHotUpdatereact_openseadragon;this.webpackHotUpdatereact_openseadragon=function(e,t){l(e,t),p&&p(e,t)};var f=!1;try{Object.defineProperty({},"x",{get:function(){}}),f=!0}catch(e){}var m,v,g,y=!0,w="db18937a5d73d44f13dc",E={},_=[],T=[],x="idle",b=0,S=0,P={},C={},O={},R={};return d.m=e,d.c=R,d.p="",d.h=function(){return w},i(0)(0)}([function(e,t,n){(function(e){!function(){var t=n(2),i=n(10),o=n(12),r=n(98);e.makeHot=e.hot.data?e.hot.data.makeHot:t(function(){return i.getRootInstances(o)},r)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{default:e}}function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0}),t.OpenSeadragonControls=void 0;var a=function(){function e(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(t,n,i){return n&&e(t.prototype,n),i&&e(t,i),t}}(),s=n(99);Object.defineProperty(t,"OpenSeadragonControls",{enumerable:!0,get:function(){return s.OpenSeadragonControls}});var l=n(103);n(158);var u=n(156),c=e(u),h=n(98),d=e(h),p=n(162),f=e(p),m=n(164),v=e(m),g=function(e){function t(e){i(this,t);var n=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.pageHandler=n.pageHandler.bind(n),n._nav=n._nav.bind(n),n.state={viewer:{},id:0},n}return r(t,e),a(t,[{key:"pageHandler",value:function(e,t){this.setState({viewer:t}),this.setState({id:parseInt(e,10)}),l.browserHistory.push(this.props.base_path+"#/image/"+e)}},{key:"_viewer",value:function(e,t,n){return d.default.cloneElement(n,{pageHandler:e,config:t})}},{key:"_nav",value:function(){var e=this.state.id,t=this.props.config.tocs,n=this.state.viewer,i=this.pageHandler;return n?d.default.createElement(v.default,{id:e,pageHandler:i,viewer:n,tocs:t}):""}},{key:"_app",value:function(){var e=this.pageHandler,t=this.props.config,n=this._viewer,i=this._nav;return d.default.createClass({render:function(){return d.default.createElement("div",null,d.default.createElement("div",{className:"row"},i()),n(e,t,this.props.children))}})}},{key:"render",value:function(){var e=(0,l.useRouterHistory)(c.default)({basename:this.props.base_path});return d.default.createElement(l.Router,{history:e},d.default.createElement(l.Route,{path:"/",component:this._app()},d.default.createElement(l.IndexRedirect,{to:"image/0"}),d.default.createElement(l.Route,{path:"image/:id",component:f.default})))}}]),t}(d.default.Component),y={config:d.default.PropTypes.object.isRequired,base_path:d.default.PropTypes.string};g.propTypes=y,t.default=g}).call(this)}finally{!function(){var t=e.hot.data&&e.hot.data.foundReactClasses||!1;if(e.exports&&e.makeHot){var i=n(100);i(e,n(98))&&(t=!0);var o=t;o&&e.hot.accept(function(e){e&&console.error("Cannot apply hot update to react-openseadragon.js: "+e.message)})}e.hot.dispose(function(n){n.makeHot=e.makeHot,n.foundReactClasses=t})}()}}).call(t,n(1)(e))},function(e,t){e.exports=function(e){return e.webpackPolyfill||(e.deprecate=function(){},e.paths=[],e.children=[],e.webpackPolyfill=1),e}},function(e,t,n){"use strict";e.exports=n(3)},function(e,t,n){"use strict";var i=n(4);e.exports=function(e,t){if("function"!=typeof e)throw new Error("Expected getRootInstances to be a function.");var n={};return function(o,r){if(r=r||o.displayName||o.name,!r)return console.error("Hot reload is disabled for one of your types. To enable it, pass a string uniquely identifying this class within this current module as a second parameter to makeHot."),o;n[r]||(n[r]=i(e,t));var a=n[r];return a(o)}}},function(e,t,n){"use strict";function i(e){if(!e.hasOwnProperty("type"))return!1;var t=Object.getOwnPropertyDescriptor(e,"type");return"function"!=typeof t.get}function o(e){var t=e.prototype,n=t&&"function"==typeof t.render;return!n&&i(e)&&(t=e.type.prototype),t}var r=n(5),a=n(6);e.exports=function(e,t){var n=r(),i=null;return function(r){var s=o(r);return n(s),i&&a(e,t),i||(i=r)}}},function(e,t){"use strict";e.exports=function(){function e(e){return function(){if(o[e])return o[e].apply(this,arguments)}}function t(t,n){t[n]=o[n],"function"==typeof t[n]&&"type"!==n&&"constructor"!==n&&(t[n]=e(n),o[n].isReactClassApproved&&(t[n].isReactClassApproved=o[n].isReactClassApproved),t.__reactAutoBindMap&&t.__reactAutoBindMap[n]&&(t.__reactAutoBindMap[n]=t[n]))}function n(e){o={},Object.getOwnPropertyNames(e).forEach(function(t){o[t]=e[t]})}function i(e){r.push(e),r.forEach(function(e){Object.getOwnPropertyNames(o).forEach(function(n){t(e,n)})})}var o,r=[];return function(e){Object.prototype.hasOwnProperty.call(e,"__isAssimilatedByReactHotAPI")||(n(e),i(e),e.__isAssimilatedByReactHotAPI=!0)}}},function(e,t,n){var i=n(7),o=!1;e.exports=function(e,t){function n(){o=!1;var n,r=e();for(var a in r)r.hasOwnProperty(a)&&(n=r[a],n=n._reactInternalInstance||n,i(n,t))}o||setTimeout(n)}},function(e,t,n){"use strict";function i(e){e._pendingForceUpdate===!1&&(e._pendingForceUpdate=!0)}function o(e,t){if(e._pendingForceUpdate===!0){var n=e._instance||e;n.forceUpdate?n.forceUpdate():t&&t.Component&&t.Component.prototype.forceUpdate.call(n)}}function r(e,t){s(e,a),s(e,i),s(e,o,t)}var a=n(8),s=n(9);e.exports=r},function(e,t){"use strict";function n(e,t){var n=t.bind(e);n.__reactBoundContext=e,n.__reactBoundMethod=t,n.__reactBoundArguments=null;var i=e.constructor.displayName,o=n.bind;return n.bind=function(r){var a=Array.prototype.slice.call(arguments,1);if(r!==e&&null!==r)console.warn("bind(): React component methods may only be bound to the component instance. See "+i);else if(!a.length)return console.warn("bind(): You are binding a component method to the component. React does this for you automatically in a high-performance way, so you can safely remove this call. See "+i),n;var s=o.apply(n,arguments);return s.__reactBoundContext=e,s.__reactBoundMethod=t,s.__reactBoundArguments=a,s},n}e.exports=function(e){var t="function"==typeof e.getPublicInstance?e.getPublicInstance():e;if(t)for(var i in t.__reactAutoBindMap)if(t.__reactAutoBindMap.hasOwnProperty(i)&&(!t.hasOwnProperty(i)||t[i].__reactBoundContext!==t)){var o=t.__reactAutoBindMap[i];t[i]=n(t,o)}}},function(e,t){"use strict";function n(e,t,i){if(t(e,i),e._renderedComponent)n(e._renderedComponent,t,i);else for(var o in e._renderedChildren)n(e._renderedChildren[o],t,i)}e.exports=n},function(e,t,n){"use strict";function i(){a||console.warn("It appears that React Hot Loader isn't configured correctly. If you're using NPM, make sure your dependencies don't drag duplicate React distributions into their node_modules and that require(\"react\") corresponds to the React instance you render your app with.","If you're using a precompiled version of React, see https://github.com/gaearon/react-hot-loader/tree/master/docs#usage-with-external-react for integration instructions."),a=!0}var o=n(11),r=null,a=!1,s={injection:{injectProvider:function(e){r=e}},getRootInstances:function(e){if(r)return r.getRootInstances();var t=e&&o(e)||[];return Object.keys(t).length||i(),t}};e.exports=s},function(e,t){"use strict";function n(e){return e._instancesByReactRootID||e._instancesByContainerID||[]}e.exports=n},function(e,t,n){(function(t){"use strict";function i(e,t){for(var n=Math.min(e.length,t.length),i=0;i<n;i++)if(e.charAt(i)!==t.charAt(i))return i;return e.length===t.length?-1:n}function o(e){return e?e.nodeType===V?e.documentElement:e.firstChild:null}function r(e){return e.getAttribute&&e.getAttribute(B)||""}function a(e,t,n,i,o){var r;if(b.logTopLevelRenders){var a=e._currentElement.props.child,s=a.type;r="React mount: "+("string"==typeof s?s:s.displayName||s.name),console.time(r)}var l=O.mountComponent(e,n,null,T(e,t),o,0);r&&console.timeEnd(r),e._renderedComponent._topLevelWrapper=e,q._mountImageIntoNode(l,t,e,i,n)}function s(e,t,n,i){var o=N.ReactReconcileTransaction.getPooled(!n&&x.useCreateElement);o.perform(a,null,e,t,o,n,i),N.ReactReconcileTransaction.release(o)}function l(e,n,i){for("production"!==t.env.NODE_ENV&&P.debugTool.onBeginFlush(),O.unmountComponent(e,i),"production"!==t.env.NODE_ENV&&P.debugTool.onEndFlush(),n.nodeType===V&&(n=n.documentElement);n.lastChild;)n.removeChild(n.lastChild)}function u(e){var t=o(e);if(t){var n=_.getInstanceFromNode(t);return!(!n||!n._hostParent)}}function c(e){var t=o(e);return!(!t||!d(t)||_.getInstanceFromNode(t))}function h(e){return!(!e||e.nodeType!==F&&e.nodeType!==V&&e.nodeType!==z)}function d(e){return h(e)&&(e.hasAttribute(H)||e.hasAttribute(B))}function p(e){var t=o(e),n=t&&_.getInstanceFromNode(t);return n&&!n._hostParent?n:null}function f(e){var t=p(e);return t?t._hostContainerInfo._topLevelWrapper:null}var m=n(14),v=n(15),g=n(22),y=n(24),w=n(52),E=n(30),_=n(63),T=n(65),x=n(67),b=n(68),S=n(69),P=n(70),C=n(76),O=n(78),R=n(81),N=n(82),D=n(40),I=n(86),k=n(23),M=n(17),A=n(94),L=n(31),B=g.ID_ATTRIBUTE_NAME,H=g.ROOT_ATTRIBUTE_NAME,F=1,V=9,z=11,U={},j=1,W=function(){this.rootID=j++};W.prototype.isReactComponent={},"production"!==t.env.NODE_ENV&&(W.displayName="TopLevelWrapper"),W.prototype.render=function(){return this.props.child},W.isReactTopLevelWrapper=!0;var q={TopLevelWrapper:W,_instancesByReactRootID:U,scrollMonitor:function(e,t){t()},_updateRootComponent:function(e,t,n,i,o){return q.scrollMonitor(i,function(){R.enqueueElementInternal(e,t,n),o&&R.enqueueCallbackInternal(e,o)}),e},_renderNewRootComponent:function(e,n,i,o){"production"!==t.env.NODE_ENV?L(null==E.current,"_renderNewRootComponent(): Render methods should be a pure function of props and state; triggering nested component updates from render is not allowed. If necessary, trigger nested updates in componentDidUpdate. Check the render method of %s.",E.current&&E.current.getName()||"ReactCompositeComponent"):void 0,h(n)?void 0:"production"!==t.env.NODE_ENV?k(!1,"_registerComponent(...): Target container is not a DOM element."):m("37"),w.ensureScrollValueMonitoring();var r=I(e,!1);N.batchedUpdates(s,r,n,i,o);var a=r._instance.rootID;return U[a]=r,r},renderSubtreeIntoContainer:function(e,n,i,o){return null!=e&&S.has(e)?void 0:"production"!==t.env.NODE_ENV?k(!1,"parentComponent must be a valid React Component"):m("38"),q._renderSubtreeIntoContainer(e,n,i,o)},_renderSubtreeIntoContainer:function(e,n,i,a){R.validateCallback(a,"ReactDOM.render"),y.isValidElement(n)?void 0:"production"!==t.env.NODE_ENV?k(!1,"ReactDOM.render(): Invalid component element.%s","string"==typeof n?" Instead of passing a string like 'div', pass React.createElement('div') or <div />.":"function"==typeof n?" Instead of passing a class like Foo, pass React.createElement(Foo) or <Foo />.":null!=n&&void 0!==n.props?" This may be caused by unintentionally loading two independent copies of React.":""):m("39","string"==typeof n?" Instead of passing a string like 'div', pass React.createElement('div') or <div />.":"function"==typeof n?" Instead of passing a class like Foo, pass React.createElement(Foo) or <Foo />.":null!=n&&void 0!==n.props?" This may be caused by unintentionally loading two independent copies of React.":""),"production"!==t.env.NODE_ENV?L(!i||!i.tagName||"BODY"!==i.tagName.toUpperCase(),"render(): Rendering components directly into document.body is discouraged, since its children are often manipulated by third-party scripts and browser extensions. This may lead to subtle reconciliation issues. Try rendering into a container element created for your app."):void 0;var s,l=y.createElement(W,{child:n});if(e){var c=S.get(e);s=c._processChildContext(c._context)}else s=D;var h=f(i);if(h){var d=h._currentElement,p=d.props.child;if(A(p,n)){var v=h._renderedComponent.getPublicInstance(),g=a&&function(){a.call(v)};return q._updateRootComponent(h,l,s,i,g),v}q.unmountComponentAtNode(i)}var w=o(i),E=w&&!!r(w),_=u(i);if("production"!==t.env.NODE_ENV&&("production"!==t.env.NODE_ENV?L(!_,"render(...): Replacing React-rendered children with a new root component. If you intended to update the children of this node, you should instead have the existing children update their state and render the new components instead of calling ReactDOM.render."):void 0,!E||w.nextSibling))for(var T=w;T;){if(r(T)){"production"!==t.env.NODE_ENV?L(!1,"render(): Target node has markup rendered by React, but there are unrelated nodes as well. This is most commonly caused by white-space inserted around server-rendered markup."):void 0;break}T=T.nextSibling}var x=E&&!h&&!_,b=q._renderNewRootComponent(l,i,x,s)._renderedComponent.getPublicInstance();return a&&a.call(b),b},render:function(e,t,n){return q._renderSubtreeIntoContainer(null,e,t,n)},unmountComponentAtNode:function(e){"production"!==t.env.NODE_ENV?L(null==E.current,"unmountComponentAtNode(): Render methods should be a pure function of props and state; triggering nested component updates from render is not allowed. If necessary, trigger nested updates in componentDidUpdate. Check the render method of %s.",E.current&&E.current.getName()||"ReactCompositeComponent"):void 0,h(e)?void 0:"production"!==t.env.NODE_ENV?k(!1,"unmountComponentAtNode(...): Target container is not a DOM element."):m("40"),"production"!==t.env.NODE_ENV&&("production"!==t.env.NODE_ENV?L(!c(e),"unmountComponentAtNode(): The node you're attempting to unmount was rendered by another copy of React."):void 0);var n=f(e);if(!n){var i=u(e),o=1===e.nodeType&&e.hasAttribute(H);return"production"!==t.env.NODE_ENV&&("production"!==t.env.NODE_ENV?L(!i,"unmountComponentAtNode(): The node you're attempting to unmount was rendered by React and is not a top-level container. %s",o?"You may have accidentally passed in a React root node instead of its container.":"Instead, have the parent component update its state and rerender in order to remove this component."):void 0),!1}return delete U[n._instance.rootID],N.batchedUpdates(l,n,e,!1),!0},_mountImageIntoNode:function(e,n,r,a,s){if(h(n)?void 0:"production"!==t.env.NODE_ENV?k(!1,"mountComponentIntoNode(...): Target container is not valid."):m("41"),a){var l=o(n);if(C.canReuseMarkup(e,l))return void _.precacheNode(r,l);var u=l.getAttribute(C.CHECKSUM_ATTR_NAME);l.removeAttribute(C.CHECKSUM_ATTR_NAME);var c=l.outerHTML;l.setAttribute(C.CHECKSUM_ATTR_NAME,u);var d=e;if("production"!==t.env.NODE_ENV){var p;n.nodeType===F?(p=document.createElement("div"),p.innerHTML=e,d=p.innerHTML):(p=document.createElement("iframe"),document.body.appendChild(p),p.contentDocument.write(e),d=p.contentDocument.documentElement.outerHTML,document.body.removeChild(p))}var f=i(d,c),g=" (client) "+d.substring(f-20,f+20)+"\n (server) "+c.substring(f-20,f+20);n.nodeType===V?"production"!==t.env.NODE_ENV?k(!1,"You're trying to render a component to the document using server rendering but the checksum was invalid. This usually means you rendered a different component type or props on the client from the one on the server, or your render() methods are impure. React cannot handle this case due to cross-browser quirks by rendering at the document root. You should look for environment dependent code in your components and ensure the props are the same client and server side:\n%s",g):m("42",g):void 0,"production"!==t.env.NODE_ENV&&("production"!==t.env.NODE_ENV?L(!1,"React attempted to reuse markup in a container but the checksum was invalid. This generally means that you are using server rendering and the markup generated on the server was not what the client was expecting. React injected new markup to compensate which works but you have lost many of the benefits of server rendering. Instead, figure out why the markup being generated is different on the client or server:\n%s",g):void 0)}if(n.nodeType===V?"production"!==t.env.NODE_ENV?k(!1,"You're trying to render a component to the document but you didn't use server rendering. We can't do this without using server rendering due to cross-browser quirks. See ReactDOMServer.renderToString() for server rendering."):m("43"):void 0,s.useCreateElement){for(;n.lastChild;)n.removeChild(n.lastChild);v.insertTreeBefore(n,e,null)}else M(n,e),_.precacheNode(r,n.firstChild);if("production"!==t.env.NODE_ENV){var y=_.getInstanceFromNode(n.firstChild);0!==y._debugID&&P.debugTool.onHostOperation({instanceID:y._debugID,type:"mount",payload:e.toString()})}}};e.exports=q}).call(t,n(13))},function(e,t){function n(){throw new Error("setTimeout has not been defined")}function i(){throw new Error("clearTimeout has not been defined")}function o(e){if(c===setTimeout)return setTimeout(e,0);if((c===n||!c)&&setTimeout)return c=setTimeout,setTimeout(e,0);try{return c(e,0)}catch(t){try{return c.call(null,e,0)}catch(t){return c.call(this,e,0)}}}function r(e){if(h===clearTimeout)return clearTimeout(e);if((h===i||!h)&&clearTimeout)return h=clearTimeout,clearTimeout(e);try{return h(e)}catch(t){try{return h.call(null,e)}catch(t){return h.call(this,e)}}}function a(){m&&p&&(m=!1,p.length?f=p.concat(f):v=-1,f.length&&s())}function s(){if(!m){var e=o(a);m=!0;for(var t=f.length;t;){for(p=f,f=[];++v<t;)p&&p[v].run();v=-1,t=f.length}p=null,m=!1,r(e)}}function l(e,t){this.fun=e,this.array=t}function u(){}var c,h,d=e.exports={};!function(){try{c="function"==typeof setTimeout?setTimeout:n}catch(e){c=n}try{h="function"==typeof clearTimeout?clearTimeout:i}catch(e){h=i}}();var p,f=[],m=!1,v=-1;d.nextTick=function(e){var t=new Array(arguments.length-1);if(arguments.length>1)for(var n=1;n<arguments.length;n++)t[n-1]=arguments[n];f.push(new l(e,t)),1!==f.length||m||o(s)},l.prototype.run=function(){this.fun.apply(null,this.array)},d.title="browser",d.browser=!0,d.env={},d.argv=[],d.version="",d.versions={},d.on=u,d.addListener=u,d.once=u,d.off=u,d.removeListener=u,d.removeAllListeners=u,d.emit=u,d.binding=function(e){throw new Error("process.binding is not supported")},d.cwd=function(){return"/"},d.chdir=function(e){throw new Error("process.chdir is not supported")},d.umask=function(){return 0}},function(e,t){"use strict";function n(e){for(var t=arguments.length-1,n="Minified React error #"+e+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant="+e,i=0;i<t;i++)n+="&args[]="+encodeURIComponent(arguments[i+1]);n+=" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.";var o=new Error(n);throw o.name="Invariant Violation",o.framesToPop=1,o}e.exports=n},function(e,t,n){"use strict";function i(e){if(v){var t=e.node,n=e.children;if(n.length)for(var i=0;i<n.length;i++)g(t,n[i],null);else null!=e.html?h(t,e.html):null!=e.text&&p(t,e.text)}}function o(e,t){e.parentNode.replaceChild(t.node,e),i(t)}function r(e,t){v?e.children.push(t):e.node.appendChild(t.node)}function a(e,t){v?e.html=t:h(e.node,t)}function s(e,t){v?e.text=t:p(e.node,t)}function l(){return this.node.nodeName}function u(e){return{node:e,children:[],html:null,text:null,toString:l}}var c=n(16),h=n(17),d=n(19),p=n(20),f=1,m=11,v="undefined"!=typeof document&&"number"==typeof document.documentMode||"undefined"!=typeof navigator&&"string"==typeof navigator.userAgent&&/\bEdge\/\d/.test(navigator.userAgent),g=d(function(e,t,n){t.node.nodeType===m||t.node.nodeType===f&&"object"===t.node.nodeName.toLowerCase()&&(null==t.node.namespaceURI||t.node.namespaceURI===c.html)?(i(t),e.insertBefore(t.node,n)):(e.insertBefore(t.node,n),i(t))});u.insertTreeBefore=g,u.replaceChildWithTree=o,u.queueChild=r,u.queueHTML=a,u.queueText=s,e.exports=u},function(e,t){"use strict";var n={html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"};e.exports=n},function(e,t,n){"use strict";var i,o=n(18),r=n(16),a=/^[ \r\n\t\f]/,s=/<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/,l=n(19),u=l(function(e,t){if(e.namespaceURI!==r.svg||"innerHTML"in e)e.innerHTML=t;else{i=i||document.createElement("div"),i.innerHTML="<svg>"+t+"</svg>";for(var n=i.firstChild;n.firstChild;)e.appendChild(n.firstChild)}});if(o.canUseDOM){var c=document.createElement("div");c.innerHTML=" ",""===c.innerHTML&&(u=function(e,t){if(e.parentNode&&e.parentNode.replaceChild(e,e),a.test(t)||"<"===t[0]&&s.test(t)){e.innerHTML=String.fromCharCode(65279)+t;var n=e.firstChild;1===n.data.length?e.removeChild(n):n.deleteData(0,1)}else e.innerHTML=t}),c=null}e.exports=u},function(e,t){"use strict";var n=!("undefined"==typeof window||!window.document||!window.document.createElement),i={canUseDOM:n,canUseWorkers:"undefined"!=typeof Worker,canUseEventListeners:n&&!(!window.addEventListener&&!window.attachEvent),canUseViewport:n&&!!window.screen,isInWorker:!n};e.exports=i},function(e,t){"use strict";var n=function(e){return"undefined"!=typeof MSApp&&MSApp.execUnsafeLocalFunction?function(t,n,i,o){MSApp.execUnsafeLocalFunction(function(){return e(t,n,i,o)})}:e};e.exports=n},function(e,t,n){"use strict";var i=n(18),o=n(21),r=n(17),a=function(e,t){if(t){var n=e.firstChild;if(n&&n===e.lastChild&&3===n.nodeType)return void(n.nodeValue=t)}e.textContent=t};i.canUseDOM&&("textContent"in document.documentElement||(a=function(e,t){return 3===e.nodeType?void(e.nodeValue=t):void r(e,o(t))})),e.exports=a},function(e,t){"use strict";function n(e){var t=""+e,n=o.exec(t);if(!n)return t;var i,r="",a=0,s=0;for(a=n.index;a<t.length;a++){switch(t.charCodeAt(a)){case 34:i="&quot;";break;case 38:i="&amp;";break;case 39:i="&#x27;";break;case 60:i="&lt;";break;case 62:i="&gt;";break;default:continue}s!==a&&(r+=t.substring(s,a)),s=a+1,r+=i}return s!==a?r+t.substring(s,a):r}function i(e){return"boolean"==typeof e||"number"==typeof e?""+e:n(e)}var o=/["'&<>]/;e.exports=i},function(e,t,n){(function(t){"use strict";function i(e,t){return(e&t)===t}var o=n(14),r=n(23),a={MUST_USE_PROPERTY:1,HAS_BOOLEAN_VALUE:4,HAS_NUMERIC_VALUE:8,HAS_POSITIVE_NUMERIC_VALUE:24,HAS_OVERLOADED_BOOLEAN_VALUE:32,injectDOMPropertyConfig:function(e){var n=a,s=e.Properties||{},u=e.DOMAttributeNamespaces||{},c=e.DOMAttributeNames||{},h=e.DOMPropertyNames||{},d=e.DOMMutationMethods||{};e.isCustomAttribute&&l._isCustomAttributeFunctions.push(e.isCustomAttribute);for(var p in s){l.properties.hasOwnProperty(p)?"production"!==t.env.NODE_ENV?r(!1,"injectDOMPropertyConfig(...): You're trying to inject DOM property '%s' which has already been injected. You may be accidentally injecting the same DOM property config twice, or you may be injecting two configs that have conflicting property names.",p):o("48",p):void 0;var f=p.toLowerCase(),m=s[p],v={attributeName:f,attributeNamespace:null,propertyName:p,mutationMethod:null,mustUseProperty:i(m,n.MUST_USE_PROPERTY),hasBooleanValue:i(m,n.HAS_BOOLEAN_VALUE),hasNumericValue:i(m,n.HAS_NUMERIC_VALUE),hasPositiveNumericValue:i(m,n.HAS_POSITIVE_NUMERIC_VALUE),hasOverloadedBooleanValue:i(m,n.HAS_OVERLOADED_BOOLEAN_VALUE)};if(v.hasBooleanValue+v.hasNumericValue+v.hasOverloadedBooleanValue<=1?void 0:"production"!==t.env.NODE_ENV?r(!1,"DOMProperty: Value can be one of boolean, overloaded boolean, or numeric value, but not a combination: %s",p):o("50",p),"production"!==t.env.NODE_ENV&&(l.getPossibleStandardName[f]=p),c.hasOwnProperty(p)){var g=c[p];v.attributeName=g,"production"!==t.env.NODE_ENV&&(l.getPossibleStandardName[g]=p)}u.hasOwnProperty(p)&&(v.attributeNamespace=u[p]),h.hasOwnProperty(p)&&(v.propertyName=h[p]),d.hasOwnProperty(p)&&(v.mutationMethod=d[p]),l.properties[p]=v}}},s=":A-Z_a-z\\u00C0-\\u00D6\\u00D8-\\u00F6\\u00F8-\\u02FF\\u0370-\\u037D\\u037F-\\u1FFF\\u200C-\\u200D\\u2070-\\u218F\\u2C00-\\u2FEF\\u3001-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFFD",l={ID_ATTRIBUTE_NAME:"data-reactid",ROOT_ATTRIBUTE_NAME:"data-reactroot",ATTRIBUTE_NAME_START_CHAR:s,ATTRIBUTE_NAME_CHAR:s+"\\-.0-9\\u00B7\\u0300-\\u036F\\u203F-\\u2040",properties:{},getPossibleStandardName:"production"!==t.env.NODE_ENV?{autofocus:"autoFocus"}:null,_isCustomAttributeFunctions:[],isCustomAttribute:function(e){for(var t=0;t<l._isCustomAttributeFunctions.length;t++){var n=l._isCustomAttributeFunctions[t];if(n(e))return!0}return!1},injection:a};e.exports=l}).call(t,n(13))},function(e,t,n){(function(t){"use strict";function n(e,t,n,o,r,a,s,l){if(i(t),!e){var u;if(void 0===t)u=new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else{var c=[n,o,r,a,s,l],h=0;u=new Error(t.replace(/%s/g,function(){return c[h++]})),u.name="Invariant Violation"}throw u.framesToPop=1,u}}var i=function(e){};"production"!==t.env.NODE_ENV&&(i=function(e){if(void 0===e)throw new Error("invariant requires an error message argument")}),e.exports=n}).call(t,n(13))},function(e,t,n){(function(t){"use strict";var i=n(25),o=n(26),r=n(38),a=n(41),s=n(42),l=n(44),u=n(29),c=n(49),h=n(50),d=n(51),p=n(31),f=u.createElement,m=u.createFactory,v=u.cloneElement;if("production"!==t.env.NODE_ENV){var g=n(45);f=g.createElement,m=g.createFactory,v=g.cloneElement}var y=i;if("production"!==t.env.NODE_ENV){var w=!1;y=function(){return"production"!==t.env.NODE_ENV?p(w,"React.__spread is deprecated and should not be used. Use Object.assign directly or another helper function with similar semantics. You may be seeing this warning due to your compiler. See https://fb.me/react-spread-deprecation for more details."):void 0,w=!0,i.apply(null,arguments)}}var E={Children:{map:o.map,forEach:o.forEach,count:o.count,toArray:o.toArray,only:d},Component:r,PureComponent:a,createElement:f,cloneElement:v,isValidElement:u.isValidElement,PropTypes:c,createClass:s.createClass,createFactory:m,createMixin:function(e){return e},DOM:l,version:h,__spread:y};e.exports=E}).call(t,n(13))},function(e,t){"use strict";function n(e){
@@ -27814,7 +28033,7 @@
 	},_imageToViewportDelta:function(t,n,i){var o=i?this._scaleSpring.current.value:this._scaleSpring.target.value;return new e.Point(t/this.source.dimensions.x*o,n/this.source.dimensions.y/this.contentAspectX*o)},imageToViewportCoordinates:function(t,n,i){t instanceof e.Point&&(i=n,n=t.y,t=t.x);var o=this._imageToViewportDelta(t,n);return i?(o.x+=this._xSpring.current.value,o.y+=this._ySpring.current.value):(o.x+=this._xSpring.target.value,o.y+=this._ySpring.target.value),o},imageToViewportRectangle:function(t,n,i,o,r){var a=t;a instanceof e.Rect?r=n:a=new e.Rect(t,n,i,o);var s=this.imageToViewportCoordinates(a.getTopLeft(),r),l=this._imageToViewportDelta(a.width,a.height,r);return new e.Rect(s.x,s.y,l.x,l.y,a.degrees)},viewportToImageRectangle:function(t,n,i,o,r){var a=t;t instanceof e.Rect?r=n:a=new e.Rect(t,n,i,o);var s=this.viewportToImageCoordinates(a.getTopLeft(),r),l=this._viewportToImageDelta(a.width,a.height,r);return new e.Rect(s.x,s.y,l.x,l.y,a.degrees)},viewerElementToImageCoordinates:function(e){var t=this.viewport.pointFromPixel(e,!0);return this.viewportToImageCoordinates(t)},imageToViewerElementCoordinates:function(e){var t=this.imageToViewportCoordinates(e);return this.viewport.pixelFromPoint(t,!0)},windowToImageCoordinates:function(e){var t=e.minus(OpenSeadragon.getElementPosition(this.viewer.element));return this.viewerElementToImageCoordinates(t)},imageToWindowCoordinates:function(e){var t=this.imageToViewerElementCoordinates(e);return t.plus(OpenSeadragon.getElementPosition(this.viewer.element))},viewportToImageZoom:function(e){var t=this._scaleSpring.current.value*this.viewport._containerInnerSize.x/this.source.dimensions.x;return t*e},imageToViewportZoom:function(e){var t=this._scaleSpring.current.value*this.viewport._containerInnerSize.x/this.source.dimensions.x;return e/t},setPosition:function(e,t){var n=this._xSpring.target.value===e.x&&this._ySpring.target.value===e.y;if(t){if(n&&this._xSpring.current.value===e.x&&this._ySpring.current.value===e.y)return;this._xSpring.resetTo(e.x),this._ySpring.resetTo(e.y),this._needsDraw=!0}else{if(n)return;this._xSpring.springTo(e.x),this._ySpring.springTo(e.y),this._needsDraw=!0}n||this._raiseBoundsChange()},setWidth:function(e,t){this._setScale(e,t)},setHeight:function(e,t){this._setScale(e/this.normHeight,t)},fitBounds:function(t,n,i){n=n||e.Placement.CENTER;var o=e.Placement.properties[n],r=this.contentAspectX,a=0,s=0,l=1,u=1;if(this._clip&&(r=this._clip.getAspectRatio(),l=this._clip.width/this.source.dimensions.x,u=this._clip.height/this.source.dimensions.y,t.getAspectRatio()>r?(a=this._clip.x/this._clip.height*t.height,s=this._clip.y/this._clip.height*t.height):(a=this._clip.x/this._clip.width*t.width,s=this._clip.y/this._clip.width*t.width)),t.getAspectRatio()>r){var c=t.height/u,h=0;o.isHorizontallyCentered?h=(t.width-t.height*r)/2:o.isRight&&(h=t.width-t.height*r),this.setPosition(new e.Point(t.x-a+h,t.y-s),i),this.setHeight(c,i)}else{var d=t.width/l,p=0;o.isVerticallyCentered?p=(t.height-t.width/r)/2:o.isBottom&&(p=t.height-t.width/r),this.setPosition(new e.Point(t.x-a,t.y-s+p),i),this.setWidth(d,i)}},getClip:function(){return this._clip?this._clip.clone():null},setClip:function(t){e.console.assert(!t||t instanceof e.Rect,"[TiledImage.setClip] newClip must be an OpenSeadragon.Rect or null"),t instanceof e.Rect?this._clip=t.clone():this._clip=null,this._needsDraw=!0},getOpacity:function(){return this.opacity},setOpacity:function(e){this.opacity=e,this._needsDraw=!0},getCompositeOperation:function(){return this.compositeOperation},setCompositeOperation:function(e){this.compositeOperation=e,this._needsDraw=!0},_setScale:function(e,t){var n=this._scaleSpring.target.value===e;if(t){if(n&&this._scaleSpring.current.value===e)return;this._scaleSpring.resetTo(e),this._updateForScale(),this._needsDraw=!0}else{if(n)return;this._scaleSpring.springTo(e),this._updateForScale(),this._needsDraw=!0}n||this._raiseBoundsChange()},_updateForScale:function(){this._worldWidthTarget=this._scaleSpring.target.value,this._worldHeightTarget=this.normHeight*this._scaleSpring.target.value,this._worldWidthCurrent=this._scaleSpring.current.value,this._worldHeightCurrent=this.normHeight*this._scaleSpring.current.value},_raiseBoundsChange:function(){this.raiseEvent("bounds-change")},_isBottomItem:function(){return this.viewer.world.getItemAt(0)===this}})}(OpenSeadragon),function(e){var t=function(t){e.console.assert(t,"[TileCache.cacheTile] options is required"),e.console.assert(t.tile,"[TileCache.cacheTile] options.tile is required"),e.console.assert(t.tiledImage,"[TileCache.cacheTile] options.tiledImage is required"),this.tile=t.tile,this.tiledImage=t.tiledImage},n=function(t){e.console.assert(t,"[ImageRecord] options is required"),e.console.assert(t.image,"[ImageRecord] options.image is required"),this._image=t.image,this._tiles=[]};n.prototype={destroy:function(){this._image=null,this._renderedContext=null,this._tiles=null},getImage:function(){return this._image},getRenderedContext:function(){if(!this._renderedContext){var e=document.createElement("canvas");e.width=this._image.width,e.height=this._image.height,this._renderedContext=e.getContext("2d"),this._renderedContext.drawImage(this._image,0,0),this._image=null}return this._renderedContext},setRenderedContext:function(t){e.console.error("ImageRecord.setRenderedContext is deprecated. The rendered context should be created by the ImageRecord itself when calling ImageRecord.getRenderedContext."),this._renderedContext=t},addTile:function(t){e.console.assert(t,"[ImageRecord.addTile] tile is required"),this._tiles.push(t)},removeTile:function(t){for(var n=0;n<this._tiles.length;n++)if(this._tiles[n]===t)return void this._tiles.splice(n,1);e.console.warn("[ImageRecord.removeTile] trying to remove unknown tile",t)},getTileCount:function(){return this._tiles.length}},e.TileCache=function(t){t=t||{},this._maxImageCacheCount=t.maxImageCacheCount||e.DEFAULT_SETTINGS.maxImageCacheCount,this._tilesLoaded=[],this._imagesLoaded=[],this._imagesLoadedCount=0},e.TileCache.prototype={numTilesLoaded:function(){return this._tilesLoaded.length},cacheTile:function(i){e.console.assert(i,"[TileCache.cacheTile] options is required"),e.console.assert(i.tile,"[TileCache.cacheTile] options.tile is required"),e.console.assert(i.tile.url,"[TileCache.cacheTile] options.tile.url is required"),e.console.assert(i.tiledImage,"[TileCache.cacheTile] options.tiledImage is required");var o=i.cutoff||0,r=this._tilesLoaded.length,a=this._imagesLoaded[i.tile.url];if(a||(e.console.assert(i.image,"[TileCache.cacheTile] options.image is required to create an ImageRecord"),a=this._imagesLoaded[i.tile.url]=new n({image:i.image}),this._imagesLoadedCount++),a.addTile(i.tile),i.tile.cacheImageRecord=a,this._imagesLoadedCount>this._maxImageCacheCount){for(var s,l,u,c,h,d,p=null,f=-1,m=null,v=this._tilesLoaded.length-1;v>=0;v--)d=this._tilesLoaded[v],s=d.tile,s.level<=o||s.beingDrawn||(p?(c=s.lastTouchTime,l=p.lastTouchTime,h=s.level,u=p.level,(c<l||c==l&&h>u)&&(p=s,f=v,m=d)):(p=s,f=v,m=d));p&&f>=0&&(this._unloadTile(m),r=f)}this._tilesLoaded[r]=new t({tile:i.tile,tiledImage:i.tiledImage})},clearTilesFor:function(t){e.console.assert(t,"[TileCache.clearTilesFor] tiledImage is required");for(var n,i=0;i<this._tilesLoaded.length;++i)n=this._tilesLoaded[i],n.tiledImage===t&&(this._unloadTile(n),this._tilesLoaded.splice(i,1),i--)},getImageRecord:function(t){return e.console.assert(t,"[TileCache.getImageRecord] url is required"),this._imagesLoaded[t]},_unloadTile:function(t){e.console.assert(t,"[TileCache._unloadTile] tileRecord is required");var n=t.tile,i=t.tiledImage;n.unload(),n.cacheImageRecord=null;var o=this._imagesLoaded[n.url];o.removeTile(n),o.getTileCount()||(o.destroy(),delete this._imagesLoaded[n.url],this._imagesLoadedCount--),i.viewer.raiseEvent("tile-unloaded",{tile:n,tiledImage:i})}}}(OpenSeadragon),function(e){e.World=function(t){var n=this;e.console.assert(t.viewer,"[World] options.viewer is required"),e.EventSource.call(this),this.viewer=t.viewer,this._items=[],this._needsDraw=!1,this._autoRefigureSizes=!0,this._needsSizesFigured=!1,this._delegatedFigureSizes=function(e){n._autoRefigureSizes?n._figureSizes():n._needsSizesFigured=!0},this._figureSizes()},e.extend(e.World.prototype,e.EventSource.prototype,{addItem:function(t,n){if(e.console.assert(t,"[World.addItem] item is required"),e.console.assert(t instanceof e.TiledImage,"[World.addItem] only TiledImages supported at this time"),n=n||{},void 0!==n.index){var i=Math.max(0,Math.min(this._items.length,n.index));this._items.splice(i,0,t)}else this._items.push(t);this._autoRefigureSizes?this._figureSizes():this._needsSizesFigured=!0,this._needsDraw=!0,t.addHandler("bounds-change",this._delegatedFigureSizes),this.raiseEvent("add-item",{item:t})},getItemAt:function(t){return e.console.assert(void 0!==t,"[World.getItemAt] index is required"),this._items[t]},getIndexOfItem:function(t){return e.console.assert(t,"[World.getIndexOfItem] item is required"),e.indexOf(this._items,t)},getItemCount:function(){return this._items.length},setItemIndex:function(t,n){e.console.assert(t,"[World.setItemIndex] item is required"),e.console.assert(void 0!==n,"[World.setItemIndex] index is required");var i=this.getIndexOfItem(t);if(n>=this._items.length)throw new Error("Index bigger than number of layers.");n!==i&&i!==-1&&(this._items.splice(i,1),this._items.splice(n,0,t),this._needsDraw=!0,this.raiseEvent("item-index-change",{item:t,previousIndex:i,newIndex:n}))},removeItem:function(t){e.console.assert(t,"[World.removeItem] item is required");var n=e.indexOf(this._items,t);n!==-1&&(t.removeHandler("bounds-change",this._delegatedFigureSizes),t.destroy(),this._items.splice(n,1),this._figureSizes(),this._needsDraw=!0,this._raiseRemoveItem(t))},removeAll:function(){this.viewer._cancelPendingImages();for(var e,t=0;t<this._items.length;t++)e=this._items[t],e.removeHandler("bounds-change",this._delegatedFigureSizes),e.destroy();var n=this._items;for(this._items=[],this._figureSizes(),this._needsDraw=!0,t=0;t<n.length;t++)e=n[t],this._raiseRemoveItem(e)},resetItems:function(){for(var e=0;e<this._items.length;e++)this._items[e].reset()},update:function(){for(var e=!1,t=0;t<this._items.length;t++)e=this._items[t].update()||e;return e},draw:function(){for(var e=0;e<this._items.length;e++)this._items[e].draw();this._needsDraw=!1},needsDraw:function(){for(var e=0;e<this._items.length;e++)if(this._items[e].needsDraw())return!0;return this._needsDraw},getHomeBounds:function(){return this._homeBounds.clone()},getContentFactor:function(){return this._contentFactor},setAutoRefigureSizes:function(e){this._autoRefigureSizes=e,e&this._needsSizesFigured&&(this._figureSizes(),this._needsSizesFigured=!1)},arrange:function(t){t=t||{};var n,i=t.immediately||!1,o=t.layout||e.DEFAULT_SETTINGS.collectionLayout,r=t.rows||e.DEFAULT_SETTINGS.collectionRows,a=t.columns||e.DEFAULT_SETTINGS.collectionColumns,s=t.tileSize||e.DEFAULT_SETTINGS.collectionTileSize,l=t.tileMargin||e.DEFAULT_SETTINGS.collectionTileMargin,u=s+l;n=!t.rows&&a?a:Math.ceil(this._items.length/r);var c,h,d,p,f,m=0,v=0;this.setAutoRefigureSizes(!1);for(var g=0;g<this._items.length;g++)g&&g%n===0&&("horizontal"===o?(v+=u,m=0):(m+=u,v=0)),c=this._items[g],h=c.getBounds(),d=h.width>h.height?s:s*(h.width/h.height),p=d*(h.height/h.width),f=new e.Point(m+(s-d)/2,v+(s-p)/2),c.setPosition(f,i),c.setWidth(d,i),"horizontal"===o?m+=u:v+=u;this.setAutoRefigureSizes(!0)},_figureSizes:function(){var t=this._homeBounds?this._homeBounds.clone():null,n=this._contentSize?this._contentSize.clone():null,i=this._contentFactor||0;if(this._items.length){var o=this._items[0],r=o.getBounds();this._contentFactor=o.getContentSize().x/r.width;for(var a=o.getClippedBounds(),s=a.x,l=a.y,u=a.x+a.width,c=a.y+a.height,h=1;h<this._items.length;h++)o=this._items[h],r=o.getBounds(),this._contentFactor=Math.max(this._contentFactor,o.getContentSize().x/r.width),a=o.getClippedBounds(),s=Math.min(s,a.x),l=Math.min(l,a.y),u=Math.max(u,a.x+a.width),c=Math.max(c,a.y+a.height);this._homeBounds=new e.Rect(s,l,u-s,c-l),this._contentSize=new e.Point(this._homeBounds.width*this._contentFactor,this._homeBounds.height*this._contentFactor)}else this._homeBounds=new e.Rect(0,0,1,1),this._contentSize=new e.Point(1,1),this._contentFactor=1;this._contentFactor===i&&this._homeBounds.equals(t)&&this._contentSize.equals(n)||this.raiseEvent("metrics-change",{})},_raiseRemoveItem:function(e){this.raiseEvent("remove-item",{item:e})}})}(OpenSeadragon)},function(e,t,n){(function(e){!function(){var t=n(2),i=n(10),o=n(12),r=n(98);e.makeHot=e.hot.data?e.hot.data.makeHot:t(function(){return i.getRootInstances(o)},r)}();try{(function(){"use strict";function e(e){return e&&e.__esModule?e:{default:e}}function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function o(e,t){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!t||"object"!=typeof t&&"function"!=typeof t?e:t}function r(e,t){if("function"!=typeof t&&null!==t)throw new TypeError("Super expression must either be null or a function, not "+typeof t);e.prototype=Object.create(t&&t.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),t&&(Object.setPrototypeOf?Object.setPrototypeOf(e,t):e.__proto__=t)}Object.defineProperty(t,"__esModule",{value:!0});var a=function(){function e(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(t,n,i){return n&&e(t.prototype,n),i&&e(t,i),t}}(),s=n(98),l=e(s),u=function(e){function t(e){i(this,t);var n=o(this,(t.__proto__||Object.getPrototypeOf(t)).call(this,e));return n.handleChange=n.handleChange.bind(n),n}return r(t,e),a(t,[{key:"handleChange",value:function(e,t){this.props.viewer.goToPage(e.target.value),this.props.pageHandler(e.target.value,this.props.viewer)}},{key:"render",value:function(){var e=this.props,t=e.tocs,n=e.id;return t.length>1?l.default.createElement("div",{className:"row image-nav"},l.default.createElement("ul",{className:"nav nav-pills"},l.default.createElement("li",null,l.default.createElement("div",{className:"toc-select"},l.default.createElement("label",{htmlFor:"toc"},"Table of Contents:"),l.default.createElement("select",{name:"toc",onChange:this.handleChange},t.map(function(e,t){var i=t+1;return n==t?l.default.createElement("option",{value:t,key:t,selected:"selected"},i,". ",e):l.default.createElement("option",{value:t,key:t},i,". ",e)})))))):l.default.createElement("span",null)}}]),t}(l.default.Component);t.default=u;var c={tocs:l.default.PropTypes.array,id:l.default.PropTypes.number.isRequired,viewer:l.default.PropTypes.object,pageHandler:l.default.PropTypes.func};u.propTypes=c}).call(this)}finally{!function(){var t=e.hot.data&&e.hot.data.foundReactClasses||!1;if(e.exports&&e.makeHot){var i=n(100);i(e,n(98))&&(t=!0);var o=t;o&&e.hot.accept(function(e){e&&console.error("Cannot apply hot update to react-openseadragon-nav.js: "+e.message)})}e.hot.dispose(function(n){n.makeHot=e.makeHot,n.foundReactClasses=t})}()}}).call(t,n(1)(e))}])});
 
 /***/ },
-/* 247 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -27904,17 +28123,17 @@
 	
 	TranscriptNav.propTypes = propTypes;
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "transcript-nav.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "transcript-nav.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 248 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var isReactClassish = __webpack_require__(249),
-	    isReactElementish = __webpack_require__(250);
+	var isReactClassish = __webpack_require__(251),
+	    isReactElementish = __webpack_require__(252);
 	
 	function makeExportsHot(m, React) {
 	  if (isReactElementish(m.exports, React)) {
@@ -27968,7 +28187,7 @@
 
 
 /***/ },
-/* 249 */
+/* 251 */
 /***/ function(module, exports) {
 
 	function hasRender(Class) {
@@ -28018,10 +28237,10 @@
 	module.exports = isReactClassish;
 
 /***/ },
-/* 250 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var isReactClassish = __webpack_require__(249);
+	var isReactClassish = __webpack_require__(251);
 	
 	function isReactElementish(obj, React) {
 	  if (!obj) {
@@ -28035,7 +28254,7 @@
 	module.exports = isReactElementish;
 
 /***/ },
-/* 251 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28052,7 +28271,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _borealisThumbnail = __webpack_require__(252);
+	var _borealisThumbnail = __webpack_require__(254);
 	
 	var _borealisThumbnail2 = _interopRequireDefault(_borealisThumbnail);
 	
@@ -28082,7 +28301,7 @@
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      return ['image', 'audio', 'video', 'pdf', 'ppt'].map(function (type) {
+	      return ['image', 'audio', 'video', 'pdf', 'ppt', 'kaltura_video', 'kaltura_audio', 'kaltura_audio_playlist'].map(function (type) {
 	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
 	      }).filter(function (item) {
 	        return item != '';
@@ -28140,11 +28359,11 @@
 	
 	BorealisTray.propTypes = propTypes;
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-tray.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-tray.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 252 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28184,11 +28403,11 @@
 	
 	exports.default = Thumbnail;
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-thumbnail.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-thumbnail.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 253 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28203,7 +28422,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _borealisAudioPlayer = __webpack_require__(254);
+	var _borealisAudioPlayer = __webpack_require__(256);
 	
 	var _borealisAudioPlayer2 = _interopRequireDefault(_borealisAudioPlayer);
 	
@@ -28213,11 +28432,11 @@
 	  return _react2.default.createElement(_borealisAudioPlayer2.default, props.config['audio']);
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 254 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28275,11 +28494,11 @@
 	    src: _react2.default.PropTypes.string.isRequired
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 255 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28294,7 +28513,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _borealisVideoPlayer = __webpack_require__(256);
+	var _borealisVideoPlayer = __webpack_require__(258);
 	
 	var _borealisVideoPlayer2 = _interopRequireDefault(_borealisVideoPlayer);
 	
@@ -28304,11 +28523,11 @@
 	  return _react2.default.createElement(_borealisVideoPlayer2.default, props.config['video']);
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 256 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28376,108 +28595,7 @@
 	  width: _react2.default.PropTypes.number
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
-
-/***/ },
-/* 257 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-	
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _borealisTranscript = __webpack_require__(258);
-	
-	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisTranscript2.default, props.config['image']);
-	};
-	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-image-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
-
-/***/ },
-/* 258 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-	
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _transcriptNav = __webpack_require__(247);
-	
-	var _transcriptNav2 = _interopRequireDefault(_transcriptNav);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-	
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	var BorealisTranscript = function (_React$Component) {
-	  _inherits(BorealisTranscript, _React$Component);
-	
-	  function BorealisTranscript(props) {
-	    _classCallCheck(this, BorealisTranscript);
-	
-	    return _possibleConstructorReturn(this, (BorealisTranscript.__proto__ || Object.getPrototypeOf(BorealisTranscript)).call(this, props));
-	  }
-	
-	  _createClass(BorealisTranscript, [{
-	    key: 'render',
-	    value: function render() {
-	      var transcript = this.props.transcript;
-	
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        transcript.texts.map(function (text, i) {
-	          return _react2.default.createElement(
-	            'div',
-	            { key: i, className: 'transcript' },
-	            text
-	          );
-	        })
-	      );
-	    }
-	  }]);
-	
-	  return BorealisTranscript;
-	}(_react2.default.Component);
-	
-	var propTypes = {
-	  transcript: _react2.default.PropTypes.object.isRequired
-	};
-	
-	BorealisTranscript.propTypes = propTypes;
-	
-	exports.default = BorealisTranscript;
-	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video-player.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
@@ -28496,236 +28614,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _borealisTranscript = __webpack_require__(258);
-	
-	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisTranscript2.default, props.config['audio']);
-	};
-	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
-
-/***/ },
-/* 260 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-	
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _borealisTranscript = __webpack_require__(258);
-	
-	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisTranscript2.default, props.config['video']);
-	};
-	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
-
-/***/ },
-/* 261 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-	
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _borealisTranscript = __webpack_require__(258);
-	
-	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisTranscript2.default, props.config['pdf']);
-	};
-	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
-
-/***/ },
-/* 262 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	exports.__esModule = true;
-	exports.locationsAreEqual = exports.Actions = exports.useQueries = exports.useBeforeUnload = exports.useBasename = exports.createMemoryHistory = exports.createHashHistory = exports.createHistory = undefined;
-	
-	var _LocationUtils = __webpack_require__(226);
-	
-	Object.defineProperty(exports, 'locationsAreEqual', {
-	  enumerable: true,
-	  get: function get() {
-	    return _LocationUtils.locationsAreEqual;
-	  }
-	});
-	
-	var _createBrowserHistory = __webpack_require__(235);
-	
-	var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
-	
-	var _createHashHistory2 = __webpack_require__(243);
-	
-	var _createHashHistory3 = _interopRequireDefault(_createHashHistory2);
-	
-	var _createMemoryHistory2 = __webpack_require__(229);
-	
-	var _createMemoryHistory3 = _interopRequireDefault(_createMemoryHistory2);
-	
-	var _useBasename2 = __webpack_require__(228);
-	
-	var _useBasename3 = _interopRequireDefault(_useBasename2);
-	
-	var _useBeforeUnload2 = __webpack_require__(263);
-	
-	var _useBeforeUnload3 = _interopRequireDefault(_useBeforeUnload2);
-	
-	var _useQueries2 = __webpack_require__(222);
-	
-	var _useQueries3 = _interopRequireDefault(_useQueries2);
-	
-	var _Actions2 = __webpack_require__(220);
-	
-	var _Actions = _interopRequireWildcard(_Actions2);
-	
-	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	exports.createHistory = _createBrowserHistory2.default;
-	exports.createHashHistory = _createHashHistory3.default;
-	exports.createMemoryHistory = _createMemoryHistory3.default;
-	exports.useBasename = _useBasename3.default;
-	exports.useBeforeUnload = _useBeforeUnload3.default;
-	exports.useQueries = _useQueries3.default;
-	exports.Actions = _Actions;
-
-/***/ },
-/* 263 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
-	
-	exports.__esModule = true;
-	
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-	
-	var _invariant = __webpack_require__(194);
-	
-	var _invariant2 = _interopRequireDefault(_invariant);
-	
-	var _DOMUtils = __webpack_require__(238);
-	
-	var _ExecutionEnvironment = __webpack_require__(236);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var startListener = function startListener(getPromptMessage) {
-	  var handleBeforeUnload = function handleBeforeUnload(event) {
-	    var message = getPromptMessage();
-	
-	    if (typeof message === 'string') {
-	      (event || window.event).returnValue = message;
-	      return message;
-	    }
-	
-	    return undefined;
-	  };
-	
-	  (0, _DOMUtils.addEventListener)(window, 'beforeunload', handleBeforeUnload);
-	
-	  return function () {
-	    return (0, _DOMUtils.removeEventListener)(window, 'beforeunload', handleBeforeUnload);
-	  };
-	};
-	
-	/**
-	 * Returns a new createHistory function that can be used to create
-	 * history objects that know how to use the beforeunload event in web
-	 * browsers to cancel navigation.
-	 */
-	var useBeforeUnload = function useBeforeUnload(createHistory) {
-	  !_ExecutionEnvironment.canUseDOM ? process.env.NODE_ENV !== 'production' ? (0, _invariant2.default)(false, 'useBeforeUnload only works in DOM environments') : (0, _invariant2.default)(false) : void 0;
-	
-	  return function (options) {
-	    var history = createHistory(options);
-	
-	    var listeners = [];
-	    var stopListener = void 0;
-	
-	    var getPromptMessage = function getPromptMessage() {
-	      var message = void 0;
-	      for (var i = 0, len = listeners.length; message == null && i < len; ++i) {
-	        message = listeners[i].call();
-	      }return message;
-	    };
-	
-	    var listenBeforeUnload = function listenBeforeUnload(listener) {
-	      if (listeners.push(listener) === 1) stopListener = startListener(getPromptMessage);
-	
-	      return function () {
-	        listeners = listeners.filter(function (item) {
-	          return item !== listener;
-	        });
-	
-	        if (listeners.length === 0 && stopListener) {
-	          stopListener();
-	          stopListener = null;
-	        }
-	      };
-	    };
-	
-	    return _extends({}, history, {
-	      listenBeforeUnload: listenBeforeUnload
-	    });
-	  };
-	};
-	
-	exports.default = useBeforeUnload;
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
-
-/***/ },
-/* 264 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-	
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _borealisPdfViewer = __webpack_require__(265);
+	var _borealisPdfViewer = __webpack_require__(260);
 	
 	var _borealisPdfViewer2 = _interopRequireDefault(_borealisPdfViewer);
 	
@@ -28735,11 +28624,11 @@
 	  return _react2.default.createElement(_borealisPdfViewer2.default, props.config['pdf']);
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 265 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28756,7 +28645,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _transcriptNav = __webpack_require__(247);
+	var _transcriptNav = __webpack_require__(249);
 	
 	var _transcriptNav2 = _interopRequireDefault(_transcriptNav);
 	
@@ -28829,11 +28718,11 @@
 	  thumbnail: _react2.default.PropTypes.string
 	};
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf-viewer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf-viewer.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ },
-/* 266 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -28871,7 +28760,471 @@
 	
 	exports.default = PPTViewer;
 	
-	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(248); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-ppt.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-ppt.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisKaltura = __webpack_require__(263);
+	
+	var _borealisKaltura2 = _interopRequireDefault(_borealisKaltura);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisKaltura2.default, props.config.kaltura_video);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-video.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 263 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var KalturaPlayer = function (_React$Component) {
+	  _inherits(KalturaPlayer, _React$Component);
+	
+	  function KalturaPlayer() {
+	    _classCallCheck(this, KalturaPlayer);
+	
+	    return _possibleConstructorReturn(this, (KalturaPlayer.__proto__ || Object.getPrototypeOf(KalturaPlayer)).apply(this, arguments));
+	  }
+	
+	  _createClass(KalturaPlayer, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      kWidget.embed(KalturaPlayer._config(this.props));
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var _props = this.props,
+	          entry_id = _props.entry_id,
+	          height = _props.height,
+	          width = _props.width,
+	          targetId = _props.targetId;
+	
+	      var wid = this.props.wid.replace(/_/, '');
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'kaltura-player' },
+	        _react2.default.createElement('span', { id: 'kaltura-player-code' }),
+	        _react2.default.createElement(
+	          'div',
+	          {
+	            id: targetId,
+	            style: { width: width, height: height },
+	            itemProp: 'video',
+	            itemType: 'http://schema.org/VideoObject'
+	          },
+	          _react2.default.createElement('span', {
+	            itemProp: 'thumbnail',
+	            content: 'http://cfvod.kaltura.com/p/' + wid + '/sp/' + wid + '00/thumbnail/entry_id/' + entry_id + '"'
+	          }),
+	          _react2.default.createElement('span', { itemProp: 'width', content: width }),
+	          _react2.default.createElement('span', { itemProp: 'height', content: height })
+	        )
+	      );
+	    }
+	  }], [{
+	    key: '_config',
+	    value: function _config(props) {
+	      return {
+	        targetId: props.targetId,
+	        wid: props.wid,
+	        uiconf_id: props.uiconf_id,
+	        flashvars: props.flashvars,
+	        entry_id: props.entry_id
+	      };
+	    }
+	  }]);
+	
+	  return KalturaPlayer;
+	}(_react2.default.Component);
+	
+	KalturaPlayer.propTypes = {
+	  targetId: _react2.default.PropTypes.string.isRequired,
+	  wid: _react2.default.PropTypes.string.isRequired,
+	  uiconf_id: _react2.default.PropTypes.string.isRequired,
+	  flashvars: _react2.default.PropTypes.object,
+	  height: _react2.default.PropTypes.string.isRequired,
+	  width: _react2.default.PropTypes.string.isRequired,
+	  entry_id: _react2.default.PropTypes.string.isRequired
+	};
+	
+	exports.default = KalturaPlayer;
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 264 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisKaltura = __webpack_require__(263);
+	
+	var _borealisKaltura2 = _interopRequireDefault(_borealisKaltura);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisKaltura2.default, props.config.kaltura_audio);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-audio.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisKaltura = __webpack_require__(263);
+	
+	var _borealisKaltura2 = _interopRequireDefault(_borealisKaltura);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisKaltura2.default, props.config.kaltura_audio_playlist);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-audio-playlist.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 266 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config.image);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-image-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 267 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _transcriptNav = __webpack_require__(249);
+	
+	var _transcriptNav2 = _interopRequireDefault(_transcriptNav);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var BorealisTranscript = function (_React$Component) {
+	  _inherits(BorealisTranscript, _React$Component);
+	
+	  function BorealisTranscript(props) {
+	    _classCallCheck(this, BorealisTranscript);
+	
+	    return _possibleConstructorReturn(this, (BorealisTranscript.__proto__ || Object.getPrototypeOf(BorealisTranscript)).call(this, props));
+	  }
+	
+	  _createClass(BorealisTranscript, [{
+	    key: 'render',
+	    value: function render() {
+	      var transcript = this.props.transcript;
+	
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        transcript.texts.map(function (text, i) {
+	          return _react2.default.createElement(
+	            'div',
+	            { key: i, className: 'transcript' },
+	            text
+	          );
+	        })
+	      );
+	    }
+	  }]);
+	
+	  return BorealisTranscript;
+	}(_react2.default.Component);
+	
+	var propTypes = {
+	  transcript: _react2.default.PropTypes.object.isRequired
+	};
+	
+	BorealisTranscript.propTypes = propTypes;
+	
+	exports.default = BorealisTranscript;
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 268 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config['audio']);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 269 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config['video']);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-video-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config['pdf']);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-pdf-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 271 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config.kaltura_video);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-video-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 272 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config.kaltura_audio);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-audio-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _borealisTranscript = __webpack_require__(267);
+	
+	var _borealisTranscript2 = _interopRequireDefault(_borealisTranscript);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	exports.default = function (props) {
+	  return _react2.default.createElement(_borealisTranscript2.default, props.config.kaltura_audio_playlist);
+	};
+	
+	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-kaltura-audio-playlist-transcript.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(179)(module)))
 
 /***/ }
