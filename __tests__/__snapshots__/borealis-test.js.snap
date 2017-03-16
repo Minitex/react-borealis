@@ -52,6 +52,36 @@ exports[`Borealis should render correctly 1`] = `
           src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
       </a>
     </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/kaltura_video"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/kaltura_audio"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="thumbnail"
+        href="#/kaltura_audio_playlist"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
   </div>
   <div
     className="row image-nav">

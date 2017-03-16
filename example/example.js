@@ -35,6 +35,48 @@ var config =
       thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
       src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx',
     },
+    kaltura_audio_playlist: {
+      targetId: 'kaltura_player_1489684320',
+      wid: '_1369852',
+      uiconf_id: 38719361,
+      flashvars: {
+        streamerType: 'auto',
+        'playlistAPI.kpl0Id': '0_0s5bpfh7',
+      },
+      transcript: {
+        texts: ['this is a kaltura audio playlist transcript'],
+        label: 'Video',
+      },
+      height: '395px',
+      width: '560px',
+      thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885',
+    },
+    kaltura_video: {
+      targetId: 'kaltura_player_1489614720',
+      wid: '_1369852',
+      uiconf_id: 38683631,
+      transcript: {
+        texts: ['this is a kaltura video transcript'],
+        label: 'Video',
+      },
+      entry_id: '0_t96feg4f',
+      height: '315px',
+      width: '560px',
+      thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0',
+    },
+    kaltura_audio: {
+      targetId: 'kaltura_player_1489599711',
+      wid: '_1369852',
+      uiconf_id: 38708801,
+      entry_id: '0_b64f8k0c',
+      transcript: {
+        texts: ['this is a kaltura audio transcript'],
+        label: 'Audio',
+      },
+      height: '70px',
+      width: '460px',
+      thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885',
+    },
     "pdf": {
       "height": 800,
       "src": "https://s3.amazonaws.com/mdl-assets/stpaul.pdf",

@@ -3,20 +3,25 @@ import { Router,
          IndexRedirect,
          useRouterHistory,
          Redirect } from 'react-router';
-
+import { createHashHistory } from 'history';
 import React from 'react';
 import BorealisImage from './borealis-image';
 import BorealisTray from './borealis-tray';
 import BorealisAudio from './borealis-audio';
 import BorealisVideo from './borealis-video';
+import TranscriptNav from './transcript-nav';
+import BorealisPDF from './borealis-pdf';
+import BorealisPPT from './borealis-ppt';
+import KalturaVideo from './borealis-kaltura-video';
+import KalturaAudio from './borealis-kaltura-audio';
+import KalturaAudioPlaylist from './borealis-kaltura-audio-playlist';
 import BorealisImageTranscript from './borealis-image-transcript';
 import BorealisAudioTranscript from './borealis-audio-transcript';
 import BorealisVideoTranscript from './borealis-video-transcript';
 import BorealisPDFTranscript from './borealis-pdf-transcript';
-import TranscriptNav from './transcript-nav';
-import { createHashHistory } from 'history';
-import BorealisPDF from './borealis-pdf';
-import BorealisPPT from './borealis-ppt';
+import KalturaVideoTranscript from './borealis-kaltura-video-transcript';
+import KalturaAudioTranscript from './borealis-kaltura-audio-transcript';
+import KalturaAudioPlaylistTranscript from './borealis-kaltura-audio-playlist-transcript';
 
 
 class Borealis extends React.Component {
@@ -73,6 +78,8 @@ class Borealis extends React.Component {
       type = 'pdf';
     } else if (config.ppt) {
       type = 'ppt';
+    } else if (config.kaltura_video) {
+      type = 'kaltura_video';
     }
     return type;
   }
@@ -95,9 +102,15 @@ class Borealis extends React.Component {
           <Route path="video" component={BorealisVideo} />
           <Route path="pdf" component={BorealisPDF} />
           <Route path="ppt" component={BorealisPPT} />
+          <Route path="kaltura_video" component={KalturaVideo} />
+          <Route path="kaltura_audio" component={KalturaAudio} />
+          <Route path="kaltura_audio_playlist" component={KalturaAudioPlaylist} />
           <Route path="audio/transcript" component={BorealisAudioTranscript} />
           <Route path="video/transcript" component={BorealisVideoTranscript} />
           <Route path="pdf/transcript" component={BorealisPDFTranscript} />
+          <Route path="kaltura_video/transcript" component={KalturaVideoTranscript} />
+          <Route path="kaltura_audio/transcript" component={KalturaAudioTranscript} />
+          <Route path="kaltura_audio_playlist/transcript" component={KalturaAudioPlaylistTranscript} />
         </Route>
       </Router>
     );
