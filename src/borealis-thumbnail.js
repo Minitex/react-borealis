@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 const Thumbnail = props => (
                               <div>
-                                <Link className="thumbnail" activeClassName="active" to={props.to}><img src={props.src} /></Link>
+                                <Link className="borealis-thumbnail" activeClassName="active" to={props.to}><img src={props.src} /></Link>
                               </div>
                             )
 
