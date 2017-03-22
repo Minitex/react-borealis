@@ -2,23 +2,27 @@ import React from 'react';
 
 class KalturaPlayer extends React.Component {
 
-  static _config(props) {
-    return {
-      targetId: props.targetId,
-      wid: props.wid,
-      uiconf_id: props.uiconf_id,
-      flashvars: props.flashvars,
-      entry_id: props.entry_id,
-    };
+  constructor(props) {
+    super(props);
+    this._config = this._config.bind(this);
   }
 
   componentDidMount() {
-    kWidget.embed(KalturaPlayer._config(this.props));
+    kWidget.embed(this._config());
+  }
+
+  _config() {
+    return {
+      targetId: this.props.targetId,
+      wid: this.props.wid,
+      uiconf_id: this.props.uiconf_id,
+      flashvars: this.props.flashvars,
+      entry_id: this.props.entry_id,
+    };
   }
 
   render() {
-    const { entry_id, height, width, targetId } = this.props;
-    const wid = this.props.wid.replace(/_/, '');
+    const { height, width, targetId } = this.props;
     return (
       <div className="kaltura-player">
         <span id="kaltura-player-code" />
