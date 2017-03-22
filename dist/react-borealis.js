@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4500468b40ffce9c5f1b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5a67a8f585054b684f95"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -17971,7 +17971,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    null,
 	    _react2.default.createElement(
 	      _reactRouter.Link,
-	      { className: 'thumbnail', activeClassName: 'active', to: props.to },
+	      { className: 'borealis-thumbnail', activeClassName: 'active', to: props.to },
 	      _react2.default.createElement('img', { src: props.src })
 	    )
 	  );

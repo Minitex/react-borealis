@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4ad398ee4e16eaf6e4e0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "235715db32c05ec1534b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28389,7 +28389,7 @@
 	    null,
 	    _react2.default.createElement(
 	      _reactRouter.Link,
-	      { className: 'thumbnail', activeClassName: 'active', to: props.to },
+	      { className: 'borealis-thumbnail', activeClassName: 'active', to: props.to },
 	      _react2.default.createElement('img', { src: props.src })
 	    )
 	  );
