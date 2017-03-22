@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cfb9f01e7f59aa40def7"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4ad398ee4e16eaf6e4e0"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -621,8 +621,8 @@
 	      label: 'PowerPoint'
 	    },
 	    text: '(Download)',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827',
-	    src: 'http://reflections.mndigital.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll17/id/827',
+	    src: 'https://cdm16022.contentdm.oclc.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
 	  },
 	  kaltura_audio_playlist: {
 	    targetId: 'kaltura_player_1489684320',
@@ -638,7 +638,7 @@
 	    },
 	    height: '395px',
 	    width: '560px',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885'
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
 	  kaltura_video: {
 	    targetId: 'kaltura_player_1489614720',
@@ -651,7 +651,7 @@
 	    entry_id: '0_t96feg4f',
 	    height: '315px',
 	    width: '560px',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0'
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0'
 	  },
 	  kaltura_audio: {
 	    targetId: 'kaltura_player_1489599711',
@@ -664,34 +664,34 @@
 	    },
 	    height: '70px',
 	    width: '460px',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885'
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
 	  pdf: {
 	    height: 800,
 	    src: 'https://s3.amazonaws.com/mdl-assets/stpaul.pdf',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0',
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
 	    transcript: {
 	      texts: ['PDF Transcript Here'],
 	      label: 'PDF'
 	    }
 	  },
 	  audio: {
-	    src: 'http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919',
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885',
+	    src: 'https://cdm16022.contentdm.oclc.org/utils/getstream/collection/mhs/id/1919',
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885',
 	    transcript: {
 	      texts: ['Audio Transcript Here'],
 	      label: 'Audio'
 	    }
 	  },
 	  video: {
-	    thumbnail: 'http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0',
+	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
 	    transcript: {
 	      texts: [],
 	      label: 'Video'
 	    },
 	    height: 500,
 	    width: 500,
-	    src: 'http://reflections.mndigital.org/utils/getstream/collection/stc/id/8470'
+	    src: 'https://cdm16022.contentdm.oclc.org/utils/getstream/collection/stc/id/8470'
 	  }
 	};
 	
@@ -28430,7 +28430,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisAudioPlayer2.default, props.config['audio']);
+	  return _react2.default.createElement(_borealisAudioPlayer2.default, props.config.audio);
 	};
 	
 	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(250); if (makeExportsHot(module, __webpack_require__(1))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
@@ -28773,7 +28773,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(180), RootInstanceProvider = __webpack_require__(188), ReactMount = __webpack_require__(166), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 	
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -28796,54 +28796,55 @@
 	var KalturaPlayer = function (_React$Component) {
 	  _inherits(KalturaPlayer, _React$Component);
 	
-	  function KalturaPlayer() {
+	  function KalturaPlayer(props) {
 	    _classCallCheck(this, KalturaPlayer);
 	
-	    return _possibleConstructorReturn(this, (KalturaPlayer.__proto__ || Object.getPrototypeOf(KalturaPlayer)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (KalturaPlayer.__proto__ || Object.getPrototypeOf(KalturaPlayer)).call(this, props));
+	
+	    _this._config = _this._config.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(KalturaPlayer, [{
-	    key: 'componentDidMount',
+	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      kWidget.embed(KalturaPlayer._config(this.props));
+	      kWidget.embed(this._config());
 	    }
 	  }, {
-	    key: 'render',
+	    key: "_config",
+	    value: function _config() {
+	      return {
+	        targetId: this.props.targetId,
+	        wid: this.props.wid,
+	        uiconf_id: this.props.uiconf_id,
+	        flashvars: this.props.flashvars,
+	        entry_id: this.props.entry_id
+	      };
+	    }
+	  }, {
+	    key: "render",
 	    value: function render() {
 	      var _props = this.props,
-	          entry_id = _props.entry_id,
 	          height = _props.height,
 	          width = _props.width,
 	          targetId = _props.targetId;
 	
-	      var wid = this.props.wid.replace(/_/, '');
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'kaltura-player' },
-	        _react2.default.createElement('span', { id: 'kaltura-player-code' }),
+	        "div",
+	        { className: "kaltura-player" },
+	        _react2.default.createElement("span", { id: "kaltura-player-code" }),
 	        _react2.default.createElement(
-	          'div',
+	          "div",
 	          {
 	            id: targetId,
 	            style: { width: width, height: height },
-	            itemProp: 'video',
-	            itemType: 'http://schema.org/VideoObject'
+	            itemProp: "video",
+	            itemType: "http://schema.org/VideoObject"
 	          },
-	          _react2.default.createElement('span', { itemProp: 'width', content: width }),
-	          _react2.default.createElement('span', { itemProp: 'height', content: height })
+	          _react2.default.createElement("span", { itemProp: "width", content: width }),
+	          _react2.default.createElement("span", { itemProp: "height", content: height })
 	        )
 	      );
-	    }
-	  }], [{
-	    key: '_config',
-	    value: function _config(props) {
-	      return {
-	        targetId: props.targetId,
-	        wid: props.wid,
-	        uiconf_id: props.uiconf_id,
-	        flashvars: props.flashvars,
-	        entry_id: props.entry_id
-	      };
 	    }
 	  }]);
 	

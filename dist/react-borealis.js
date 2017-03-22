@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "613b9995809ff7f9f3d0"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4500468b40ffce9c5f1b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -18012,7 +18012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	exports.default = function (props) {
-	  return _react2.default.createElement(_borealisAudioPlayer2.default, props.config['audio']);
+	  return _react2.default.createElement(_borealisAudioPlayer2.default, props.config.audio);
 	};
 	
 	/* REACT HOT LOADER */ }).call(this); } finally { if (true) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = __webpack_require__(159); if (makeExportsHot(module, __webpack_require__(98))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "borealis-audio.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
@@ -18355,7 +18355,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(2), RootInstanceProvider = __webpack_require__(10), ReactMount = __webpack_require__(12), React = __webpack_require__(98); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 	
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -18378,54 +18378,55 @@ return /******/ (function(modules) { // webpackBootstrap
 	var KalturaPlayer = function (_React$Component) {
 	  _inherits(KalturaPlayer, _React$Component);
 	
-	  function KalturaPlayer() {
+	  function KalturaPlayer(props) {
 	    _classCallCheck(this, KalturaPlayer);
 	
-	    return _possibleConstructorReturn(this, (KalturaPlayer.__proto__ || Object.getPrototypeOf(KalturaPlayer)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (KalturaPlayer.__proto__ || Object.getPrototypeOf(KalturaPlayer)).call(this, props));
+	
+	    _this._config = _this._config.bind(_this);
+	    return _this;
 	  }
 	
 	  _createClass(KalturaPlayer, [{
-	    key: 'componentDidMount',
+	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      kWidget.embed(KalturaPlayer._config(this.props));
+	      kWidget.embed(this._config());
 	    }
 	  }, {
-	    key: 'render',
+	    key: "_config",
+	    value: function _config() {
+	      return {
+	        targetId: this.props.targetId,
+	        wid: this.props.wid,
+	        uiconf_id: this.props.uiconf_id,
+	        flashvars: this.props.flashvars,
+	        entry_id: this.props.entry_id
+	      };
+	    }
+	  }, {
+	    key: "render",
 	    value: function render() {
 	      var _props = this.props,
-	          entry_id = _props.entry_id,
 	          height = _props.height,
 	          width = _props.width,
 	          targetId = _props.targetId;
 	
-	      var wid = this.props.wid.replace(/_/, '');
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'kaltura-player' },
-	        _react2.default.createElement('span', { id: 'kaltura-player-code' }),
+	        "div",
+	        { className: "kaltura-player" },
+	        _react2.default.createElement("span", { id: "kaltura-player-code" }),
 	        _react2.default.createElement(
-	          'div',
+	          "div",
 	          {
 	            id: targetId,
 	            style: { width: width, height: height },
-	            itemProp: 'video',
-	            itemType: 'http://schema.org/VideoObject'
+	            itemProp: "video",
+	            itemType: "http://schema.org/VideoObject"
 	          },
-	          _react2.default.createElement('span', { itemProp: 'width', content: width }),
-	          _react2.default.createElement('span', { itemProp: 'height', content: height })
+	          _react2.default.createElement("span", { itemProp: "width", content: width }),
+	          _react2.default.createElement("span", { itemProp: "height", content: height })
 	        )
 	      );
-	    }
-	  }], [{
-	    key: '_config',
-	    value: function _config(props) {
-	      return {
-	        targetId: props.targetId,
-	        wid: props.wid,
-	        uiconf_id: props.uiconf_id,
-	        flashvars: props.flashvars,
-	        entry_id: props.entry_id
-	      };
 	    }
 	  }]);
 	
