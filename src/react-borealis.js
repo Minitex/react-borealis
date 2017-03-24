@@ -70,6 +70,12 @@ class Borealis extends React.Component {
     let type = 'image/0';
     if (config.image) {
       type = 'image/0';
+    } else if (config.kaltura_audio) {
+      type = 'kaltura_audio';
+    } else if (config.kaltura_audio_playlist) {
+      type = 'kaltura_audio_playlist';
+    } else if (config.kaltura_video) {
+      type = 'kaltura_video';
     } else if (config.audio) {
       type = 'audio';
     } else if (config.video) {
@@ -78,8 +84,6 @@ class Borealis extends React.Component {
       type = 'pdf';
     } else if (config.ppt) {
       type = 'ppt';
-    } else if (config.kaltura_video) {
-      type = 'kaltura_video';
     }
     return type;
   }
