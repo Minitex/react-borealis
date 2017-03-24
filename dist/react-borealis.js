@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "f357b6779127de6b51f1"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "7a0169a64f67d15297d6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -746,6 +746,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var type = 'image/0';
 	      if (config.image) {
 	        type = 'image/0';
+	      } else if (config.kaltura_audio) {
+	        type = 'kaltura_audio';
+	      } else if (config.kaltura_audio_playlist) {
+	        type = 'kaltura_audio_playlist';
+	      } else if (config.kaltura_video) {
+	        type = 'kaltura_video';
 	      } else if (config.audio) {
 	        type = 'audio';
 	      } else if (config.video) {
@@ -754,8 +760,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        type = 'pdf';
 	      } else if (config.ppt) {
 	        type = 'ppt';
-	      } else if (config.kaltura_video) {
-	        type = 'kaltura_video';
 	      }
 	      return type;
 	    }

@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5f798a4acb25c028562a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "cda252a855151fbed97f"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -600,21 +600,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var config = {
-	  image: {
-	    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
-	    type: 'image',
-	    label: 'Image',
-	    include_controls: true,
-	    sequenceMode: true,
-	    showReferenceStrip: true,
-	    defaultZoomLevel: 0,
-	    tileSources: ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
-	    transcript: {
-	      texts: ['First Image Item Transcript', 'Second Image Item  Transcript'],
-	      label: 'Image'
-	    },
-	    tocs: ['A Statue']
-	  },
 	  ppt: {
 	    transcript: {
 	      texts: [],
@@ -22291,6 +22276,12 @@
 	      var type = 'image/0';
 	      if (config.image) {
 	        type = 'image/0';
+	      } else if (config.kaltura_audio) {
+	        type = 'kaltura_audio';
+	      } else if (config.kaltura_audio_playlist) {
+	        type = 'kaltura_audio_playlist';
+	      } else if (config.kaltura_video) {
+	        type = 'kaltura_video';
 	      } else if (config.audio) {
 	        type = 'audio';
 	      } else if (config.video) {
@@ -22299,8 +22290,6 @@
 	        type = 'pdf';
 	      } else if (config.ppt) {
 	        type = 'ppt';
-	      } else if (config.kaltura_video) {
-	        type = 'kaltura_video';
 	      }
 	      return type;
 	    }
