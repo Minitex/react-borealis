@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "235715db32c05ec1534b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5f798a4acb25c028562a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28302,7 +28302,7 @@
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      return ['image', 'audio', 'video', 'pdf', 'ppt', 'kaltura_video', 'kaltura_audio', 'kaltura_audio_playlist'].map(function (type) {
+	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'audio', 'kaltura_video', 'video', 'pdf', 'ppt'].map(function (type) {
 	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
 	      }).filter(function (item) {
 	        return item != '';

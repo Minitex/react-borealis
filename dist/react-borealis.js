@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5a67a8f585054b684f95"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "f357b6779127de6b51f1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -17884,7 +17884,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      return ['image', 'audio', 'video', 'pdf', 'ppt', 'kaltura_video', 'kaltura_audio', 'kaltura_audio_playlist'].map(function (type) {
+	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'audio', 'kaltura_video', 'video', 'pdf', 'ppt'].map(function (type) {
 	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
 	      }).filter(function (item) {
 	        return item != '';
