@@ -3,7 +3,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   className="borealis-tray">
   <div>
     <a
-      className="thumbnail"
+      className="borealis-thumbnail"
       onClick={[Function]}
       style={Object {}}>
       <img
@@ -12,7 +12,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
-      className="thumbnail"
+      className="borealis-thumbnail"
       onClick={[Function]}
       style={Object {}}>
       <img
@@ -21,7 +21,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
-      className="thumbnail"
+      className="borealis-thumbnail"
       onClick={[Function]}
       style={Object {}}>
       <img
@@ -30,7 +30,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
-      className="thumbnail"
+      className="borealis-thumbnail"
       onClick={[Function]}
       style={Object {}}>
       <img

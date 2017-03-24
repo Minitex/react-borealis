@@ -4,7 +4,7 @@ exports[`Borealis should render correctly 1`] = `
     className="borealis-tray">
     <div>
       <a
-        className="thumbnail"
+        className="borealis-thumbnail"
         href="#/image"
         onClick={[Function]}
         style={Object {}}>
@@ -14,57 +14,7 @@ exports[`Borealis should render correctly 1`] = `
     </div>
     <div>
       <a
-        className="thumbnail"
-        href="#/audio"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="thumbnail"
-        href="#/video"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="thumbnail"
-        href="#/pdf"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="thumbnail"
-        href="#/ppt"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="thumbnail"
-        href="#/kaltura_video"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="thumbnail"
+        className="borealis-thumbnail"
         href="#/kaltura_audio"
         onClick={[Function]}
         style={Object {}}>
@@ -74,12 +24,62 @@ exports[`Borealis should render correctly 1`] = `
     </div>
     <div>
       <a
-        className="thumbnail"
+        className="borealis-thumbnail"
         href="#/kaltura_audio_playlist"
         onClick={[Function]}
         style={Object {}}>
         <img
           src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/audio"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/kaltura_video"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/video"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/pdf"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/ppt"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
       </a>
     </div>
   </div>
