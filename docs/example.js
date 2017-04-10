@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "cda252a855151fbed97f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "9568f0dd040ecf0ddc6b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -610,7 +610,7 @@
 	    src: 'https://cdm16022.contentdm.oclc.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
 	  },
 	  kaltura_audio_playlist: {
-	    targetId: 'kaltura_player_1489684320',
+	    targetId: 'kaltura_player_asdasd',
 	    wid: '_1369852',
 	    uiconf_id: 38719361,
 	    flashvars: {
@@ -28079,7 +28079,7 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { className: 'thumbnail', activeClassName: 'active', to: asset_path },
+	                { className: 'transcript-nav-link', activeClassName: 'active', to: asset_path },
 	                transcript.label
 	              )
 	            ),
@@ -28088,7 +28088,7 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { className: 'thumbnail', activeClassName: 'active', to: transcript_path },
+	                { className: 'transcript-nav-link', activeClassName: 'active', to: transcript_path },
 	                'Transcript'
 	              )
 	            )
@@ -28291,7 +28291,7 @@
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'audio', 'kaltura_video', 'video', 'pdf', 'ppt'].map(function (type) {
+	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'audio', 'video', 'pdf', 'ppt'].map(function (type) {
 	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
 	      }).filter(function (item) {
 	        return item != '';
@@ -28841,7 +28841,6 @@
 	}(_react2.default.Component);
 	
 	KalturaPlayer.propTypes = {
-	  targetId: _react2.default.PropTypes.string.isRequired,
 	  wid: _react2.default.PropTypes.string.isRequired,
 	  uiconf_id: _react2.default.PropTypes.number.isRequired,
 	  flashvars: _react2.default.PropTypes.object,

@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7a0169a64f67d15297d6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1b5ab066523c3327ab81"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -17676,7 +17676,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { className: 'thumbnail', activeClassName: 'active', to: asset_path },
+	                { className: 'transcript-nav-link', activeClassName: 'active', to: asset_path },
 	                transcript.label
 	              )
 	            ),
@@ -17685,7 +17685,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { className: 'thumbnail', activeClassName: 'active', to: transcript_path },
+	                { className: 'transcript-nav-link', activeClassName: 'active', to: transcript_path },
 	                'Transcript'
 	              )
 	            )
@@ -17888,7 +17888,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  _createClass(BorealisTray, [{
 	    key: '_thumbs',
 	    value: function _thumbs(config) {
-	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'audio', 'kaltura_video', 'video', 'pdf', 'ppt'].map(function (type) {
+	      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'audio', 'video', 'pdf', 'ppt'].map(function (type) {
 	        return config[type] ? _defineProperty({}, type, config[type].thumbnail) : '';
 	      }).filter(function (item) {
 	        return item != '';
@@ -18438,7 +18438,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	}(_react2.default.Component);
 	
 	KalturaPlayer.propTypes = {
-	  targetId: _react2.default.PropTypes.string.isRequired,
 	  wid: _react2.default.PropTypes.string.isRequired,
 	  uiconf_id: _react2.default.PropTypes.number.isRequired,
 	  flashvars: _react2.default.PropTypes.object,
