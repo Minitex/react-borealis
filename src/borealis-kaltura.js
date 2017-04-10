@@ -41,7 +41,6 @@ class KalturaPlayer extends React.Component {
 }
 
 KalturaPlayer.propTypes = {
-  targetId: React.PropTypes.string.isRequired,
   wid: React.PropTypes.string.isRequired,
   uiconf_id: React.PropTypes.number.isRequired,
   flashvars: React.PropTypes.object,
