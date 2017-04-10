@@ -9,7 +9,7 @@ export default class BorealisTray extends React.Component {
     }
 
     _thumbs(config) {
-      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'audio', 'kaltura_video', 'video', 'pdf', 'ppt'].map(
+      return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'audio', 'video', 'pdf', 'ppt'].map(
         (type) => {
           return (config[type]) ? {[type]: config[type].thumbnail} : ''
         }
