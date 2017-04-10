@@ -35,21 +35,21 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/audio"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
         href="#/kaltura_video"
         onClick={[Function]}
         style={Object {}}>
         <img
           src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+      </a>
+    </div>
+    <div>
+      <a
+        className="borealis-thumbnail"
+        href="#/audio"
+        onClick={[Function]}
+        style={Object {}}>
+        <img
+          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
       </a>
     </div>
     <div>
@@ -89,7 +89,7 @@ exports[`Borealis should render correctly 1`] = `
       className="nav nav-pills">
       <li>
         <a
-          className="thumbnail"
+          className="transcript-nav-link"
           href="#/image"
           onClick={[Function]}
           style={Object {}}>
@@ -98,7 +98,7 @@ exports[`Borealis should render correctly 1`] = `
       </li>
       <li>
         <a
-          className="thumbnail"
+          className="transcript-nav-link"
           href="#/image/transcript"
           onClick={[Function]}
           style={Object {}}>

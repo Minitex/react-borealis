@@ -7,7 +7,7 @@ exports[`Borealis should render correctly 1`] = `
       className="nav nav-pills">
       <li>
         <a
-          className="thumbnail"
+          className="transcript-nav-link"
           href="#/image"
           onClick={[Function]}
           style={Object {}}>
@@ -16,7 +16,7 @@ exports[`Borealis should render correctly 1`] = `
       </li>
       <li>
         <a
-          className="thumbnail"
+          className="transcript-nav-link"
           href="#/image/transcript"
           onClick={[Function]}
           style={Object {}}>
