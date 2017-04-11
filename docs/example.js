@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9568f0dd040ecf0ddc6b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a52062e74e4a03fd9a91"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -600,6 +600,21 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var config = {
+	  image: {
+	    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
+	    type: 'image',
+	    label: 'Image',
+	    include_controls: true,
+	    sequenceMode: true,
+	    showReferenceStrip: true,
+	    defaultZoomLevel: 0,
+	    tileSources: ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
+	    transcript: {
+	      texts: ['First Image Item Transcript', 'Second Image Item  Transcript'],
+	      label: 'Image'
+	    },
+	    tocs: ['A Statue']
+	  },
 	  ppt: {
 	    transcript: {
 	      texts: [],
@@ -610,7 +625,7 @@
 	    src: 'https://cdm16022.contentdm.oclc.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx'
 	  },
 	  kaltura_audio_playlist: {
-	    targetId: 'kaltura_player_asdasd',
+	    targetId: 'kaltura_player_1489684320',
 	    wid: '_1369852',
 	    uiconf_id: 38719361,
 	    flashvars: {
@@ -22227,7 +22242,6 @@
 	
 	    _this._app = _this._app.bind(_this);
 	    _this._type = _this._type.bind(_this);
-	    _this._initialPath = _this._initialPath.bind(_this);
 	    return _this;
 	  }
 	
@@ -22266,33 +22280,6 @@
 	        }
 	      });
 	    }
-	
-	    // This order is mirrored in borealis-tray.js
-	
-	  }, {
-	    key: '_initialPath',
-	    value: function _initialPath() {
-	      var config = this.props.config;
-	      var type = 'image/0';
-	      if (config.image) {
-	        type = 'image/0';
-	      } else if (config.kaltura_audio) {
-	        type = 'kaltura_audio';
-	      } else if (config.kaltura_audio_playlist) {
-	        type = 'kaltura_audio_playlist';
-	      } else if (config.kaltura_video) {
-	        type = 'kaltura_video';
-	      } else if (config.audio) {
-	        type = 'audio';
-	      } else if (config.video) {
-	        type = 'video';
-	      } else if (config.pdf) {
-	        type = 'pdf';
-	      } else if (config.ppt) {
-	        type = 'ppt';
-	      }
-	      return type;
-	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -22301,14 +22288,12 @@
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
 	        basename: '/'
 	      });
-	      var initialPath = this._initialPath;
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: history },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
-	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
