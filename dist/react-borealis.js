@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0a6a0b82abf67bf93112"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1b5ab066523c3327ab81"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -697,6 +697,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	    _this._app = _this._app.bind(_this);
 	    _this._type = _this._type.bind(_this);
+	    _this._initialPath = _this._initialPath.bind(_this);
 	    return _this;
 	  }
 	
@@ -735,6 +736,33 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	      });
 	    }
+	
+	    // This order is mirrored in borealis-tray.js
+	
+	  }, {
+	    key: '_initialPath',
+	    value: function _initialPath() {
+	      var config = this.props.config;
+	      var type = 'image/0';
+	      if (config.image) {
+	        type = 'image/0';
+	      } else if (config.kaltura_audio) {
+	        type = 'kaltura_audio';
+	      } else if (config.kaltura_audio_playlist) {
+	        type = 'kaltura_audio_playlist';
+	      } else if (config.kaltura_video) {
+	        type = 'kaltura_video';
+	      } else if (config.audio) {
+	        type = 'audio';
+	      } else if (config.video) {
+	        type = 'video';
+	      } else if (config.pdf) {
+	        type = 'pdf';
+	      } else if (config.ppt) {
+	        type = 'ppt';
+	      }
+	      return type;
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -743,12 +771,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
 	        basename: '/'
 	      });
+	      var initialPath = this._initialPath;
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: history },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
+	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
