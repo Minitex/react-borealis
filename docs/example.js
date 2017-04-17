@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7ce9cc40f41a33c52386"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "22307fa195459e17ca5c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -22242,6 +22242,7 @@
 	
 	    _this._app = _this._app.bind(_this);
 	    _this._type = _this._type.bind(_this);
+	    _this._initialPath = _this._initialPath.bind(_this);
 	    return _this;
 	  }
 	
@@ -22280,6 +22281,33 @@
 	        }
 	      });
 	    }
+	
+	    // This order is mirrored in borealis-tray.js
+	
+	  }, {
+	    key: '_initialPath',
+	    value: function _initialPath() {
+	      var config = this.props.config;
+	      var type = 'image/0';
+	      if (config.image) {
+	        type = 'image/0';
+	      } else if (config.kaltura_audio) {
+	        type = 'kaltura_audio';
+	      } else if (config.kaltura_audio_playlist) {
+	        type = 'kaltura_audio_playlist';
+	      } else if (config.kaltura_video) {
+	        type = 'kaltura_video';
+	      } else if (config.audio) {
+	        type = 'audio';
+	      } else if (config.video) {
+	        type = 'video';
+	      } else if (config.pdf) {
+	        type = 'pdf';
+	      } else if (config.ppt) {
+	        type = 'ppt';
+	      }
+	      return type;
+	    }
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -22288,13 +22316,14 @@
 	      var history = (0, _reactRouter.useRouterHistory)(_history.createHashHistory)({
 	        basename: '/'
 	      });
-	
+	      var initialPath = this._initialPath;
 	      return _react2.default.createElement(
 	        _reactRouter.Router,
 	        { history: history },
 	        _react2.default.createElement(
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
+	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
