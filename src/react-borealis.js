@@ -28,6 +28,7 @@ class Borealis extends React.Component {
     super(props);
     this._app = this._app.bind(this);
     this._type = this._type.bind(this);
+    this._initialPath = this._initialPath.bind(this);
   }
 
   _viewer(config, base_path, children) {
@@ -62,16 +63,42 @@ class Borealis extends React.Component {
     });
   }
 
+
+  // This order is mirrored in borealis-tray.js
+  _initialPath() {
+    const config = this.props.config;
+    let type = 'image/0';
+    if (config.image) {
+      type = 'image/0';
+    } else if (config.kaltura_audio) {
+      type = 'kaltura_audio';
+    } else if (config.kaltura_audio_playlist) {
+      type = 'kaltura_audio_playlist';
+    } else if (config.kaltura_video) {
+      type = 'kaltura_video';
+    } else if (config.audio) {
+      type = 'audio';
+    } else if (config.video) {
+      type = 'video';
+    } else if (config.pdf) {
+      type = 'pdf';
+    } else if (config.ppt) {
+      type = 'ppt';
+    }
+    return type;
+  }
+
   render() {
     // Allow this React App to exist at the end of a preexisiting path like:
     // localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
     const history = useRouterHistory(createHashHistory)({
       basename: '/',
     });
-
+    const initialPath = this._initialPath;
     return (
       <Router history={history}>
         <Route path="/" component={this._app()}>
+          <IndexRedirect to={initialPath()} />
           <Redirect from="image" to="image/0" />
           <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="image/:id" component={BorealisImage} />
