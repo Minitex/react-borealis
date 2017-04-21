@@ -14,10 +14,11 @@
   },
   "dependencies": {
     "development": "0.0.6",
+    "history": "3.0.2",
     "openseadragon": "^2.2.1",
     "react": "^15.4.1",
-    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#c399233595",
-    "react-router": "^3.0.2"
+    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#42fdbaef3ed8",
+    "react-router": "3.0.2"
   },
   "devDependencies": {
     "babel": "^6.5.2",

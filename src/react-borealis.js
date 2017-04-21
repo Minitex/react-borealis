@@ -31,11 +31,17 @@ class Borealis extends React.Component {
     this._initialPath = this._initialPath.bind(this);
   }
 
-  _viewer(config, base_path, children) {
+  _viewer(config, basename, children) {
     return React.cloneElement(
       children,
-      { config, base_path },
+      { config, basename },
     );
+  }
+
+
+ componentDidMount() {
+    // Force a re-render to get the TOC drop-down
+    this.forceUpdate();
   }
 
   _type(path) {
@@ -43,7 +49,7 @@ class Borealis extends React.Component {
   }
 
   _app() {
-    const { config, base_path } = this.props;
+    const { config, basename } = this.props;
     const viewer                = this._viewer;
     const type                  = this._type;
     return React.createClass({
@@ -56,7 +62,7 @@ class Borealis extends React.Component {
               transcript={config[asset_type].transcript}
               asset_path={asset_type}
               transcript_path={`${asset_type}/transcript`}  />
-            {viewer(config, base_path, this.props.children)}
+            {viewer(config, basename, this.props.children)}
           </div>
         );
       },
@@ -92,13 +98,12 @@ class Borealis extends React.Component {
     // Allow this React App to exist at the end of a preexisiting path like:
     // localhost:3000/catalog/blaah:100 <-- base_path is 'catalog/blaah:100'
     const history = useRouterHistory(createHashHistory)({
-      basename: '/',
+      basename: this.props.basename,
     });
     const initialPath = this._initialPath;
     return (
       <Router history={history}>
         <Route path="/" component={this._app()}>
-          <IndexRedirect to={initialPath()} />
           <Redirect from="image" to="image/0" />
           <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="image/:id" component={BorealisImage} />
@@ -123,7 +128,7 @@ class Borealis extends React.Component {
 
 const propTypes = {
   config: React.PropTypes.object.isRequired,
-  base_path: React.PropTypes.string,
+  basename: React.PropTypes.string,
 };
 
 Borealis.propTypes = propTypes;
