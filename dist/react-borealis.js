@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "7ba66093f34dd1fc44a4"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "8f23fbcb1234250f3799"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -18540,8 +18540,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	BorealisPDFViewer.propTypes = {
 	  src: _react2.default.PropTypes.string.isRequired,
-	  height: _react2.default.PropTypes.number,
-	  width: _react2.default.PropTypes.number,
+	  height: _react2.default.PropTypes.string,
+	  width: _react2.default.PropTypes.string,
 	  thumbnail: _react2.default.PropTypes.string
 	};
 	
