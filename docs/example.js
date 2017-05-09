@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d8b0110e1c46dc2df12a"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2e63dce45c9fb3f7a102"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -600,20 +600,20 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var config = {
-	  image: {
+	  "image": {
+	    "type": "image",
 	    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
-	    type: 'image',
-	    label: 'Image',
-	    include_controls: true,
-	    sequenceMode: true,
-	    showReferenceStrip: true,
-	    defaultZoomLevel: 0,
-	    tileSources: ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
-	    transcript: {
-	      texts: ['First Image Item Transcript', 'Second Image Item  Transcript'],
-	      label: 'Image'
+	    "label": "Image",
+	    "include_controls": true,
+	    "sequenceMode": true,
+	    "showReferenceStrip": true,
+	    "defaultZoomLevel": 0,
+	    "tileSources": ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
+	    "transcript": {
+	      "texts": [],
+	      "label": "Image"
 	    },
-	    tocs: ['MLK', 'A Statue']
+	    "tocs": ["Neighborhoods of Duluth: Lakeside, Carl Grumdahl house, Duluth, Minnesota"]
 	  },
 	  ppt: {
 	    transcript: {
@@ -22622,6 +22622,7 @@
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
+	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'audio', component: _borealisAudio2.default }),
@@ -29023,8 +29024,8 @@
 	
 	BorealisPDFViewer.propTypes = {
 	  src: _react2.default.PropTypes.string.isRequired,
-	  height: _react2.default.PropTypes.number,
-	  width: _react2.default.PropTypes.number,
+	  height: _react2.default.PropTypes.string,
+	  width: _react2.default.PropTypes.string,
 	  thumbnail: _react2.default.PropTypes.string
 	};
 	

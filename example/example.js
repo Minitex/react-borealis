@@ -4,26 +4,26 @@ import Borealis  from '../src/react-borealis';
 
 var config =
   {
-    image: {
-      thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
-      type: 'image',
-      label: 'Image',
-      include_controls: true,
-      sequenceMode: true,
-      showReferenceStrip: true,
-      defaultZoomLevel: 0,
-      tileSources: [
+  "image": {
+    "type": "image",
+    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
+    "label": "Image",
+    "include_controls": true,
+    "sequenceMode": true,
+    "showReferenceStrip": true,
+    "defaultZoomLevel": 0,
+    "tileSources": [
         'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json',
         'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json',
-      ],
-      transcript: {
-        texts: ['First Image Item Transcript', 'Second Image Item  Transcript'],
-        label: 'Image',
-      },
-      tocs: [
-        'A Statue',
-      ],
+    ],
+    "transcript": {
+      "texts": [],
+      "label": "Image"
     },
+    "tocs": [
+      "Neighborhoods of Duluth: Lakeside, Carl Grumdahl house, Duluth, Minnesota"
+    ]
+  },
     ppt: {
       transcript: {
         texts: [],
@@ -106,5 +106,5 @@ var config =
 
 ReactDOM.render(<Borealis
   config={config}
-  base_path="/foo/bar"
+  basename="/foo/bar"
 />, document.getElementById('app'));

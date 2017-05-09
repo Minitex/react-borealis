@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "8f23fbcb1234250f3799"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "59d8c81e5e629c419a2a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -785,6 +785,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
+	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'audio', component: _borealisAudio2.default }),
