@@ -18,7 +18,6 @@ import KalturaAudioPlaylist from './borealis-kaltura-audio-playlist';
 import BorealisImageTranscript from './borealis-image-transcript';
 import BorealisAudioTranscript from './borealis-audio-transcript';
 import BorealisVideoTranscript from './borealis-video-transcript';
-import BorealisPDFTranscript from './borealis-pdf-transcript';
 import KalturaVideoTranscript from './borealis-kaltura-video-transcript';
 import KalturaAudioTranscript from './borealis-kaltura-audio-transcript';
 import KalturaAudioPlaylistTranscript from './borealis-kaltura-audio-playlist-transcript';
