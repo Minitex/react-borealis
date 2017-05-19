@@ -1,6 +1,6 @@
 import React from 'react'
-import BorealisPDFViewer from './borealis-pdf-viewer'
+import BorealisPDF from 'borealis-pdf'
 
 export default (props) => {
-  return <BorealisPDFViewer {...props.config['pdf']} />
+  return <BorealisPDF {...props.config['pdf']} basename={props.basename} />
 }

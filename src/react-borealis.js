@@ -110,14 +110,14 @@ class Borealis extends React.Component {
           <Route path="image/:id" component={BorealisImage} />
           <Route path="audio" component={BorealisAudio} />
           <Route path="video" component={BorealisVideo} />
-          <Route path="pdf" component={BorealisPDF} />
+          <Route exact path="pdf/:id" component={BorealisPDF} />
           <Route path="ppt" component={BorealisPPT} />
           <Route path="kaltura_video" component={KalturaVideo} />
           <Route path="kaltura_audio" component={KalturaAudio} />
           <Route path="kaltura_audio_playlist" component={KalturaAudioPlaylist} />
           <Route path="audio/transcript" component={BorealisAudioTranscript} />
           <Route path="video/transcript" component={BorealisVideoTranscript} />
-          <Route path="pdf/transcript" component={BorealisPDFTranscript} />
+          <Route path="pdf/transcript/:id" component={BorealisPDF} />
           <Route path="kaltura_video/transcript" component={KalturaVideoTranscript} />
           <Route path="kaltura_audio/transcript" component={KalturaAudioTranscript} />
           <Route path="kaltura_audio_playlist/transcript" component={KalturaAudioPlaylistTranscript} />
