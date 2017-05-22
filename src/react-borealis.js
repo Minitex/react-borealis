@@ -104,6 +104,7 @@ class Borealis extends React.Component {
       <Router history={history}>
         <Route path="/" component={this._app()}>
           <Redirect from="image" to="image/0" />
+          <Redirect from="pdf" to="pdf/0" />
           <IndexRedirect to={initialPath()} />
           <Route path="image/transcript" component={BorealisImageTranscript} />
           <Route path="image/:id" component={BorealisImage} />
