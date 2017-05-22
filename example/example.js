@@ -83,12 +83,6 @@ var config =
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
       config: {
         height: 800,
-        src: 'https://s3.amazonaws.com/mdl-assets/stpaul.pdf',
-        thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
-        transcript: {
-          texts: ['PDF Transcript Here'],
-          label: 'PDF',
-        }
       },
       values: [
         {
