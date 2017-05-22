@@ -75,7 +75,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "4a98193d56ea625d2dc6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "94efabc595cbbe5732ea"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -781,6 +781,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
+	          _react2.default.createElement(_reactRouter.Redirect, { from: 'pdf', to: 'pdf/0' }),
 	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),

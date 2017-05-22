@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "126992db8f038d98dbfa"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "05ced2243f368fccb668"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -673,13 +673,7 @@
 	    },
 	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
 	    config: {
-	      height: 800,
-	      src: 'https://s3.amazonaws.com/mdl-assets/stpaul.pdf',
-	      thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
-	      transcript: {
-	        texts: ['PDF Transcript Here'],
-	        label: 'PDF'
-	      }
+	      height: 800
 	    },
 	    values: [{
 	      src: 'http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/16/filename',
@@ -22640,6 +22634,7 @@
 	          _reactRouter.Route,
 	          { path: '/', component: this._app() },
 	          _react2.default.createElement(_reactRouter.Redirect, { from: 'image', to: 'image/0' }),
+	          _react2.default.createElement(_reactRouter.Redirect, { from: 'pdf', to: 'pdf/0' }),
 	          _react2.default.createElement(_reactRouter.IndexRedirect, { to: initialPath() }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/transcript', component: _borealisImageTranscript2.default }),
 	          _react2.default.createElement(_reactRouter.Route, { path: 'image/:id', component: _borealisImage2.default }),
