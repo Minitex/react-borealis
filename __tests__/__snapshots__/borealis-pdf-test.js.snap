@@ -1,20 +1,5 @@
 exports[`BorealisPDF Tests renders an audio 1`] = `
 <div>
-  <object
-    data="https://s3.amazonaws.com/mdl-assets/stpaul.pdf"
-    height={800}
-    type="application/pdf"
-    width={800}>
-    <img
-      src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
-     
-    <a
-      href="https://s3.amazonaws.com/mdl-assets/stpaul.pdf">
-      <span
-        className="glyphicon glyphicon-download-alt" />
-       
-      https://s3.amazonaws.com/mdl-assets/stpaul.pdf
-    </a>
-  </object>
+  <div />
 </div>
 `;

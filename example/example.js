@@ -12,6 +12,8 @@ var config =
     "sequenceMode": true,
     "showReferenceStrip": true,
     "defaultZoomLevel": 0,
+    "defaultHomeZoomLevel": 0,
+    "minZoomLevel": 0,
     "tileSources": [
         'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json',
         'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json',
@@ -45,8 +47,8 @@ var config =
         texts: ['this is a kaltura audio playlist transcript'],
         label: 'Video',
       },
-      height: '395px',
-      width: '560px',
+      wrapper_height: '395px',
+      wrapper_width: '60%',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885',
     },
     kaltura_video: {
@@ -58,8 +60,8 @@ var config =
         label: 'Video',
       },
       entry_id: '0_t96feg4f',
-      height: '315px',
-      width: '560px',
+      wrapper_height: '315px',
+      wrapper_width: '60%',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
     },
     kaltura_audio: {
@@ -71,8 +73,8 @@ var config =
         texts: ['this is a kaltura audio transcript'],
         label: 'Audio',
       },
-      height: '70px',
-      width: '460px',
+      wrapper_height: '70px',
+      wrapper_width: '60%',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885',
     },
     pdf: {

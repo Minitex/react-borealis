@@ -5,7 +5,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/image"
+        href="#image"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -15,7 +15,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/kaltura_audio"
+        href="#kaltura_audio"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -25,7 +25,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/kaltura_audio_playlist"
+        href="#kaltura_audio_playlist"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -35,7 +35,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/kaltura_video"
+        href="#kaltura_video"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -45,7 +45,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/audio"
+        href="#audio"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -55,7 +55,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/video"
+        href="#video"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -65,7 +65,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/pdf"
+        href="#pdf"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -75,7 +75,7 @@ exports[`Borealis should render correctly 1`] = `
     <div>
       <a
         className="borealis-thumbnail"
-        href="#/ppt"
+        href="#ppt"
         onClick={[Function]}
         style={Object {}}>
         <img
@@ -90,7 +90,7 @@ exports[`Borealis should render correctly 1`] = `
       <li>
         <a
           className="transcript-nav-link"
-          href="#/image"
+          href="#image"
           onClick={[Function]}
           style={Object {}}>
           Image
@@ -99,7 +99,7 @@ exports[`Borealis should render correctly 1`] = `
       <li>
         <a
           className="transcript-nav-link"
-          href="#/image/transcript"
+          href="#image/transcript"
           onClick={[Function]}
           style={Object {}}>
           Transcript
@@ -109,7 +109,7 @@ exports[`Borealis should render correctly 1`] = `
   </div>
   <div>
     <OpenSeadragonViewer
-      base_path="/"
+      basename={undefined}
       config={
         Object {
           "defaultZoomLevel": 0,
