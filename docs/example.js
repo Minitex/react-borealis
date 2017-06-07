@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "05ced2243f368fccb668"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c5d28d38802e0426eb73"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -608,6 +608,8 @@
 	    "sequenceMode": true,
 	    "showReferenceStrip": true,
 	    "defaultZoomLevel": 0,
+	    "defaultHomeZoomLevel": 0,
+	    "minZoomLevel": 0,
 	    "tileSources": ['https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json', 'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json'],
 	    "transcript": {
 	      "texts": [],
@@ -636,8 +638,8 @@
 	      texts: ['this is a kaltura audio playlist transcript'],
 	      label: 'Video'
 	    },
-	    height: '395px',
-	    width: '560px',
+	    wrapper_height: '395px',
+	    wrapper_width: '60%',
 	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
 	  kaltura_video: {
@@ -649,8 +651,8 @@
 	      label: 'Video'
 	    },
 	    entry_id: '0_t96feg4f',
-	    height: '315px',
-	    width: '560px',
+	    wrapper_height: '315px',
+	    wrapper_width: '60%',
 	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0'
 	  },
 	  kaltura_audio: {
@@ -662,8 +664,8 @@
 	      texts: ['this is a kaltura audio transcript'],
 	      label: 'Audio'
 	    },
-	    height: '70px',
-	    width: '460px',
+	    wrapper_height: '70px',
+	    wrapper_width: '60%',
 	    thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885'
 	  },
 	  pdf: {
@@ -29059,7 +29061,7 @@
 
 	/* WEBPACK VAR INJECTION */(function(module) {/* REACT HOT LOADER */ if (true) { (function () { var ReactHotAPI = __webpack_require__(184), RootInstanceProvider = __webpack_require__(192), ReactMount = __webpack_require__(170), React = __webpack_require__(1); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 	
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -29072,6 +29074,8 @@
 	var _react2 = _interopRequireDefault(_react);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 	
@@ -29092,12 +29096,12 @@
 	  }
 	
 	  _createClass(KalturaPlayer, [{
-	    key: "componentDidMount",
+	    key: 'componentDidMount',
 	    value: function componentDidMount() {
 	      kWidget.embed(this._config());
 	    }
 	  }, {
-	    key: "_config",
+	    key: '_config',
 	    value: function _config() {
 	      return {
 	        targetId: this.props.targetId,
@@ -29108,28 +29112,29 @@
 	      };
 	    }
 	  }, {
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
+	      var _playerStyle;
+	
 	      var _props = this.props,
-	          height = _props.height,
-	          width = _props.width,
+	          pusher_margin_top = _props.pusher_margin_top,
+	          wrapper_height = _props.wrapper_height,
+	          wrapper_width = _props.wrapper_width,
 	          targetId = _props.targetId;
 	
+	      var wrapperStyle = { width: wrapper_width, height: wrapper_height, display: 'inline-block', position: 'relative' };
+	      var pusherStyle = { marginTop: pusher_margin_top };
+	      var playerStyle = (_playerStyle = { position: 'absolute', top: 0, left: 0 }, _defineProperty(_playerStyle, 'left', 0), _defineProperty(_playerStyle, 'right', 0), _defineProperty(_playerStyle, 'bottom', 0), _playerStyle);
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "kaltura-player" },
-	        _react2.default.createElement("span", { id: "kaltura-player-code" }),
-	        _react2.default.createElement(
-	          "div",
-	          {
-	            id: targetId,
-	            style: { width: width, height: height },
-	            itemProp: "video",
-	            itemType: "http://schema.org/VideoObject"
-	          },
-	          _react2.default.createElement("span", { itemProp: "width", content: width }),
-	          _react2.default.createElement("span", { itemProp: "height", content: height })
-	        )
+	        'div',
+	        { id: 'kaltura-wrapper-div', style: wrapperStyle },
+	        _react2.default.createElement('div', { id: 'kaltura-pusher-div', style: pusherStyle }),
+	        _react2.default.createElement('div', {
+	          id: targetId,
+	          style: playerStyle,
+	          itemProp: 'video',
+	          itemType: 'http://schema.org/VideoObject'
+	        })
 	      );
 	    }
 	  }]);
@@ -29137,12 +29142,17 @@
 	  return KalturaPlayer;
 	}(_react2.default.Component);
 	
+	KalturaPlayer.defaultProps = {
+	  pusher_margin_top: '56.25%'
+	};
+	
 	KalturaPlayer.propTypes = {
+	  wrapper_height: _react2.default.PropTypes.string.isRequired,
+	  wrapper_width: _react2.default.PropTypes.string.isRequired,
+	  pusher_margin_top: _react2.default.PropTypes.string.isRequired,
 	  wid: _react2.default.PropTypes.string.isRequired,
 	  uiconf_id: _react2.default.PropTypes.number.isRequired,
 	  flashvars: _react2.default.PropTypes.object,
-	  height: _react2.default.PropTypes.string.isRequired,
-	  width: _react2.default.PropTypes.string.isRequired,
 	  entry_id: _react2.default.PropTypes.string
 	};
 	

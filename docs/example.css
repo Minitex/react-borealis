@@ -18,7 +18,7 @@
   position: relative;
   background-color: black;
 }
-  
+
 .osd-toolbar {
   padding:0;
   position: absolute;
@@ -55,7 +55,7 @@
   font-size:15px;
   padding-top:2px
 }
-  
+
 
 .openseadragon-container, .openseadragon {
   height: 500px;
