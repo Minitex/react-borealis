@@ -22,9 +22,10 @@ var config =
       "texts": [],
       "label": "Image"
     },
-    "tocs": [
-      "Neighborhoods of Duluth: Lakeside, Carl Grumdahl house, Duluth, Minnesota"
-    ]
+    tocs: [
+      'MLK',
+      'A Statue',
+    ],
   },
     ppt: {
       transcript: {
