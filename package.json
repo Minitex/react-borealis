@@ -55,7 +55,7 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "build": "webpack --minimize --build; webpack --build; webpack --example",
+    "build": "webpack --build; webpack --example",
     "test": "jest"
   },
   "keywords": [
