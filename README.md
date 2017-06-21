@@ -11,7 +11,7 @@ npm install
 npm start
 ```
 
-Then open [`localhost:8000`](http://localhost:8000) in a browser.
+Then open [`http://localhost:8080/#/foo/bar/image/0`](http://localhost:8080/#/foo/bar/image/0) in a browser.
 
 
 ## Installation
@@ -31,7 +31,6 @@ npm install git+git@github.com:UMNLibraries/react-borealis.git --save
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Borealis  from 'react-borealis'
-
 
 const assets =  {
     image: {
@@ -137,7 +136,7 @@ const assets =  {
 
 ReactDOM.render(<Borealis
   config={config}
-  base_path="/foo/bar"
+  basename="/foo/bar"
 />, document.getElementById('app'));
 
 ```
