@@ -3,13 +3,14 @@ const path = require('path');
 const merge = require('webpack-merge');
 
 let common = {
+  devServer: {
+    hot: true,
+    contentBase: path.resolve(__dirname, 'docs'),
+    publicPath: '/',
+    port: 8080,
+  },
   module: {
     rules: [
-      {
-        test: /\.js?$/,
-        use: 'react-hot-loader',
-        include: path.join(__dirname, 'src'),
-      },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -32,10 +33,24 @@ let common = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new webpack.LoaderOptionsPlugin({
+      minimize: true,
+      debug: false,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      beautify: false,
+      mangle: {
+        screw_ie8: true,
+        keep_fnames: true,
+      },
+      compress: {
+        screw_ie8: true,
+      },
+      comments: false,
+    })
   ],
 };
 
-common.plugins.push(new webpack.optimize.UglifyJsPlugin());
 const minConfig = merge(common  , {
   entry: './src/react-borealis.js',
   output: {
@@ -46,24 +61,12 @@ const minConfig = merge(common  , {
     umdNamedDefine: true,
   },
 });
-const mapConfig = merge(common, {
-  devtool: 'source-map',
-  entry: './src/react-borealis.js',
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'react-borealis.js',
-    library: 'react-borealis',
-    libraryTarget: 'umd',
-    umdNamedDefine: true,
-  },
-});
 
 const exampleConfig = merge(common, {
-  devtool: 'source-map',
   entry: './example/example.js',
   output: {
     filename: 'example.js',
   },
 });
 
-module.exports = [minConfig, mapConfig, exampleConfig]
+module.exports = [minConfig, exampleConfig]
