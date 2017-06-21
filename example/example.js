@@ -1,32 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Borealis  from '../src/react-borealis';
+import Borealis from '../src/react-borealis';
 
-var config =
+const config =
   {
-  "image": {
-    "type": "image",
-    thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
-    "label": "Image",
-    "include_controls": true,
-    "sequenceMode": true,
-    "showReferenceStrip": true,
-    "defaultZoomLevel": 0,
-    "defaultHomeZoomLevel": 0,
-    "minZoomLevel": 0,
-    "tileSources": [
+    image: {
+      type: "image",
+      thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
+      label: "Image",
+      include_controls: true,
+      sequenceMode: true,
+      showReferenceStrip: true,
+      defaultZoomLevel: 0,
+      defaultHomeZoomLevel: 0,
+      minZoomLevel: 0,
+      tileSources: [
         'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json',
         'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json',
-    ],
-    "transcript": {
-      "texts": [],
-      "label": "Image"
+      ],
+      transcript: {
+        texts: [],
+        label: "Image"
+      },
+      tocs: [
+        'MLK',
+        'A Statue',
+      ],
     },
-    tocs: [
-      'MLK',
-      'A Statue',
-    ],
-  },
     ppt: {
       transcript: {
         texts: [],
@@ -79,7 +79,7 @@ var config =
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/jhs/id/885',
     },
     pdf: {
-       transcript: {
+      transcript: {
         texts: [],
         label: 'PDF',
       },
