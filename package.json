@@ -36,7 +36,6 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
-    "express": "^4.14.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "jest-css-modules": "^1.1.0",
     "less-loader": "^2.2.3",
@@ -45,17 +44,16 @@
     "react-shallow-testutils": "^2.0.0",
     "react-test-renderer": "^15.4.1",
     "style-loader": "^0.13.1",
-    "webpack": "^1.12.2",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.10.0",
-    "webpack-merge": "^2.6.1",
-    "yargs": "^6.6.0",
-    "yarn": "^0.18.1"
+    "webpack": "^3.0.0",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-dev-server": "^2.5.0",
+    "webpack-merge": "^4.1.0",
+    "yarn": "^0.24.6"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "webpack-dev-server -d --hot --content-base docs",
     "lint": "eslint src",
-    "build": "webpack --build; webpack --example",
+    "build": "webpack",
     "test": "jest"
   },
   "keywords": [
