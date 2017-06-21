@@ -50,9 +50,9 @@
     "yarn": "^0.24.6"
   },
   "scripts": {
-    "start": "webpack-dev-server -d --hot --content-base docs",
+    "start": "webpack-dev-server --env=dev",
     "lint": "eslint src",
-    "build": "webpack",
+    "build": "webpack --env=prod",
     "test": "jest"
   },
   "keywords": [
