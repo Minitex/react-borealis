@@ -5,6 +5,7 @@ class KalturaPlayer extends React.Component {
   constructor(props) {
     super(props);
     this._config = this._config.bind(this);
+    console.log(props);
   }
 
   componentDidMount() {

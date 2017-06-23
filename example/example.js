@@ -5,9 +5,9 @@ import Borealis from '../src/react-borealis';
 const config =
   {
     image: {
-      type: "image",
+      type: 'image',
       thumbnail: 'https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg',
-      label: "Image",
+      label: 'Image',
       include_controls: true,
       sequenceMode: true,
       showReferenceStrip: true,
@@ -20,12 +20,16 @@ const config =
       ],
       transcript: {
         texts: [],
-        label: "Image"
+        label: 'Image',
       },
       tocs: [
         'MLK',
         'A Statue',
       ],
+      transcript: {
+        texts: ['this is an image'],
+        label: 'Image',
+      },
     },
     ppt: {
       transcript: {
@@ -35,6 +39,10 @@ const config =
       text: '(Download)',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll17/id/827',
       src: 'https://cdm16022.contentdm.oclc.org/utils/getdownloaditem/collection/p16022coll17/id/827/filename/828.pptx',
+      transcript: {
+        texts: ['this is a POWER point'],
+        label: 'FeelThePower',
+      },
     },
     kaltura_audio_playlist: {
       targetId: 'kaltura_player_1489684320',
@@ -80,7 +88,7 @@ const config =
     },
     pdf: {
       transcript: {
-        texts: [],
+        texts: ['P.D.F ya\'ll'],
         label: 'PDF',
       },
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
@@ -117,7 +125,7 @@ const config =
     video: {
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
       transcript: {
-        texts: [],
+        texts: ['Vydeo transcription here'],
         label: 'Video',
       },
       height: 500,
@@ -128,5 +136,5 @@ const config =
 
 ReactDOM.render(<Borealis
   config={config}
-  basename="/foo/bar"
+  basename='/foo/bar'
 />, document.getElementById('app'));

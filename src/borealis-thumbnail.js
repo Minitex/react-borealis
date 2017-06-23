@@ -1,16 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router'
-const Thumbnail = props => (
-                              <div>
-                                <Link className="borealis-thumbnail" activeClassName="active" to={props.to}><img src={props.src} /></Link>
-                              </div>
-                            )
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+const Thumbnail = props => {
+  return (<div>
+    <NavLink
+      className="borealis-thumbnail"
+      activeClassName="active"
+      to={`/${props.to}`}>
+      <img alt={`Click to load the ${props.to}`} src={props.src} />
+    </NavLink>
+  </div>);
+}
 
 const propTypes = {
   to: React.PropTypes.string.isRequired,
-  src: React.PropTypes.string.isRequired
-}
+  src: React.PropTypes.string.isRequired,
+};
 
-Thumbnail.propTypes = propTypes
+Thumbnail.propTypes = propTypes;
 
-export default Thumbnail
+export default Thumbnail;

@@ -1,19 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default class TranscriptNav extends React.Component {
-    constructor(props) {
-      super(props)
-    }
-
     render() {
-      let { transcript, asset_path, transcript_path } = this.props
+      let { transcript, assetPath, transcriptPath } = this.props;
       if (transcript.texts.length > 0) {
           return (
                     <div className="row image-nav">
                       <ul className="nav nav-pills">
-                        <li><Link className="transcript-nav-link" activeClassName="active" to={asset_path}>{transcript.label}</Link></li>
-                        <li ><Link className="transcript-nav-link" activeClassName="active" to={transcript_path}>Transcript</Link></li>
+                        <li><NavLink className="transcript-nav-link" activeClassName="active" to={assetPath}>{transcript.label}</NavLink></li>
+                        <li ><NavLink className="transcript-nav-link" activeClassName="active" to={transcriptPath}>Transcript</NavLink></li>
                       </ul>
                     </div>
                   )
@@ -24,8 +20,8 @@ export default class TranscriptNav extends React.Component {
 }
 
 const propTypes = {
-  asset_path: React.PropTypes.string.isRequired,
-  transcript_path: React.PropTypes.string.isRequired,
+  assetPath: React.PropTypes.string.isRequired,
+  transcriptPath: React.PropTypes.string.isRequired,
 }
 
 TranscriptNav.propTypes = propTypes
