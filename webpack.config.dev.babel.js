@@ -1,8 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const merge = require('webpack-merge');
 
-let common = {
+module.exports = {
   devServer: {
     hot: true,
     contentBase: path.resolve(__dirname, 'docs'),
@@ -26,11 +25,9 @@ let common = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-};
-
-module.exports = merge(common, {
   entry: './example/example.js',
+  devtool: 'source-map',
   output: {
     filename: 'example.js',
   },
-});
+};

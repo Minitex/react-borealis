@@ -1,8 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
-const merge = require('webpack-merge');
 
-let common = {
+module.exports = {
   module: {
     rules: [
       {
@@ -34,10 +33,8 @@ let common = {
       comments: false,
     }),
   ],
-};
-
-module.exports = merge(common  , {
   entry: './src/react-borealis.js',
+  devtool: 'source-map',
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'react-borealis-min.js',
@@ -45,4 +42,4 @@ module.exports = merge(common  , {
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },
-});
+};
