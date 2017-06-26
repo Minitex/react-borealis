@@ -30,15 +30,10 @@ class Borealis extends React.Component {
     this._thumbnailPath = this._thumbnailPath.bind(this);
   }
 
- componentDidMount() {
-    // Force a re-render to get the TOC drop-down
-    this.forceUpdate();
-  }
 
   _type(path) {
     return path.replace(/^\//, '').split('/')[0];
   }
-
 
     // This order is mirrored in borealis-tray.js
   _initialPath() {
