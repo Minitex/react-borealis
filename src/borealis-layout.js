@@ -23,7 +23,7 @@ class BorealisLayout extends React.Component {
           transcript={config[type].transcript}
           assetPath={`/${getThumbnailPath(type)}`}
           transcriptPath={`/${getThumbnailPath(type)}/transcript`}  />
-        <WrappedComponent basename={basename} {...layoutProps} {...config[type]} />
+        <WrappedComponent basename={basename} {...layoutProps} config={config[type]} {...config[type]} />
       </div>
     );
   }
