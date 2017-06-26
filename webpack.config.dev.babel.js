@@ -1,10 +1,10 @@
 const webpack = require('webpack');
-const path = require('path');
+const {resolve} = require('path');
 
 module.exports = {
   devServer: {
     hot: true,
-    contentBase: path.resolve(__dirname, 'docs'),
+    contentBase: resolve('docs'),
     publicPath: '/',
     port: 8080,
   },
@@ -25,7 +25,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-  entry: './example/example.js',
+  context: resolve('example'),
+  entry: './example.js',
   devtool: 'source-map',
   output: {
     filename: 'example.js',

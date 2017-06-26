@@ -1,5 +1,5 @@
 const webpack = require('webpack');
-const path = require('path');
+const {resolve} = require('path');
 
 module.exports = {
   module: {
@@ -33,10 +33,12 @@ module.exports = {
       comments: false,
     }),
   ],
-  entry: './src/react-borealis.js',
+  context: resolve('src'),
+  entry: './react-borealis.js',
   devtool: 'source-map',
   output: {
-    path: path.join(__dirname, 'dist'),
+
+    path: resolve('dist'),
     filename: 'react-borealis-min.js',
     library: 'react-borealis',
     libraryTarget: 'umd',
