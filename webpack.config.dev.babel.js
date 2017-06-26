@@ -2,12 +2,6 @@ const webpack = require('webpack');
 const {resolve} = require('path');
 
 module.exports = {
-  devServer: {
-    hot: true,
-    contentBase: resolve('docs'),
-    publicPath: '/',
-    port: 8080,
-  },
   module: {
     rules: [
       {
@@ -25,10 +19,11 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
-  context: resolve('example'),
-  entry: './example.js',
+  entry: './example/example.js',
   devtool: 'source-map',
   output: {
-    filename: 'example.js',
+    path: resolve('dist'),
+    filename: 'react-borealis.js',
+    publicPath: '/dist/',
   },
 };
