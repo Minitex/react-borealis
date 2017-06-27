@@ -16,14 +16,13 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
-  entry: './example/example.js',
+  context: resolve('example'),
+  entry: './example.js',
   devtool: 'source-map',
   output: {
     path: resolve('dist'),
     filename: 'react-borealis.js',
     publicPath: '/dist/',
+    pathinfo: true
   },
 };
