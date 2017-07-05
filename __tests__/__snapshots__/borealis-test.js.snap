@@ -1,115 +1,125 @@
 exports[`Borealis should render correctly 1`] = `
 <div>
-  <div
-    className="borealis-tray">
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#image"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#kaltura_audio"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#kaltura_audio_playlist"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#kaltura_video"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#audio"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#video"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#pdf"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
-      </a>
-    </div>
-    <div>
-      <a
-        className="borealis-thumbnail"
-        href="#ppt"
-        onClick={[Function]}
-        style={Object {}}>
-        <img
-          src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
-      </a>
-    </div>
-  </div>
-  <div
-    className="row image-nav">
-    <ul
-      className="nav nav-pills">
-      <li>
-        <a
-          className="transcript-nav-link"
-          href="#image"
-          onClick={[Function]}
-          style={Object {}}>
-          Image
-        </a>
-      </li>
-      <li>
-        <a
-          className="transcript-nav-link"
-          href="#image/transcript"
-          onClick={[Function]}
-          style={Object {}}>
-          Transcript
-        </a>
-      </li>
-    </ul>
-  </div>
   <div>
+    <div
+      className="borealis-tray">
+      <div>
+        <a
+          className="active borealis-thumbnail"
+          href="#/image/0"
+          onClick={[Function]}
+          style={Object {}}>
+          <img
+            alt="Click to load the image/0"
+            src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/kaltura_audio"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the kaltura_audio"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/kaltura_audio_playlist"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the kaltura_audio_playlist"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/kaltura_video"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the kaltura_video"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/audio"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the audio"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/video"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the video"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/pdf/0"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the pdf/0"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+        </a>
+      </div>
+      <div>
+        <a
+          className="borealis-thumbnail"
+          href="#/ppt"
+          onClick={[Function]}
+          style={undefined}>
+          <img
+            alt="Click to load the ppt"
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
+        </a>
+      </div>
+    </div>
+    <div
+      className="row image-nav">
+      <ul
+        className="nav nav-pills">
+        <li>
+          <a
+            className="active transcript-nav-link"
+            href="#/image/0"
+            onClick={[Function]}
+            style={Object {}}>
+            Image
+          </a>
+        </li>
+        <li>
+          <a
+            className="transcript-nav-link"
+            href="#/image/0/transcript"
+            onClick={[Function]}
+            style={undefined}>
+            Transcript
+          </a>
+        </li>
+      </ul>
+    </div>
     <OpenSeadragonViewer
-      basename={undefined}
+      WrappedComponent="OpenSeadragonViewer"
+      base_path="/"
+      basename="/"
       config={
         Object {
           "defaultZoomLevel": 0,
@@ -134,7 +144,74 @@ exports[`Borealis should render correctly 1`] = `
           },
           "type": "image",
         }
-      } />
+      }
+      defaultZoomLevel={0}
+      getThumbnailPath={[Function]}
+      history={
+        Object {
+          "action": "REPLACE",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 3,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/image/0",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      include_controls={true}
+      label="Image"
+      location={
+        Object {
+          "hash": "",
+          "pathname": "/image/0",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {
+            "id": "0",
+          },
+          "path": "/image/:id",
+          "url": "/image/0",
+        }
+      }
+      sequenceMode={true}
+      showReferenceStrip={true}
+      staticContext={undefined}
+      thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
+      tileSources={
+        Array [
+          "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+          "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
+        ]
+      }
+      tocs={
+        Array [
+          "A Statue",
+        ]
+      }
+      transcript={
+        Object {
+          "label": "Image",
+          "texts": Array [
+            "First Image Item Transcript",
+            "Second Image Item  Transcript",
+          ],
+        }
+      }
+      type="image" />
   </div>
 </div>
 `;

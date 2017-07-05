@@ -1,5 +1,5 @@
 import React from 'react'
-import BorealisVideo from '../src/borealis-video'
+import BorealisVideo from '../src/borealis-video-player'
 import renderer from 'react-test-renderer'
 
 test('Borealis video', () => {

@@ -4,36 +4,44 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   <div>
     <a
       className="borealis-thumbnail"
+      href="/image"
       onClick={[Function]}
-      style={Object {}}>
+      style={undefined}>
       <img
+        alt="Click to load the image"
         src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
     </a>
   </div>
   <div>
     <a
       className="borealis-thumbnail"
+      href="/image"
       onClick={[Function]}
-      style={Object {}}>
+      style={undefined}>
       <img
+        alt="Click to load the image"
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
     </a>
   </div>
   <div>
     <a
       className="borealis-thumbnail"
+      href="/image"
       onClick={[Function]}
-      style={Object {}}>
+      style={undefined}>
       <img
+        alt="Click to load the image"
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
     </a>
   </div>
   <div>
     <a
       className="borealis-thumbnail"
+      href="/image"
       onClick={[Function]}
-      style={Object {}}>
+      style={undefined}>
       <img
+        alt="Click to load the image"
         src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
     </a>
   </div>

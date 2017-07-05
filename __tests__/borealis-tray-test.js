@@ -1,6 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 import BorealisTray from '../src/borealis-tray'
+import { MemoryRouter } from 'react-router-dom';
 
 describe('BorealisTray Tests', () => {
 
@@ -57,7 +58,9 @@ const config = {
       }
     }
     const component = renderer.create(
-      <BorealisTray config={config} />
+      <MemoryRouter>
+        <BorealisTray config={config} getThumbnailPath={() => 'image'} />
+      </MemoryRouter>
     )
     let tree = component.toJSON()
     expect(tree).toMatchSnapshot()

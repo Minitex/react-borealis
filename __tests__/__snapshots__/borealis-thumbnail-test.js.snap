@@ -2,9 +2,11 @@ exports[`BorealisThumbnail Tests renders an audio 1`] = `
 <div>
   <a
     className="borealis-thumbnail"
+    href="/foo"
     onClick={[Function]}
-    style={Object {}}>
+    style={undefined}>
     <img
+      alt="Click to load the foo"
       src="http://example.com" />
   </a>
 </div>

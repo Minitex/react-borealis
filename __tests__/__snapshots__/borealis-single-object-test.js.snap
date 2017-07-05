@@ -1,33 +1,34 @@
 exports[`Borealis should render correctly 1`] = `
 <div>
-  <span />
-  <div
-    className="row image-nav">
-    <ul
-      className="nav nav-pills">
-      <li>
-        <a
-          className="transcript-nav-link"
-          href="#image"
-          onClick={[Function]}
-          style={Object {}}>
-          Image
-        </a>
-      </li>
-      <li>
-        <a
-          className="transcript-nav-link"
-          href="#image/transcript"
-          onClick={[Function]}
-          style={Object {}}>
-          Transcript
-        </a>
-      </li>
-    </ul>
-  </div>
   <div>
+    <span />
+    <div
+      className="row image-nav">
+      <ul
+        className="nav nav-pills">
+        <li>
+          <a
+            className="active transcript-nav-link"
+            href="#/image/0"
+            onClick={[Function]}
+            style={Object {}}>
+            Image
+          </a>
+        </li>
+        <li>
+          <a
+            className="transcript-nav-link"
+            href="#/image/0/transcript"
+            onClick={[Function]}
+            style={undefined}>
+            Transcript
+          </a>
+        </li>
+      </ul>
+    </div>
     <OpenSeadragonViewer
-      basename={undefined}
+      WrappedComponent="OpenSeadragonViewer"
+      basename="/"
       config={
         Object {
           "defaultZoomLevel": 0,
@@ -52,7 +53,74 @@ exports[`Borealis should render correctly 1`] = `
           },
           "type": "image",
         }
-      } />
+      }
+      defaultZoomLevel={0}
+      getThumbnailPath={[Function]}
+      history={
+        Object {
+          "action": "REPLACE",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 3,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/image/0",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+      include_controls={true}
+      label="Image"
+      location={
+        Object {
+          "hash": "",
+          "pathname": "/image/0",
+          "search": "",
+          "state": undefined,
+        }
+      }
+      match={
+        Object {
+          "isExact": true,
+          "params": Object {
+            "id": "0",
+          },
+          "path": "/image/:id",
+          "url": "/image/0",
+        }
+      }
+      sequenceMode={true}
+      showReferenceStrip={true}
+      staticContext={undefined}
+      thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
+      tileSources={
+        Array [
+          "https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json",
+          "https://ids.lib.harvard.edu/ids/iiif/25286610/info.json",
+        ]
+      }
+      tocs={
+        Array [
+          "A Statue",
+        ]
+      }
+      transcript={
+        Object {
+          "label": "Image",
+          "texts": Array [
+            "First Image Item Transcript",
+            "Second Image Item  Transcript",
+          ],
+        }
+      }
+      type="image" />
   </div>
 </div>
 `;

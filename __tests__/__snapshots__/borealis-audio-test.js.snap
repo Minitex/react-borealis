@@ -3,7 +3,7 @@ exports[`BorealisAudio Tests renders an audio 1`] = `
   className="audio-player"
   controls={true}>
   <source
-    src="http://reflections.mndigital.org/utils/getstream/collection/mhs/id/1919"
+    src={undefined}
     type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>
