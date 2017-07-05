@@ -14,7 +14,6 @@ import TranscriptNav from './transcript-nav';
 class BorealisLayout extends React.Component {
   render() {
     const { config, transcript, type, WrappedComponent, getThumbnailPath, basename} = this.props;
-    const path = this.props.match.path;
     const layoutProps = this.props;
     return (
       <div>
