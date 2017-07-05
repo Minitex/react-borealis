@@ -10,7 +10,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['react', 'es2015', 'stage-0'],
+            presets: ['react', ['es2015', { modules: false }], 'stage-0'],
           },
         },
       },
@@ -20,7 +20,6 @@ module.exports = {
   entry: './react-borealis.js',
   devtool: 'source-map',
   output: {
-
     path: resolve('dist'),
     filename: 'react-borealis-min.js',
     library: 'react-borealis',
