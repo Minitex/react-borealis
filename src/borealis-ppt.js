@@ -1,14 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PPTViewer = (props) => {
-  const config = props.config;
   return (
     <div className="ppt-download">
-      <a href={config.src} ><img alt="Microsoft PowerPoint" src={config.thumbnail} /></a>
-      <a href={config.src} >{config.text}</a>
+      <a href={props.src} ><img alt="Microsoft PowerPoint" src={props.thumbnail} /></a>
+      <a href={props.src} >{props.text}</a>
     </div>
   );
 };
 
-export default PPTViewer;
+PPTViewer.propTypes = {
+  src: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  thumbnail: PropTypes.string.isRequired,
+};
 
+export default PPTViewer;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const BorealisAudioPlayer = props => (
   <audio controls className="audio-player">
@@ -8,7 +9,7 @@ const BorealisAudioPlayer = props => (
 );
 
 BorealisAudioPlayer.propTypes = {
-  src: React.PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 export default BorealisAudioPlayer;

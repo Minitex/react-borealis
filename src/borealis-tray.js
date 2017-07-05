@@ -1,56 +1,49 @@
-import React from 'react'
-import Thumbnail from './borealis-thumbnail'
+import React from 'react';
+import Thumbnail from './borealis-thumbnail';
 
 export default class BorealisTray extends React.Component {
-  constructor(props) {
-    super(props)
-    this._key = this._key.bind(this);
-    this._val = this._val.bind(this);
-  }
-
-  _thumbs(config) {
+  static thumbs(config) {
     return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'audio', 'video', 'pdf', 'ppt'].map(
-      (type) => {
-        return (config[type]) ? {[type]: config[type].thumbnail} : '';
-      },
-    ).filter((item) => { return item != '' });
+      type => ((config[type]) ? { [type]: config[type].thumbnail } : ''),
+    ).filter(item => item !== '');
   }
 
-  _key(obj) {
-    return this._keys(obj)[0]
+  static keys(obj) {
+    return Object.keys(obj);
   }
 
-  _val(obj) {
-    return this._keys(obj).map( (key) => { return obj[key] } )[0]
+  static key(obj) {
+    return BorealisTray.keys(obj)[0];
   }
 
-  _keys(obj) {
-    return Object.keys(obj)
+  static val(obj) {
+    return BorealisTray.keys(obj).map(key => obj[key])[0];
   }
 
   render() {
-    const { config, getThumbnailPath } = this.props
-    const val = this._val
-    const key = this._key
-    if (Object.keys(config).length > 1) {
-      return  (
-                <div className="borealis-tray">
-                  {this._thumbs(config).map(function(item, i) {
-                    return <Thumbnail to={ getThumbnailPath(key(item)) }
-                                      src={ val(item) }
-                                      key={i} />
-                  })}
-                </div>
-              )
-    } else {
-      return <span/>
+    const { config, getThumbnailPath } = this.props;
+    const val = BorealisTray.val;
+    const key = BorealisTray.key;
+    if (BorealisTray.keys(config).length > 1) {
+      return (
+        <div className="borealis-tray">
+          {BorealisTray.thumbs(config).map((item, i) =>
+            <Thumbnail
+              to={getThumbnailPath(key(item))}
+              src={val(item)}
+              key={`tray-thumbnail-${i}`}
+            />,
+          )}
+        </div>
+      );
     }
+    return <span />;
   }
-
 }
 
 const propTypes = {
-  config: React.PropTypes.object.isRequired
-}
+  config: React.PropTypes.object.isRequired,
+  getThumbnailPath: React.PropTypes.func.isRequired,
+};
 
-BorealisTray.propTypes = propTypes
+BorealisTray.propTypes = propTypes;
