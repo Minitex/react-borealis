@@ -53,7 +53,7 @@
   "scripts": {
     "start": "webpack-dev-server --env=dev --hot --port=8081",
     "lint": "eslint src",
-    "build": "webpack -p -env=prod",
+    "build": "webpack -p --env=prod",
     "test": "jest"
   },
   "keywords": [
