@@ -17,9 +17,11 @@ import BorealisTranscript from './borealis-transcript';
 
 import BorealisPDF from 'borealis-pdf';
 import BorealisAudioPlayer from './borealis-audio-player';
-import KalturaPlayer from './borealis-kaltura';
 import ReactOpenseadragon from 'react-openseadragon';
 import BorealisVideoPlayer from './borealis-video-player';
+import KalturaAudio from './kaltura-audio';
+import KalturaPlaylist from './kaltura-audio-playlist';
+import KalturaVideo from './kaltura-video';
 
 class Borealis extends React.Component {
   constructor(props) {
@@ -29,7 +31,6 @@ class Borealis extends React.Component {
     this._initialPath = this._initialPath.bind(this);
     this._thumbnailPath = this._thumbnailPath.bind(this);
   }
-
 
   _type(path) {
     return path.replace(/^\//, '').split('/')[0];
@@ -87,9 +88,9 @@ class Borealis extends React.Component {
         <Switch>
           <Redirect from="/" exact to={`/${initialPath()}`} />
           <Route exact path="/image/:id" render={props => layout(props, ReactOpenseadragon, 'image')} />
-          <Route exact path="/kaltura_audio" render={props => layout(props, KalturaPlayer, 'kaltura_audio')} />
-          <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaPlayer, 'kaltura_audio_playlist')} />
-          <Route exact path="/kaltura_video" render={props => layout(props, KalturaPlayer, 'kaltura_video')} />
+          <Route exact path="/kaltura_audio" render={props => layout(props, KalturaAudio, 'kaltura_audio')} />
+          <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_audio_playlist')} />
+          <Route exact path="/kaltura_video" render={props => layout(props, KalturaVideo, 'kaltura_video')} />
           <Route exact path="/audio" render={props => layout(props, BorealisAudioPlayer, 'audio')} />
           <Route exact path="/video" render={props => layout(props, BorealisVideoPlayer, 'video')} />
           <Route exact path="/pdf/:id" render={props => layout(props, BorealisPDF, 'pdf')} />
