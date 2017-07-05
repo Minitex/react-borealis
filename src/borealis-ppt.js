@@ -1,8 +1,7 @@
 import React from 'react';
 
 const PPTViewer = (props) => {
-  const config = props.config.ppt;
-
+  const config = props.config;
   return (
     <div className="ppt-download">
       <a href={config.src} ><img alt="Microsoft PowerPoint" src={config.thumbnail} /></a>
