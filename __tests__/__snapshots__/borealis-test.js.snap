@@ -118,7 +118,6 @@ exports[`Borealis should render correctly 1`] = `
     </div>
     <OpenSeadragonViewer
       WrappedComponent="OpenSeadragonViewer"
-      base_path="/"
       basename="/"
       config={
         Object {

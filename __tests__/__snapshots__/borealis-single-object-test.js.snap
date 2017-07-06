@@ -28,7 +28,7 @@ exports[`Borealis should render correctly 1`] = `
     </div>
     <OpenSeadragonViewer
       WrappedComponent="OpenSeadragonViewer"
-      basename="/"
+      basename={undefined}
       config={
         Object {
           "defaultZoomLevel": 0,
