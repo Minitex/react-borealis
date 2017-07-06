@@ -51,7 +51,7 @@ class Borealis extends React.Component {
         return thumb.path;
       }
       return null;
-    })[0];
+    }).find(thumb => thumb != null);
   }
 
   _layout(props, wrappedComponent, type) {

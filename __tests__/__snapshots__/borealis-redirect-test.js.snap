@@ -1,0 +1,1261 @@
+exports[`Borealis should render correctly 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <div>
+    <function Switch() {
+        _classCallCheck(this, Switch);
+    
+        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+      }>
+        <function Redirect() {
+            _classCallCheck(this, Redirect);
+        
+            return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+          }
+            exact={true}
+            from="/"
+            push={false}
+            to="/pdf/0" />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/image/:id"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/kaltura_audio"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/kaltura_audio_playlist"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/kaltura_video"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/audio"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/video"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/pdf/:id"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
+            path="/ppt"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/image/:id/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/kaltura_audio/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/kaltura_audio_playlist/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/kaltura_video/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/audio/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/video/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/pdf/:id/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            path="/ppt/transcript"
+            render={[Function]} />
+    </function Switch() {
+        _classCallCheck(this, Switch);
+    
+        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+      }>
+</div>,
+  "nodes": Array [
+    <div>
+      <function Switch() {
+          _classCallCheck(this, Switch);
+      
+          return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+        }>
+            <function Redirect() {
+                _classCallCheck(this, Redirect);
+            
+                return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+              }
+                  exact={true}
+                  from="/"
+                  push={false}
+                  to="/pdf/0" />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/image/:id"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/kaltura_audio"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/kaltura_audio_playlist"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/kaltura_video"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/audio"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/video"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/pdf/:id"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/ppt"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/image/:id/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/kaltura_audio/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/kaltura_audio_playlist/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/kaltura_video/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/audio/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/video/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/pdf/:id/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/ppt/transcript"
+                  render={[Function]} />
+      </function Switch() {
+          _classCallCheck(this, Switch);
+      
+          return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+        }>
+</div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_instance": ShallowComponentWrapper {
+      "_calledComponentWillUnmount": false,
+      "_compositeType": 0,
+      "_context": Object {},
+      "_currentElement": <function Borealis(props) {/* istanbul ignore next */_classCallCheck(this, Borealis);var _this = _possibleConstructorReturn(this, (Borealis.__proto__ || Object.getPrototypeOf(Borealis)).call(this,
+    props));
+    /* istanbul ignore next */_this._layout = /* istanbul ignore next */_this._layout.bind( /* istanbul ignore next */_this);
+    /* istanbul ignore next */_this._initialPath = /* istanbul ignore next */_this._initialPath.bind( /* istanbul ignore next */_this); /* istanbul ignore next */return _this;
+  }
+        basename="/"
+        config={
+                Object {
+                        "pdf": Object {
+                          "config": Object {
+                            "height": 800,
+                          },
+                          "thumbnail": "https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0",
+                          "transcript": Object {
+                            "label": "PDF",
+                            "texts": Array [
+                              "P.D.F ya\'ll",
+                            ],
+                          },
+                          "values": Array [
+                            Object {
+                              "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/16/filename",
+                              "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:16",
+                              "transcript": Object {
+                                "label": "PDF",
+                                "texts": Array [
+                                  "1 Cecelia Boone Narrator Sara Ring Interviewer June 9, 2011 Minitex Oral History Project Minneapolis, Minnesota SR: Tell us how you got started working at Minitex. How did you end up in the job you are doing right now? CB: As always, there is a story. blah blah",
+                                ],
+                              },
+                            },
+                            Object {
+                              "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/17/filename",
+                              "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:17",
+                              "transcript": Object {
+                                "label": "PDF",
+                                "texts": Array [
+                                  "blah blah blah, second pdf here",
+                                ],
+                              },
+                            },
+                          ],
+                        },
+                      }
+        } />,
+      "_debugID": 1,
+      "_hostContainerInfo": null,
+      "_hostParent": null,
+      "_instance": Borealis {
+        "_initialPath": [Function],
+        "_layout": [Function],
+        "_reactInternalInstance": [Circular],
+        "context": Object {},
+        "props": Object {
+          "basename": "/",
+          "config": Object {
+            "pdf": Object {
+              "config": Object {
+                "height": 800,
+              },
+              "thumbnail": "https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0",
+              "transcript": Object {
+                "label": "PDF",
+                "texts": Array [
+                  "P.D.F ya\'ll",
+                ],
+              },
+              "values": Array [
+                Object {
+                  "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/16/filename",
+                  "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:16",
+                  "transcript": Object {
+                    "label": "PDF",
+                    "texts": Array [
+                      "1 Cecelia Boone Narrator Sara Ring Interviewer June 9, 2011 Minitex Oral History Project Minneapolis, Minnesota SR: Tell us how you got started working at Minitex. How did you end up in the job you are doing right now? CB: As always, there is a story. blah blah",
+                    ],
+                  },
+                },
+                Object {
+                  "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/17/filename",
+                  "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:17",
+                  "transcript": Object {
+                    "label": "PDF",
+                    "texts": Array [
+                      "blah blah blah, second pdf here",
+                    ],
+                  },
+                },
+              ],
+            },
+          },
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueCallback": [Function],
+          "enqueueCallbackInternal": [Function],
+          "enqueueElementInternal": [Function],
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+          "validateCallback": [Function],
+        },
+      },
+      "_mountOrder": 1,
+      "_pendingCallbacks": null,
+      "_pendingElement": null,
+      "_pendingForceUpdate": false,
+      "_pendingReplaceState": false,
+      "_pendingStateQueue": null,
+      "_renderedComponent": NoopInternalComponent {
+        "_currentElement": <div>
+          <function Switch() {
+              _classCallCheck(this, Switch);
+          
+              return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+            }>
+                    <function Redirect() {
+                        _classCallCheck(this, Redirect);
+                    
+                        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+                      }
+                              exact={true}
+                              from="/"
+                              push={false}
+                              to="/pdf/0" />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/image/:id"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_audio"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_audio_playlist"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_video"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/audio"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/video"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/pdf/:id"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/ppt"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/image/:id/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_audio/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_audio_playlist/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/audio/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/pdf/:id/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/ppt/transcript"
+                              render={[Function]} />
+          </function Switch() {
+              _classCallCheck(this, Switch);
+          
+              return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+            }>
+</div>,
+        "_debugID": 2,
+        "_renderedOutput": <div>
+          <function Switch() {
+              _classCallCheck(this, Switch);
+          
+              return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+            }>
+                    <function Redirect() {
+                        _classCallCheck(this, Redirect);
+                    
+                        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+                      }
+                              exact={true}
+                              from="/"
+                              push={false}
+                              to="/pdf/0" />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/image/:id"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_audio"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_audio_playlist"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/kaltura_video"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/audio"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/video"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/pdf/:id"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
+                              path="/ppt"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/image/:id/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_audio/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_audio_playlist/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/audio/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/pdf/:id/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/ppt/transcript"
+                              render={[Function]} />
+          </function Switch() {
+              _classCallCheck(this, Switch);
+          
+              return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+            }>
+</div>,
+      },
+      "_renderedNodeType": 0,
+      "_rootNodeID": 0,
+      "_topLevelWrapper": null,
+      "_updateBatchNumber": null,
+      "_warnedAboutRefsInRender": false,
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <function Borealis(props) {/* istanbul ignore next */_classCallCheck(this, Borealis);var _this = _possibleConstructorReturn(this, (Borealis.__proto__ || Object.getPrototypeOf(Borealis)).call(this,
+    props));
+    /* istanbul ignore next */_this._layout = /* istanbul ignore next */_this._layout.bind( /* istanbul ignore next */_this);
+    /* istanbul ignore next */_this._initialPath = /* istanbul ignore next */_this._initialPath.bind( /* istanbul ignore next */_this); /* istanbul ignore next */return _this;
+  }
+    basename="/"
+    config={
+        Object {
+            "pdf": Object {
+              "config": Object {
+                "height": 800,
+              },
+              "thumbnail": "https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0",
+              "transcript": Object {
+                "label": "PDF",
+                "texts": Array [
+                  "P.D.F ya\'ll",
+                ],
+              },
+              "values": Array [
+                Object {
+                  "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/16/filename",
+                  "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:16",
+                  "transcript": Object {
+                    "label": "PDF",
+                    "texts": Array [
+                      "1 Cecelia Boone Narrator Sara Ring Interviewer June 9, 2011 Minitex Oral History Project Minneapolis, Minnesota SR: Tell us how you got started working at Minitex. How did you end up in the job you are doing right now? CB: As always, there is a story. blah blah",
+                    ],
+                  },
+                },
+                Object {
+                  "src": "http://cdm16022.contentdm.oclc.org/utils/getfile/collection/p16022coll52/id/17/filename",
+                  "thumbnail": "http://lib-mdl-dev.oit.umn.edu/thumbnails/p16022coll52:17",
+                  "transcript": Object {
+                    "label": "PDF",
+                    "texts": Array [
+                      "blah blah blah, second pdf here",
+                    ],
+                  },
+                },
+              ],
+            },
+          }
+    } />,
+}
+`;
