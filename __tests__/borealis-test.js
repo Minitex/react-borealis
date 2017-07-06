@@ -110,7 +110,7 @@ describe('Borealis', () => {
     }
 
     const component = renderer.create(
-      <Borealis config={config} base_path="/" />
+      <Borealis config={config} basename="/" />
     )
     expect(component.toJSON()).toMatchSnapshot()
   })
