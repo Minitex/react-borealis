@@ -1,54 +1,26 @@
 import {
-  BrowserRouter as Router,
   Route,
-  IndexRedirect,
-  useRouterHistory,
   Redirect,
   Switch,
 } from 'react-router-dom';
-
-
-import React from 'react';
-import BorealisLayout from './borealis-layout';
-
-import BorealisPPT from './borealis-ppt';
-
-import BorealisTranscript from './borealis-transcript';
-
 import BorealisPDF from 'borealis-pdf';
-import BorealisAudioPlayer from './borealis-audio-player';
+import React from 'react';
 import ReactOpenseadragon from 'react-openseadragon';
+import PropTypes from 'prop-types';
+
+import BorealisLayout from './borealis-layout';
+import BorealisPPT from './borealis-ppt';
+import BorealisTranscript from './borealis-transcript';
+import BorealisAudioPlayer from './borealis-audio-player';
 import BorealisVideoPlayer from './borealis-video-player';
 import KalturaAudio from './kaltura-audio';
 import KalturaPlaylist from './kaltura-audio-playlist';
 import KalturaVideo from './kaltura-video';
 
 class Borealis extends React.Component {
-  constructor(props) {
-    super(props);
-    this._type = this._type.bind(this);
-    this._layout = this._layout.bind(this);
-    this._initialPath = this._initialPath.bind(this);
-    this._thumbnailPath = this._thumbnailPath.bind(this);
-  }
-
-  _type(path) {
-    return path.replace(/^\//, '').split('/')[0];
-  }
-
-    // This order is mirrored in borealis-tray.js
-  _initialPath() {
-    const config = this.props.config;
-    return this._thumbnailPaths().map( (thumb) => {
-      if (config[thumb.type]) {
-        return thumb.path;
-      }
-    })[0];
-  }
-
   // Order matters: ordered according to which player should come first when
   // multiple players are present
-  _thumbnailPaths() {
+  static thumbnailPaths() {
     return ([
       { type: 'image', path: 'image/0' },
       { type: 'kaltura_audio', path: 'kaltura_audio' },
@@ -61,16 +33,30 @@ class Borealis extends React.Component {
     ]);
   }
 
-  _thumbnailPath(type) {
-    return this._thumbnailPaths().find((thumb) => {
-      return thumb.type === type;
-    }).path;
+  static getThumbnailPath(type) {
+    return Borealis.thumbnailPaths().find(thumb => thumb.type === type).path;
+  }
+
+  constructor(props) {
+    super(props);
+    this._layout = this._layout.bind(this);
+    this._initialPath = this._initialPath.bind(this);
+  }
+
+    // This order is mirrored in borealis-tray.js
+  _initialPath() {
+    const config = this.props.config;
+    return Borealis.thumbnailPaths().map((thumb) => {
+      if (config[thumb.type]) {
+        return thumb.path;
+      }
+      return null;
+    })[0];
   }
 
   _layout(props, wrappedComponent, type) {
     const defaultProps = this.props;
-    const config = this.props.config;
-    const getThumbnailPath = this._thumbnailPath;
+    const getThumbnailPath = Borealis.getThumbnailPath;
     return (<BorealisLayout
       {...props}
       {...defaultProps}
@@ -94,7 +80,7 @@ class Borealis extends React.Component {
           <Route exact path="/audio" render={props => layout(props, BorealisAudioPlayer, 'audio')} />
           <Route exact path="/video" render={props => layout(props, BorealisVideoPlayer, 'video')} />
           <Route exact path="/pdf/:id" render={props => layout(props, BorealisPDF, 'pdf')} />
-          <Route exact path="/ppt" render={props => layout(props, BorealisPPT, 'ppt')}  />
+          <Route exact path="/ppt" render={props => layout(props, BorealisPPT, 'ppt')} />
 
           <Route path="/image/:id/transcript" render={props => layout(props, BorealisTranscript, 'image')} />
           <Route path="/kaltura_audio/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_audio')} />
@@ -110,13 +96,8 @@ class Borealis extends React.Component {
   }
 }
 
-Borealis.defaultProps = {
-  basename: '/',
-};
-
 Borealis.propTypes = {
-  config: React.PropTypes.object.isRequired,
-  basename: React.PropTypes.string,
+  config: PropTypes.object.isRequired,
 };
 
 export default Borealis;
