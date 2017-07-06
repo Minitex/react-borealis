@@ -13,10 +13,12 @@
     "url": "https://github.com/UMNLibraries/react-borealis/issues"
   },
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "borealis-pdf": "git+https://github.com/UMNLibraries/borealis-pdf.git#6c74c8978c8102e",
     "development": "0.0.6",
     "history": "3.0.0",
     "openseadragon": "^2.2.1",
+    "prop-types": "^15.5.10",
     "react": "^15.4.1",
     "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#b6805c1cc",
     "react-router": "4.1.1",

@@ -4,7 +4,7 @@ import BorealisTray from './borealis-tray';
 import TranscriptNav from './transcript-nav';
 
 const BorealisLayout = (props) => {
-  const { config, type, WrappedComponent, getThumbnailPath, basename} = props;
+  const { config, type, WrappedComponent, getThumbnailPath, basename } = props;
   const layoutProps = props;
   return (
     <div>
