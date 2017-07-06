@@ -17,7 +17,7 @@ module.exports = {
     ],
   },
   context: resolve('src'),
-  entry: './react-borealis.js',
+  entry: ['babel-polyfill', './react-borealis.js'],
   devtool: 'source-map',
   output: {
     path: resolve('dist'),

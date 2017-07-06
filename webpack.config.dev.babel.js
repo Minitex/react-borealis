@@ -17,7 +17,7 @@ module.exports = {
     ],
   },
   context: resolve('example'),
-  entry: './example.js',
+  entry: ['babel-polyfill', './example.js'],
   devtool: 'source-map',
   output: {
     path: resolve('dist'),
