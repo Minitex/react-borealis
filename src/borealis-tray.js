@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Thumbnail from './borealis-thumbnail';
 
 export default class BorealisTray extends React.Component {
@@ -42,8 +43,8 @@ export default class BorealisTray extends React.Component {
 }
 
 const propTypes = {
-  config: React.PropTypes.object.isRequired,
-  getThumbnailPath: React.PropTypes.func.isRequired,
+  config: PropTypes.object.isRequired,
+  getThumbnailPath: PropTypes.func.isRequired,
 };
 
 BorealisTray.propTypes = propTypes;

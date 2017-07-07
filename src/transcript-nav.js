@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default class TranscriptNav extends React.Component {
     render() {
@@ -20,8 +21,8 @@ export default class TranscriptNav extends React.Component {
 }
 
 const propTypes = {
-  assetPath: React.PropTypes.string.isRequired,
-  transcriptPath: React.PropTypes.string.isRequired,
+  assetPath: PropTypes.string.isRequired,
+  transcriptPath: PropTypes.string.isRequired,
 }
 
 TranscriptNav.propTypes = propTypes

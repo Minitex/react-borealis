@@ -1,5 +1,6 @@
 import React from 'react';
 import TranscriptNav from './transcript-nav';
+import PropTypes from 'prop-types';
 
 const BorealisTranscript = (props) => {
   const { transcript } = props;
@@ -9,7 +10,7 @@ const BorealisTranscript = (props) => {
 };
 
 const propTypes = {
-  transcript: React.PropTypes.object.isRequired,
+  transcript: PropTypes.object.isRequired,
 };
 
 BorealisTranscript.propTypes = propTypes;

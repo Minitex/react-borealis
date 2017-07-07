@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 const Thumbnail = props =>
   <div>
@@ -13,8 +14,8 @@ const Thumbnail = props =>
   </div>;
 
 const propTypes = {
-  to: React.PropTypes.string.isRequired,
-  src: React.PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 Thumbnail.propTypes = propTypes;
