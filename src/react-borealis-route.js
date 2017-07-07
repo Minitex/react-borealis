@@ -79,7 +79,7 @@ class Borealis extends React.Component {
           <Route exact path="/kaltura_video" render={props => layout(props, KalturaVideo, 'kaltura_video')} />
           <Route exact path="/audio" render={props => layout(props, BorealisAudioPlayer, 'audio')} />
           <Route exact path="/video" render={props => layout(props, BorealisVideoPlayer, 'video')} />
-          <Route exact path="/pdf/:id" render={props => layout(props, BorealisPDF, 'pdf')} />
+          <Route path="/pdf/:id" render={props => layout(props, BorealisPDF, 'pdf')} />
           <Route exact path="/ppt" render={props => layout(props, BorealisPPT, 'ppt')} />
 
           <Route path="/image/:id/transcript" render={props => layout(props, BorealisTranscript, 'image')} />
@@ -88,7 +88,6 @@ class Borealis extends React.Component {
           <Route path="/kaltura_video/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_video')} />
           <Route path="/audio/transcript" render={props => layout(props, BorealisTranscript, 'audio')} />
           <Route path="/video/transcript" render={props => layout(props, BorealisTranscript, 'video')} />
-          <Route path="/pdf/:id/transcript" render={props => layout(props, BorealisTranscript, 'pdf')} />
           <Route path="/ppt/transcript" render={props => layout(props, BorealisTranscript, 'ppt')} />
         </Switch>
       </div>

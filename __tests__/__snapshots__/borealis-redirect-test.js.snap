@@ -130,7 +130,6 @@ ShallowWrapper {
               match: _this.computeMatch(_this.props, _this.context.router)
             }, _temp), _possibleConstructorReturn(_this, _ret);
           }
-            exact={true}
             path="/pdf/:id"
             render={[Function]} />
         <function Route() {
@@ -238,21 +237,6 @@ ShallowWrapper {
             }, _temp), _possibleConstructorReturn(_this, _ret);
           }
             path="/video/transcript"
-            render={[Function]} />
-        <function Route() {
-            var _temp, _this, _ret;
-        
-            _classCallCheck(this, Route);
-        
-            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-              args[_key] = arguments[_key];
-            }
-        
-            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-              match: _this.computeMatch(_this.props, _this.context.router)
-            }, _temp), _possibleConstructorReturn(_this, _ret);
-          }
-            path="/pdf/:id/transcript"
             render={[Function]} />
         <function Route() {
             var _temp, _this, _ret;
@@ -400,7 +384,6 @@ ShallowWrapper {
                   match: _this.computeMatch(_this.props, _this.context.router)
                 }, _temp), _possibleConstructorReturn(_this, _ret);
               }
-                  exact={true}
                   path="/pdf/:id"
                   render={[Function]} />
             <function Route() {
@@ -508,21 +491,6 @@ ShallowWrapper {
                 }, _temp), _possibleConstructorReturn(_this, _ret);
               }
                   path="/video/transcript"
-                  render={[Function]} />
-            <function Route() {
-                var _temp, _this, _ret;
-            
-                _classCallCheck(this, Route);
-            
-                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-                  args[_key] = arguments[_key];
-                }
-            
-                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-                  match: _this.computeMatch(_this.props, _this.context.router)
-                }, _temp), _possibleConstructorReturn(_this, _ret);
-              }
-                  path="/pdf/:id/transcript"
                   render={[Function]} />
             <function Route() {
                 var _temp, _this, _ret;
@@ -787,7 +755,6 @@ ShallowWrapper {
                           match: _this.computeMatch(_this.props, _this.context.router)
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
-                              exact={true}
                               path="/pdf/:id"
                               render={[Function]} />
                     <function Route() {
@@ -895,21 +862,6 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               path="/video/transcript"
-                              render={[Function]} />
-                    <function Route() {
-                        var _temp, _this, _ret;
-                    
-                        _classCallCheck(this, Route);
-                    
-                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-                          args[_key] = arguments[_key];
-                        }
-                    
-                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-                          match: _this.computeMatch(_this.props, _this.context.router)
-                        }, _temp), _possibleConstructorReturn(_this, _ret);
-                      }
-                              path="/pdf/:id/transcript"
                               render={[Function]} />
                     <function Route() {
                         var _temp, _this, _ret;
@@ -1057,7 +1009,6 @@ ShallowWrapper {
                           match: _this.computeMatch(_this.props, _this.context.router)
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
-                              exact={true}
                               path="/pdf/:id"
                               render={[Function]} />
                     <function Route() {
@@ -1165,21 +1116,6 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               path="/video/transcript"
-                              render={[Function]} />
-                    <function Route() {
-                        var _temp, _this, _ret;
-                    
-                        _classCallCheck(this, Route);
-                    
-                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-                          args[_key] = arguments[_key];
-                        }
-                    
-                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
-                          match: _this.computeMatch(_this.props, _this.context.router)
-                        }, _temp), _possibleConstructorReturn(_this, _ret);
-                      }
-                              path="/pdf/:id/transcript"
                               render={[Function]} />
                     <function Route() {
                         var _temp, _this, _ret;
