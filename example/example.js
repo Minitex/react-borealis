@@ -88,7 +88,7 @@ const config =
     },
     pdf: {
       transcript: {
-        texts: ['P.D.F ya\'ll'],
+        texts: [],
         label: 'PDF',
       },
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll35/id/0',
