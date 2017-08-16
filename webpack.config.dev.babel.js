@@ -1,4 +1,4 @@
-const { resolve } = require('path');
+import { resolve } from 'path';
 
 module.exports = {
   context: resolve('example'),

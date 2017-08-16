@@ -19,4 +19,3 @@ module.exports = function (env) {
   };
   return merge(config, require(`./webpack.config.${env}.babel.js`));
 };
-
