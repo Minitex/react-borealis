@@ -4151,6 +4151,10 @@ openseadragon@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/openseadragon/-/openseadragon-2.2.1.tgz#5f8ef0fdb7e0aa79e0fb0d927701466cf816bb2f"
 
+openseadragon@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/openseadragon/-/openseadragon-2.3.0.tgz#899fe3de543ff51d7e16dbbb83fffa0720a3b211"
+
 opn@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/opn/-/opn-4.0.2.tgz#7abc22e644dff63b0a96d5ab7f2790c0f01abc95"
@@ -4776,13 +4780,13 @@ react-dom@^15.4.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#b6805c1cc":
+"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#788e3e66":
   version "0.1.0"
-  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#b6805c1cc"
+  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#788e3e66"
   dependencies:
     development "0.0.6"
     history "^4.6.1"
-    openseadragon "^2.2.1"
+    openseadragon "^2.3.0"
     react "^15.4.2"
     react-dom "^15.4.1"
     react-router "4.1.1"
