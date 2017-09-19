@@ -51,7 +51,6 @@
     "webpack": "^3.0.0",
     "webpack-dev-middleware": "^1.10.2",
     "webpack-dev-server": "^2.5.0",
-    "webpack-merge": "^4.1.0",
     "yarn": "^0.24.6"
   },
   "scripts": {
