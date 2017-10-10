@@ -20,7 +20,7 @@
     "openseadragon": "^2.2.1",
     "prop-types": "^15.5.10",
     "react": "^15.4.1",
-    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#76d04c26a8a6a",
+    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#b9d5411f119a70",
     "react-router": "4.1.1",
     "react-router-dom": "^4.1.1"
   },
