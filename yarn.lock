@@ -1117,9 +1117,9 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-"borealis-pdf@git+https://github.com/UMNLibraries/borealis-pdf.git#6c74c8978c8102e":
+"borealis-pdf@git+https://github.com/UMNLibraries/borealis-pdf.git#bcb052a3e7660d0ac0387568":
   version "0.1.0"
-  resolved "git+https://github.com/UMNLibraries/borealis-pdf.git#6c74c8978c8102e"
+  resolved "git+https://github.com/UMNLibraries/borealis-pdf.git#bcb052a3e7660d0ac0387568"
   dependencies:
     history "^4.6.1"
     prop-types "^15.5.10"
@@ -4780,9 +4780,9 @@ react-dom@^15.4.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#788e3e66":
+"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#de6ddf8bfc23":
   version "0.1.0"
-  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#788e3e66"
+  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#de6ddf8bfc23"
   dependencies:
     development "0.0.6"
     history "^4.6.1"

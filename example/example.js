@@ -10,7 +10,7 @@ const config =
       label: 'Image',
       include_controls: true,
       sequenceMode: true,
-      showReferenceStrip: true,
+      showReferenceStrip: false,
       defaultZoomLevel: 0,
       defaultHomeZoomLevel: 0,
       minZoomLevel: 0,
@@ -22,14 +22,18 @@ const config =
         texts: [],
         label: 'Image',
       },
-      tocs: [
+      pages: [
         'MLK',
         'A Statue',
       ],
-      transcript: {
-        texts: ['this is an image'],
-        label: 'Image',
-      },
+      thumbnails: [
+        'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/full/100,/0/default.jpg',
+        'https://ids.lib.harvard.edu/ids/iiif/25286610/full/100,/0/native.jpg',
+      ],
+      transcripts: [
+        'MLK at at thing',
+        'A statue here, very statuey',
+      ],
     },
     ppt: {
       transcript: {
