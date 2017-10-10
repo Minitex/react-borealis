@@ -4780,9 +4780,9 @@ react-dom@^15.4.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#de6ddf8bfc23":
+"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#76d04c26a8a6a":
   version "0.1.0"
-  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#de6ddf8bfc23"
+  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#76d04c26a8a6a"
   dependencies:
     development "0.0.6"
     history "^4.6.1"
