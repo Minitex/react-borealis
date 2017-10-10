@@ -14,6 +14,8 @@ const config =
       defaultZoomLevel: 0,
       defaultHomeZoomLevel: 0,
       minZoomLevel: 0,
+      containerColumns: 9,
+      sidebarColumns: 3,
       tileSources: [
         'https://stacks.stanford.edu/image/iiif/hg676jb4964%2F0380_796-44/info.json',
         'https://ids.lib.harvard.edu/ids/iiif/25286610/info.json',
