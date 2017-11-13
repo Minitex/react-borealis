@@ -3,6 +3,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   className="borealis-tray">
   <div>
     <a
+      aria-current={false}
       className="borealis-thumbnail"
       href="/image"
       onClick={[Function]}
@@ -14,6 +15,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
+      aria-current={false}
       className="borealis-thumbnail"
       href="/image"
       onClick={[Function]}
@@ -25,6 +27,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
+      aria-current={false}
       className="borealis-thumbnail"
       href="/image"
       onClick={[Function]}
@@ -36,6 +39,7 @@ exports[`BorealisTray Tests renders an audio 1`] = `
   </div>
   <div>
     <a
+      aria-current={false}
       className="borealis-thumbnail"
       href="/image"
       onClick={[Function]}

@@ -1,6 +1,7 @@
 exports[`BorealisThumbnail Tests renders an audio 1`] = `
 <div>
   <a
+    aria-current={false}
     className="borealis-thumbnail"
     href="/foo"
     onClick={[Function]}

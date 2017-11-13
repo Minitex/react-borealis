@@ -8,7 +8,8 @@ exports[`Borealis should render correctly 1`] = `
         className="nav nav-pills">
         <li>
           <a
-            className="active transcript-nav-link"
+            aria-current="true"
+            className="transcript-nav-link active"
             href="#/image/0"
             onClick={[Function]}
             style={Object {}}>
@@ -17,6 +18,7 @@ exports[`Borealis should render correctly 1`] = `
         </li>
         <li>
           <a
+            aria-current={false}
             className="transcript-nav-link"
             href="#/image/0/transcript"
             onClick={[Function]}

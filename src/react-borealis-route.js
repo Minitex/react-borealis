@@ -73,7 +73,7 @@ class Borealis extends React.Component {
       <div>
         <Switch>
           <Redirect from="/" exact to={`/${initialPath()}`} />
-          <Route exact path="/image/:id" render={props => layout(props, ReactOpenseadragon, 'image')} />
+          <Route exact path="/image/:id" basename="image" render={props => layout(props, ReactOpenseadragon, 'image')} />
           <Route exact path="/kaltura_audio" render={props => layout(props, KalturaAudio, 'kaltura_audio')} />
           <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_audio_playlist')} />
           <Route exact path="/kaltura_video" render={props => layout(props, KalturaVideo, 'kaltura_video')} />

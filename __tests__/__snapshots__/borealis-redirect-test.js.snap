@@ -34,6 +34,7 @@ ShallowWrapper {
               match: _this.computeMatch(_this.props, _this.context.router)
             }, _temp), _possibleConstructorReturn(_this, _ret);
           }
+            basename="image"
             exact={true}
             path="/image/:id"
             render={[Function]} />
@@ -288,6 +289,7 @@ ShallowWrapper {
                   match: _this.computeMatch(_this.props, _this.context.router)
                 }, _temp), _possibleConstructorReturn(_this, _ret);
               }
+                  basename="image"
                   exact={true}
                   path="/image/:id"
                   render={[Function]} />
@@ -659,6 +661,7 @@ ShallowWrapper {
                           match: _this.computeMatch(_this.props, _this.context.router)
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
+                              basename="image"
                               exact={true}
                               path="/image/:id"
                               render={[Function]} />
@@ -913,6 +916,7 @@ ShallowWrapper {
                           match: _this.computeMatch(_this.props, _this.context.router)
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
+                              basename="image"
                               exact={true}
                               path="/image/:id"
                               render={[Function]} />

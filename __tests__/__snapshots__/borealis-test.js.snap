@@ -5,7 +5,8 @@ exports[`Borealis should render correctly 1`] = `
       className="borealis-tray">
       <div>
         <a
-          className="active borealis-thumbnail"
+          aria-current="true"
+          className="borealis-thumbnail active"
           href="#/image/0"
           onClick={[Function]}
           style={Object {}}>
@@ -16,6 +17,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/kaltura_audio"
           onClick={[Function]}
@@ -27,6 +29,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/kaltura_audio_playlist"
           onClick={[Function]}
@@ -38,6 +41,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/kaltura_video"
           onClick={[Function]}
@@ -49,6 +53,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/audio"
           onClick={[Function]}
@@ -60,6 +65,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/video"
           onClick={[Function]}
@@ -71,6 +77,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/pdf/0"
           onClick={[Function]}
@@ -82,6 +89,7 @@ exports[`Borealis should render correctly 1`] = `
       </div>
       <div>
         <a
+          aria-current={false}
           className="borealis-thumbnail"
           href="#/ppt"
           onClick={[Function]}
@@ -98,7 +106,8 @@ exports[`Borealis should render correctly 1`] = `
         className="nav nav-pills">
         <li>
           <a
-            className="active transcript-nav-link"
+            aria-current="true"
+            className="transcript-nav-link active"
             href="#/image/0"
             onClick={[Function]}
             style={Object {}}>
@@ -107,6 +116,7 @@ exports[`Borealis should render correctly 1`] = `
         </li>
         <li>
           <a
+            aria-current={false}
             className="transcript-nav-link"
             href="#/image/0/transcript"
             onClick={[Function]}
