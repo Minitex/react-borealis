@@ -18,6 +18,13 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: { ReactDOM: 'react-dom' },
+  },
+  externals: {
+    react: 'react',
+    'react-dom': 'ReactDOM',
+  },
   context: resolve('src'),
   entry: ['babel-polyfill', './react-borealis.js'],
   devtool: 'cheap-module-source-map',

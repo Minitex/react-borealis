@@ -15,6 +15,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    alias: { ReactDOM: 'react-dom' },
+  },
   context: resolve('example'),
   entry: ['babel-polyfill', './example.js'],
   devtool: 'source-map',
