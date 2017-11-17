@@ -5188,13 +5188,15 @@ react-lazy-load@^3.0.12:
     lodash.throttle "^4.0.0"
     prop-types "^15.5.8"
 
-"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#467481debfdb2cd3d2e63aece18017cac9d71aac":
+"react-openseadragon@git+https://github.com/UMNLibraries/react-openseadragon.git#2b78a89383c":
   version "0.2.0"
-  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#467481debfdb2cd3d2e63aece18017cac9d71aac"
+  resolved "git+https://github.com/UMNLibraries/react-openseadragon.git#2b78a89383c"
   dependencies:
     development "0.0.6"
     history "^4.6.1"
     openseadragon "^2.3.0"
+    preact "^8.2.6"
+    preact-compat "^3.17.0"
     prop-types "^15.6.0"
     query-string "^5.0.1"
     react "^15.4.2"
