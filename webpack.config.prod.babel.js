@@ -19,7 +19,11 @@ module.exports = {
     ],
   },
   resolve: {
-    alias: { ReactDOM: 'react-dom' },
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat',
+      ReactDOM: 'preact-compat',
+    },
   },
   externals: {
     react: 'react',
