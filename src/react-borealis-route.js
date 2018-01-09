@@ -45,6 +45,9 @@ class Borealis extends React.Component {
 
     // This order is mirrored in borealis-tray.js
   _initialPath() {
+    if (this.props.initialPath !== '') {
+      return this.props.initialPath;
+    }
     const config = this.props.config;
     return Borealis.thumbnailPaths().map((thumb) => {
       if (config[thumb.type]) {
@@ -95,7 +98,12 @@ class Borealis extends React.Component {
   }
 }
 
+Borealis.defaultProps = {
+  initialPath: '',
+};
+
 Borealis.propTypes = {
+  initialPath: PropTypes.string,
   config: PropTypes.object.isRequired,
 };
 

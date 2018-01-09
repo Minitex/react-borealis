@@ -565,7 +565,8 @@ ShallowWrapper {
                           ],
                         },
                       }
-        } />,
+        }
+        initialPath="" />,
       "_debugID": 1,
       "_hostContainerInfo": null,
       "_hostParent": null,
@@ -612,6 +613,7 @@ ShallowWrapper {
               ],
             },
           },
+          "initialPath": "",
         },
         "refs": Object {},
         "state": null,
@@ -1196,6 +1198,7 @@ ShallowWrapper {
               ],
             },
           }
-    } />,
+    }
+    initialPath="" />,
 }
 `;

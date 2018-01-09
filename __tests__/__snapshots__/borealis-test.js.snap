@@ -177,6 +177,7 @@ exports[`Borealis should render correctly 1`] = `
         }
       }
       include_controls={true}
+      initialPath=""
       label="Image"
       location={
         Object {

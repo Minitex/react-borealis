@@ -194,4 +194,5 @@ const config =
 ReactDOM.render(<Borealis
   config={config}
   basename='/foo/bar'
+  initialPath="image/3/?searchText=dalles"
 />, document.getElementById('app'));
