@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
-    "borealis-pdf": "git+https://github.com/UMNLibraries/borealis-pdf.git#bcb052a3e7660d0ac0387568",
+    "borealis-pdf": "git+https://github.com/UMNLibraries/borealis-pdf.git#20ee0fcee70a3343d1d7c0",
     "development": "0.0.6",
     "history": "3.0.0",
     "openseadragon": "^2.2.1",
