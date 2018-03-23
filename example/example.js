@@ -130,6 +130,22 @@ const config =
       wrapper_width: '60%',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
     },
+    kaltura_video_playlist: {
+      targetId: 'kaltura_player_1489684320',
+      wid: '_1369852',
+      uiconf_id: 38719361,
+      flashvars: {
+        streamerType: 'auto',
+        'playlistAPI.kpl0Id': '1_ualvt5s5',
+      },
+      transcript: {
+        texts: ['this is a kaltura video transcript'],
+        label: 'Video',
+      },
+      wrapper_height: '395px',
+      wrapper_width: '60%',
+      thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
+    },
     kaltura_audio: {
       targetId: 'kaltura_player_1489599711',
       wid: '_1369852',

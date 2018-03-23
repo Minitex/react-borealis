@@ -4,7 +4,7 @@ import Thumbnail from './borealis-thumbnail';
 
 export default class BorealisTray extends React.Component {
   static thumbs(config) {
-    return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'audio', 'video', 'pdf', 'ppt'].map(
+    return ['image', 'kaltura_audio', 'kaltura_audio_playlist', 'kaltura_video', 'kaltura_video_playlist', 'audio', 'video', 'pdf', 'ppt'].map(
       type => ((config[type]) ? { [type]: config[type].thumbnail } : ''),
     ).filter(item => item !== '');
   }

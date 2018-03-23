@@ -26,6 +26,7 @@ class Borealis extends React.Component {
       { type: 'kaltura_audio', path: 'kaltura_audio' },
       { type: 'kaltura_audio_playlist', path: 'kaltura_audio_playlist' },
       { type: 'kaltura_video', path: 'kaltura_video' },
+      { type: 'kaltura_video_playlist', path: 'kaltura_video_playlist' },
       { type: 'audio', path: 'audio' },
       { type: 'video', path: 'video' },
       { type: 'pdf', path: 'pdf/0' },
@@ -79,6 +80,7 @@ class Borealis extends React.Component {
           <Route exact path="/image/:id" basename="image" render={props => layout(props, ReactOpenseadragon, 'image')} />
           <Route exact path="/kaltura_audio" render={props => layout(props, KalturaAudio, 'kaltura_audio')} />
           <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_audio_playlist')} />
+          <Route exact path="/kaltura_video_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_video_playlist')} />
           <Route exact path="/kaltura_video" render={props => layout(props, KalturaVideo, 'kaltura_video')} />
           <Route exact path="/audio" render={props => layout(props, BorealisAudioPlayer, 'audio')} />
           <Route exact path="/video" render={props => layout(props, BorealisVideoPlayer, 'video')} />
@@ -89,6 +91,7 @@ class Borealis extends React.Component {
           <Route path="/kaltura_audio/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_audio')} />
           <Route path="/kaltura_audio_playlist/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_audio_playlist')} />
           <Route path="/kaltura_video/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_video')} />
+          <Route path="/kaltura_video_playlist/transcript" render={props => layout(props, BorealisTranscript, 'kaltura_video_playlist')} />
           <Route path="/audio/transcript" render={props => layout(props, BorealisTranscript, 'audio')} />
           <Route path="/video/transcript" render={props => layout(props, BorealisTranscript, 'video')} />
           <Route path="/ppt/transcript" render={props => layout(props, BorealisTranscript, 'ppt')} />

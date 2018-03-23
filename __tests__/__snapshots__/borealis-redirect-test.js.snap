@@ -84,6 +84,22 @@ ShallowWrapper {
             }, _temp), _possibleConstructorReturn(_this, _ret);
           }
             exact={true}
+            path="/kaltura_video_playlist"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
+            exact={true}
             path="/kaltura_video"
             render={[Function]} />
         <function Route() {
@@ -222,6 +238,21 @@ ShallowWrapper {
               match: _this.computeMatch(_this.props, _this.context.router)
             }, _temp), _possibleConstructorReturn(_this, _ret);
           }
+            path="/kaltura_video_playlist/transcript"
+            render={[Function]} />
+        <function Route() {
+            var _temp, _this, _ret;
+        
+            _classCallCheck(this, Route);
+        
+            for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+              args[_key] = arguments[_key];
+            }
+        
+            return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+              match: _this.computeMatch(_this.props, _this.context.router)
+            }, _temp), _possibleConstructorReturn(_this, _ret);
+          }
             path="/audio/transcript"
             render={[Function]} />
         <function Route() {
@@ -324,6 +355,22 @@ ShallowWrapper {
               }
                   exact={true}
                   path="/kaltura_audio_playlist"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  exact={true}
+                  path="/kaltura_video_playlist"
                   render={[Function]} />
             <function Route() {
                 var _temp, _this, _ret;
@@ -463,6 +510,21 @@ ShallowWrapper {
                 }, _temp), _possibleConstructorReturn(_this, _ret);
               }
                   path="/kaltura_video/transcript"
+                  render={[Function]} />
+            <function Route() {
+                var _temp, _this, _ret;
+            
+                _classCallCheck(this, Route);
+            
+                for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                  args[_key] = arguments[_key];
+                }
+            
+                return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                  match: _this.computeMatch(_this.props, _this.context.router)
+                }, _temp), _possibleConstructorReturn(_this, _ret);
+              }
+                  path="/kaltura_video_playlist/transcript"
                   render={[Function]} />
             <function Route() {
                 var _temp, _this, _ret;
@@ -713,6 +775,22 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               exact={true}
+                              path="/kaltura_video_playlist"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
                               path="/kaltura_video"
                               render={[Function]} />
                     <function Route() {
@@ -837,6 +915,21 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               path="/kaltura_video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_video_playlist/transcript"
                               render={[Function]} />
                     <function Route() {
                         var _temp, _this, _ret;
@@ -968,6 +1061,22 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               exact={true}
+                              path="/kaltura_video_playlist"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              exact={true}
                               path="/kaltura_video"
                               render={[Function]} />
                     <function Route() {
@@ -1092,6 +1201,21 @@ ShallowWrapper {
                         }, _temp), _possibleConstructorReturn(_this, _ret);
                       }
                               path="/kaltura_video/transcript"
+                              render={[Function]} />
+                    <function Route() {
+                        var _temp, _this, _ret;
+                    
+                        _classCallCheck(this, Route);
+                    
+                        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+                          args[_key] = arguments[_key];
+                        }
+                    
+                        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _React$Component.call.apply(_React$Component, [this].concat(args))), _this), _this.state = {
+                          match: _this.computeMatch(_this.props, _this.context.router)
+                        }, _temp), _possibleConstructorReturn(_this, _ret);
+                      }
+                              path="/kaltura_video_playlist/transcript"
                               render={[Function]} />
                     <function Route() {
                         var _temp, _this, _ret;
