@@ -125,7 +125,7 @@ const config =
         texts: ['this is a kaltura video transcript'],
         label: 'Video',
       },
-      entry_id: '0_t96feg4f',
+      entry_id: '0_hmnbli5z',
       wrapper_height: '315px',
       wrapper_width: '60%',
       thumbnail: 'https://cdm16022.contentdm.oclc.org/utils/getthumbnail/collection/p16022coll38/id/0',
