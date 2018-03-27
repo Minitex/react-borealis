@@ -15,7 +15,6 @@
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "borealis-pdf": "git+https://github.com/UMNLibraries/borealis-pdf.git#20ee0fcee70a3343d1d7c0",
-    "development": "0.0.6",
     "history": "3.0.0",
     "openseadragon": "^2.2.1",
     "preact": "^8.2.6",
@@ -28,8 +27,7 @@
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
-    "babel": "^6.5.2",
-    "babel-core": "^6.21.0",
+    "babel-core": "^6.26.0",
     "babel-eslint": "^7.1.1",
     "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.10",
@@ -53,8 +51,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^3.0.0",
     "webpack-dev-middleware": "^1.10.2",
-    "webpack-dev-server": "^2.5.0",
-    "yarn": "^0.24.6"
+    "webpack-dev-server": "^2.5.0"
   },
   "scripts": {
     "start": "webpack-dev-server --env=dev --hot --port=8081",
