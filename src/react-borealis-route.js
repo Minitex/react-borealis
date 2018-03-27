@@ -14,7 +14,8 @@ import BorealisTranscript from './borealis-transcript';
 import BorealisAudioPlayer from './borealis-audio-player';
 import BorealisVideoPlayer from './borealis-video-player';
 import KalturaAudio from './kaltura-audio';
-import KalturaPlaylist from './kaltura-audio-playlist';
+import KalturaAudioPlaylist from './kaltura-audio-playlist';
+import KalturaVideoPlaylist from './kaltura-video-playlist';
 import KalturaVideo from './kaltura-video';
 
 class Borealis extends React.Component {
@@ -79,8 +80,8 @@ class Borealis extends React.Component {
           <Redirect from="/" exact to={`/${initialPath()}`} />
           <Route exact path="/image/:id" basename="image" render={props => layout(props, ReactOpenseadragon, 'image')} />
           <Route exact path="/kaltura_audio" render={props => layout(props, KalturaAudio, 'kaltura_audio')} />
-          <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_audio_playlist')} />
-          <Route exact path="/kaltura_video_playlist" render={props => layout(props, KalturaPlaylist, 'kaltura_video_playlist')} />
+          <Route exact path="/kaltura_audio_playlist" render={props => layout(props, KalturaAudioPlaylist, 'kaltura_audio_playlist')} />
+          <Route exact path="/kaltura_video_playlist" render={props => layout(props, KalturaVideoPlaylist, 'kaltura_video_playlist')} />
           <Route exact path="/kaltura_video" render={props => layout(props, KalturaVideo, 'kaltura_video')} />
           <Route exact path="/audio" render={props => layout(props, BorealisAudioPlayer, 'audio')} />
           <Route exact path="/video" render={props => layout(props, BorealisVideoPlayer, 'video')} />
