@@ -1,18 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Borealis should render correctly 1`] = `
 <div>
   <div>
     <span />
     <div
-      className="row image-nav">
+      className="row image-nav"
+    >
       <ul
-        className="nav nav-pills">
+        className="nav nav-pills"
+      >
         <li>
           <a
             aria-current="true"
             className="transcript-nav-link active"
             href="#/image/0"
             onClick={[Function]}
-            style={Object {}}>
+            style={Object {}}
+          >
             Image
           </a>
         </li>
@@ -22,7 +27,7 @@ exports[`Borealis should render correctly 1`] = `
             className="transcript-nav-link"
             href="#/image/0/transcript"
             onClick={[Function]}
-            style={undefined}>
+          >
             Transcript
           </a>
         </li>
@@ -30,7 +35,6 @@ exports[`Borealis should render correctly 1`] = `
     </div>
     <OpenSeadragonViewer
       WrappedComponent="OpenSeadragonViewer"
-      basename={undefined}
       config={
         Object {
           "defaultZoomLevel": 0,
@@ -66,7 +70,7 @@ exports[`Borealis should render correctly 1`] = `
           "go": [Function],
           "goBack": [Function],
           "goForward": [Function],
-          "length": 3,
+          "length": 1,
           "listen": [Function],
           "location": Object {
             "hash": "",
@@ -101,7 +105,6 @@ exports[`Borealis should render correctly 1`] = `
       }
       sequenceMode={true}
       showReferenceStrip={true}
-      staticContext={undefined}
       thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
       tileSources={
         Array [
@@ -123,7 +126,8 @@ exports[`Borealis should render correctly 1`] = `
           ],
         }
       }
-      type="image" />
+      type="image"
+    />
   </div>
 </div>
 `;

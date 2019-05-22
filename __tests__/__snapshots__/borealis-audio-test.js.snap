@@ -1,10 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`BorealisAudio Tests renders an audio 1`] = `
 <audio
   className="audio-player"
-  controls={true}>
+  controls={true}
+>
   <source
-    src={undefined}
-    type="audio/mpeg" />
+    type="audio/mpeg"
+  />
   Your browser does not support the audio element.
 </audio>
 `;

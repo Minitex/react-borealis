@@ -1,13 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`BorealisPPT Tests renders a PowerPoint 1`] = `
 <div
-  className="ppt-download">
-  <a
-    href={undefined}>
+  className="ppt-download"
+>
+  <a>
     <img
       alt="Microsoft PowerPoint"
-      src={undefined} />
+    />
   </a>
-  <a
-    href={undefined} />
+  <a />
 </div>
 `;

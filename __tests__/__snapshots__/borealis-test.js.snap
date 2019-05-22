@@ -1,18 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`Borealis should render correctly 1`] = `
 <div>
   <div>
     <div
-      className="borealis-tray">
+      className="borealis-tray"
+    >
       <div>
         <a
           aria-current="true"
           className="borealis-thumbnail active"
           href="#/image/0"
           onClick={[Function]}
-          style={Object {}}>
+          style={Object {}}
+        >
           <img
             alt="Click to load the image/0"
-            src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg" />
+            src="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
+          />
         </a>
       </div>
       <div>
@@ -21,10 +26,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/kaltura_audio"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the kaltura_audio"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885"
+          />
         </a>
       </div>
       <div>
@@ -33,10 +39,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/kaltura_audio_playlist"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the kaltura_audio_playlist"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885"
+          />
         </a>
       </div>
       <div>
@@ -45,10 +52,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/kaltura_video"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the kaltura_video"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0"
+          />
         </a>
       </div>
       <div>
@@ -57,10 +65,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/audio"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the audio"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/jhs/id/885"
+          />
         </a>
       </div>
       <div>
@@ -69,10 +78,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/video"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the video"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll38/id/0"
+          />
         </a>
       </div>
       <div>
@@ -81,10 +91,11 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/pdf/0"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the pdf/0"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll35/id/0"
+          />
         </a>
       </div>
       <div>
@@ -93,24 +104,28 @@ exports[`Borealis should render correctly 1`] = `
           className="borealis-thumbnail"
           href="#/ppt"
           onClick={[Function]}
-          style={undefined}>
+        >
           <img
             alt="Click to load the ppt"
-            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827" />
+            src="http://reflections.mndigital.org/utils/getthumbnail/collection/p16022coll17/id/827"
+          />
         </a>
       </div>
     </div>
     <div
-      className="row image-nav">
+      className="row image-nav"
+    >
       <ul
-        className="nav nav-pills">
+        className="nav nav-pills"
+      >
         <li>
           <a
             aria-current="true"
             className="transcript-nav-link active"
             href="#/image/0"
             onClick={[Function]}
-            style={Object {}}>
+            style={Object {}}
+          >
             Image
           </a>
         </li>
@@ -120,7 +135,7 @@ exports[`Borealis should render correctly 1`] = `
             className="transcript-nav-link"
             href="#/image/0/transcript"
             onClick={[Function]}
-            style={undefined}>
+          >
             Transcript
           </a>
         </li>
@@ -164,7 +179,7 @@ exports[`Borealis should render correctly 1`] = `
           "go": [Function],
           "goBack": [Function],
           "goForward": [Function],
-          "length": 3,
+          "length": 1,
           "listen": [Function],
           "location": Object {
             "hash": "",
@@ -199,7 +214,6 @@ exports[`Borealis should render correctly 1`] = `
       }
       sequenceMode={true}
       showReferenceStrip={true}
-      staticContext={undefined}
       thumbnail="https://stacks.stanford.edu/image/iiif/hg676jb4964%252F0380_796-44/full/340,/0/default.jpg"
       tileSources={
         Array [
@@ -221,7 +235,8 @@ exports[`Borealis should render correctly 1`] = `
           ],
         }
       }
-      type="image" />
+      type="image"
+    />
   </div>
 </div>
 `;
