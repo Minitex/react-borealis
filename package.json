@@ -51,7 +51,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^3.0.0",
     "webpack-dev-middleware": "^1.10.2",
-    "webpack-dev-server": "^2.5.0"
+    "webpack-dev-server": "^2.5.0",
+    "jest": "^24.8.0",
+    "jest-serializer-enzyme": "1.0.0"
   },
   "scripts": {
     "start": "webpack-dev-server --env=dev --hot --port=8081",
@@ -64,7 +66,7 @@
     "react-component"
   ],
   "jest": {
-    "scriptPreprocessor": "<rootDir>/node_modules/jest-css-modules",
+    "transform": {".*": "<rootDir>/node_modules/jest-css-modules"},
     "snapshotSerializers": [
       "jest-serializer-enzyme"
     ]
