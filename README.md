@@ -13,7 +13,7 @@ $ yarn install
 $ yarn start
 ```
 
-Then open [`http://localhost:8080/#/foo/bar/image/0`](http://localhost:8080/#/foo/bar/image/0) in a browser.
+Then open [`http://localhost:8081`](http://localhost:8081) in a browser.
 
 
 ## Building for Production
