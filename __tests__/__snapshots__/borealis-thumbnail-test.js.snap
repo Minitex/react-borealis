@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`BorealisThumbnail Tests renders an audio 1`] = `
 <div>
   <a
@@ -5,10 +7,11 @@ exports[`BorealisThumbnail Tests renders an audio 1`] = `
     className="borealis-thumbnail"
     href="/foo"
     onClick={[Function]}
-    style={undefined}>
+  >
     <img
       alt="Click to load the foo"
-      src="http://example.com" />
+      src="http://example.com"
+    />
   </a>
 </div>
 `;

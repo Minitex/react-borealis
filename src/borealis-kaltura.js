@@ -26,7 +26,7 @@ class KalturaPlayer extends React.Component {
     const { pusher_margin_top, wrapper_height, wrapper_width, targetId } = this.props;
     const wrapperStyle = { width: wrapper_width, height: wrapper_height, display: 'inline-block', position: 'relative' };
     const pusherStyle = { marginTop: pusher_margin_top };
-    const playerStyle = { position: 'absolute', top: 0, left: 0, left: 0, right: 0, bottom: 0 };
+    const playerStyle = { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 };
     return (
       <div id="kaltura-wrapper-div" style={wrapperStyle}>
         <div id="kaltura-pusher-div" style={pusherStyle} />

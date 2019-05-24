@@ -60,6 +60,9 @@ class Borealis extends React.Component {
   }
 
   _layout(props, wrappedComponent, type) {
+    // this.props = the original props passed into Borealis
+    // props = properties passed in by React Router
+    // We combine both sets of props and pass them downstream
     const defaultProps = this.props;
     const getThumbnailPath = Borealis.getThumbnailPath;
     return (<BorealisLayout
