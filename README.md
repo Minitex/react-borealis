@@ -9,8 +9,8 @@ React Borealis features search-as-you type for [items with multiple pages of con
 To build the examples locally, run:
 
 ```
-$ yarn install
-$ yarn start
+$ yarn install;
+$ yarn start;
 ```
 
 Then open [`http://localhost:8081`](http://localhost:8081) in a browser.
