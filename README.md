@@ -21,6 +21,7 @@ Then open [`http://localhost:8081`](http://localhost:8081) in a browser.
 After making some changes to your react components, create a new minified build of the project:
 
 ```
+$ yarn install;
 $ yarn run build;
 $ git add dist;
 $ git push origin master;
