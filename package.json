@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "description": "A React component that wraps the OpenSeadragon image viewer.",
   "main": "dist/react-borealis-min.js",
-  "homepage": "https://github.com/UMNLibraries/react-borealis",
+  "homepage": "https://github.com/Minitex/react-borealis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/UMNLibraries/react-borealis.git"
+    "url": "https://github.com/Minitex/react-borealis.git"
   },
   "bugs": {
-    "url": "https://github.com/UMNLibraries/react-borealis/issues"
+    "url": "https://github.com/Minitex/react-borealis/issues"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
@@ -22,7 +22,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.4.1",
     "react-dom": "15.4.1",
-    "react-openseadragon": "git+https://github.com/UMNLibraries/react-openseadragon.git#ebcba59c6",
+    "react-openseadragon": "git+https://github.com/Minitex/react-openseadragon.git#882b3fcb2",
     "react-router": "4.1.1",
     "react-router-dom": "^4.1.1"
   },
@@ -66,7 +66,9 @@
     "react-component"
   ],
   "jest": {
-    "transform": {".*": "<rootDir>/node_modules/jest-css-modules"},
+    "transform": {
+      ".*": "<rootDir>/node_modules/jest-css-modules"
+    },
     "snapshotSerializers": [
       "jest-serializer-enzyme"
     ]
